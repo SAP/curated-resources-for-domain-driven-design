@@ -1,37 +1,165 @@
-# SAP Repository Template
+# Curated Resources for Domain-Driven Design (DDD)
 
-Default templates for SAP open source repositories, including LICENSE, .reuse/dep5, Code of Conduct, etc... All repositories on github.com/SAP will be created based on this template.
+## Overview
 
-## To-Do
+This repository contains curated resources on the topic of **Domain Driven Design** (DDD) and **Event Storming** that we recommend internally at SAP and love to share with the community.
 
-In case you are the maintainer of a new SAP open source project, these are the steps to do with the template files:
+Besides providing a collection of great resources we also tried to structure the learning path from a first introduction to deep dives and content specializing on certain aspects. Where we think it adds value, we are giving some hints how to work with the material and what to keep in mind.
 
-- Check if the default license (Apache 2.0) also applies to your project. A license change should only be required in exceptional cases. If this is the case, please change the [license file](LICENSE).
-- Enter the correct metadata for the REUSE tool. See our [wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Using+the+Reuse+Tool+of+FSFE+for+Copyright+and+License+Information) for details how to do it. You can find an initial .reuse/dep5 file to build on. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository and be sure to run the REUSE tool to validate that the metadata is correct.
-- Adjust the contribution guidelines (e.g. add coding style guidelines, pull request checklists, different license if needed etc.)
-- Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.wdf.sap.corp/wiki/display/ospodocs/Guidelines+for+README.md+file) what is required and recommended.
-- Remove all content in this README above and including the horizontal line ;)
+Having said that, enjoy the ride 🤠.
 
-***
+## 🤷 What is DDD all about?
 
-# Our new open source project
+DDD is fundamentally hard to explain in 10 minutes.
+At its core, DDD says that your problem/business *domain* is what should first and foremost *drive* the *design* of your software system.
+Technology comes later.
+DDD offers principles, patterns and tools that help you *collaboratively* explore your domain, develop a common understanding and express this common understanding in useful models.
+Last but not least it provides guidance on how to express these models in code, architecture and organization.
 
-## About this project
+You can find a bit more extensive but still brief description of what DDD is about [here](https://www.dddcommunity.org/learning-ddd/what_is_ddd/).
 
-*Insert a short description of your project here...*
+Note: In DDD, people often distinguish between *strategic design* and *tactical design*.
+Broadly speaking, strategic design is about understanding the problem domain and splitting it into so-called *bounded contexts* (think of them as modules for now – separate things with a distinct boundary between them), while tactical design is about modelling bounded contexts in more detail and diving into actual implementation details.
+While both are important and together form a holistic design toolkit, we believe strategic design to be the better starting point for newcomers.
+Strategic design has many touch points with other important aspects of software development, such as architecture and organization – which is exactly what makes it so valuable.
+It's also the pool to draw techniques and principles from when being tasked with understanding a new problem domain.
 
-## Requirements and Setup
+That being said, there's no wrong way to approach DDD.
+We hope that this gives you the ability to better judge which resource is helpful for you at the moment.
 
-*Insert a short description what is required to get your project running...*
+## 🧑‍🎓 DDD & Event Storming 101 - Let's get things started
 
-## Support, Feedback, Contributing
+Not yet sure what DDD and Event Storming is all about and you want to get an overview on the topic?
+We got you covered.
+In this section we some material that should hook you up on the topic and at the same time give you a good explanation and overview.
+This is a perfect starting point for your DDD journey.
+From there you can dive deeper into DDD and investigate more detailed on the topics that are of specific interest to you.
 
-This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/<your-project>/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
+> 🧑‍💻 *Recommendation* Although you can specialize on aspects of DDD we recommend to approach DDD with a broader perspective and not to hyper-focus on just one aspect.
 
-## Code of Conduct
+### Videos
 
-We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](CODE_OF_CONDUCT.md) at all times.
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h) | - |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | - |
 
-## Licensing
+## 🧑‍🔬 DDD & Event Storming 201 - Give me more
 
-Copyright (20xx-)20xx SAP SE or an SAP affiliate company and <your-project> contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/<your-project>).
+The following resources should be seen as good summary of important aspects of DDD and Event Storming. It is in their nature that they will not necessarily give you the appreciation of the topic as a whole.
+
+### Books and Articles
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | - |
+
+### Videos
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [1st Event Storming Session - Agnieszka Pawlicka](https://youtu.be/a0lWpjlSRA0) | Doesn't elaborate too much on the why |
+
+## 🦸 DDD & Event Storming 301 and beyond - Going all in
+
+So you really want to dive deep into DDD and event storming, then the following resources are the right ones. To give you a better overview we distinguish between DDD and event storming in the following sections.
+
+> 🧑‍💻 *Recommendation* we don't recommend these resources to get started with the topic. Working through the resources is worth it, but require some dedicated (reading) time.
+
+### DDD
+
+#### Books and Articles
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/) | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
+| [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD. |
+
+#### Videos
+
+🥺 Nothing here yet - maybe you have something for us see ["How to contribute"](#how-to-contribute).
+
+### Event Storming
+
+#### Books and Articles
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Introducing EventStorming](https://leanpub.com/introducing_eventstorming) | It is work in progress for some years now, so take it with a grain of salt |
+
+#### Videos
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE) | - |
+| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk) | - |
+| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s) | - |
+  
+## Courses
+
+Of course there are also dedicated courses and learning paths available. They are usually paid offerings (maybe your company has a subscription) and go into the details quite quickly. They therefore are recommendations especially for more advanced learners who want to broaden and deepen their knowledge:
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Pluralsight Learning Path: Domain-Driven Design](https://www.pluralsight.com/paths/domain-driven-design) | - |
+
+## DDD and Legacy
+
+The application of DDD on legacy software is a special topic, but of importance as most of us will not start on a green field. This section is dedicated to resources that cover this aspect
+
+### Books and Articles
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+|[Getting Started with DDD When Surrounded by Legacy Systems](https://www.domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf) | - |
+
+### Videos
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Eric Evans "Getting Started with DDD When Surrounded by Legacy Systems"](https://youtu.be/ZbnF0Dn6dAA) | in German; walk through the paper by Eberhard Wolff|
+
+## Templates and Samples
+
+If you want to facilitate a DDD or Event Storming workshop and are looking for templates and sample, you find useful resources here:
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process) | Super valuable resource with tons of templates for an end-to-end DDD modeling process|
+
+## DDD Community
+
+Maybe you want to touch base with the DDD community or visit a conference. Then this section is the right place for you.
+
+## Meetups
+
+## Conferences
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Domain Driven Design Europe](https://dddeurope.com/) | **The** DDD conference in Europe, highly recommended
+
+## Further DDD Goodies
+
+As in every collection there might be some resources that are worth to mention, but do not perfectly fit into the structure. They are collected here as additional goodies
+
+> 🧑‍💻 *Recommendation* The content here is not related to a "learning path" for DDD but complements it with further aspects and discussions.
+
+### Books and Articles
+
+🥺 Nothing here yet - maybe you have something for us see ["How to contribute"](#how-to-contribute).
+
+#### Videos
+
+| Link | Our 2 cents (where applicable) |
+| - | - |
+| [Is Domain-Driven Design Overrated? (Stefan Tilkov at GOTO 2021)](https://youtu.be/ZZp9RQEGeqQ) | interesting talk around the sometimes maybe too evangelistic application of DDD in the wild |
+
+## How to contribute
+
+Of course this list is open to contributions:
+
+- If you find a bug 🐞 like a typo, missing link etc., please open a [bug](https://github.com/SAP/curated-resources-for-domain-driven-design/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)
+- If you like to have a resource added to the list 🚀, please open a [feature request](https://github.com/SAP/curated-resources-for-domain-driven-design/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BFEATURE+REQUEST%5D+%3Ctitle%3E). We will review the contribution and add it.
+
+Your friendly DDD crew from the SAP neighborhood 😎
