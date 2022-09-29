@@ -1,12 +1,16 @@
 # Curated Resources for Domain-Driven Design (DDD)
 
-## Overview
+## About this project
 
 This repository contains curated resources on the topic of **Domain Driven Design** (DDD) and **Event Storming** that we recommend internally at SAP and love to share with the community.
 
 Besides providing a collection of great resources we also tried to structure the learning path from a first introduction to deep dives and content specializing on certain aspects. Where we think it adds value, we are giving some hints how to work with the material and what to keep in mind.
 
 Having said that, enjoy the ride 🤠.
+
+## Requirements
+
+There are no prerequisites needed.
 
 ## 🤷 What is DDD all about?
 
@@ -155,7 +159,7 @@ As in every collection there might be some resources that are worth to mention, 
 | - | - |
 | [Is Domain-Driven Design Overrated? (Stefan Tilkov at GOTO 2021)](https://youtu.be/ZZp9RQEGeqQ) | interesting talk around the sometimes maybe too evangelistic application of DDD in the wild |
 
-## How to contribute
+## Support, Feedback, Contributing
 
 Of course this list is open to contributions:
 
@@ -163,3 +167,11 @@ Of course this list is open to contributions:
 - If you like to have a resource added to the list 🚀, please open a [feature request](https://github.com/SAP/curated-resources-for-domain-driven-design/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BFEATURE+REQUEST%5D+%3Ctitle%3E). We will review the contribution and add it.
 
 Your friendly DDD crew from the SAP neighborhood 😎
+
+## Code of Conduct
+
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](CODE_OF_CONDUCT.md) at all times.
+
+## Licensing
+
+Copyright 2022 SAP SE or an SAP affiliate company and "Curated Resources for Domain-Driven Design (DDD)" contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available.
