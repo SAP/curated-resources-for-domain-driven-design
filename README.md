@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/curated-resources-for-domain-driven-design)](https://api.reuse.software/info/github.com/SAP/curated-resources-for-domain-driven-design)
+
 # Curated Resources for Domain-Driven Design (DDD)
 
 ## About this project
