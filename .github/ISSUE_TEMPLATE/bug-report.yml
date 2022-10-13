@@ -1,0 +1,32 @@
+name: 🐞 Bug
+description: File a bug/issue
+title: "[BUG] <title>"
+labels: [bug]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: dropdown
+  id: level
+  attributes:
+      label: Which area of the resources should be enhanced?
+      options:
+        - DDD & Event Storming 101 - Let's get things started
+        - DDD & Event Storming 201 - Give me more
+        - DDD & Event Storming 301 and beyond - Going all in
+        - Courses
+        - DDD and Legacy
+        - DDD Community
+        - Further DDD Goodies
+  validations:
+      required: true
+- type: textarea
+  attributes:
+    label: Bug description
+    description: A concise description of what you've found.
+  validations:
+    required: true
