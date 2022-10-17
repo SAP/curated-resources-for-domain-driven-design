@@ -168,7 +168,7 @@ Of course this list is open to contributions:
 - If you find a bug 🐞 like a typo, missing link etc., please open a [bug](https://github.com/SAP/curated-resources-for-domain-driven-design/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Ctitle%3E)
 - If you like to have a resource added to the list 🚀, please open a [feature request](https://github.com/SAP/curated-resources-for-domain-driven-design/issues/new?assignees=&labels=enhancement&template=feature-request.yml&title=%5BFEATURE+REQUEST%5D+%3Ctitle%3E). We will review the contribution and add it.
 
-In addition, we are alo leveraging [GitHub Discussion](https://github.com/SAP/curated-resources-for-domain-driven-design/discussions) to foster the exchange. In case you want to ask questions you’re wondering about, share ideas or engage with other community members, this is the place to go.
+In addition, we are alo leveraging [GitHub Discussions](https://github.com/SAP/curated-resources-for-domain-driven-design/discussions) to foster the exchange. In case you want to ask questions you’re wondering about, share ideas or engage with other community members, this is the place to go.
 
 Your friendly DDD crew from the SAP neighborhood 😎
 
