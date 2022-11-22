@@ -45,10 +45,10 @@ From there you can dive deeper into DDD and investigate more detailed on the top
 
 ### Videos
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h) | - |
-| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | - |
+| Link                                                                                           | Our 2 cents (where applicable) |
+| ---------------------------------------------------------------------------------------------- | ------------------------------ |
+| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)               | -                              |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | -                              |
 
 ## 🧑‍🔬 DDD & Event Storming 201 - Give me more
 
@@ -56,14 +56,14 @@ The following resources should be seen as good summary of important aspects of D
 
 ### Books and Articles
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | - |
+| Link                                                                                                                                                         | Our 2 cents (where applicable) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | -                              |
 
 ### Videos
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
+| Link                                                                            | Our 2 cents (where applicable)        |
+| ------------------------------------------------------------------------------- | ------------------------------------- |
 | [1st Event Storming Session - Agnieszka Pawlicka](https://youtu.be/a0lWpjlSRA0) | Doesn't elaborate too much on the why |
 
 ## 🦸 DDD & Event Storming 301 and beyond - Going all in
@@ -76,10 +76,11 @@ So you really want to dive deep into DDD and event storming, then the following 
 
 #### Books and Articles
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/) | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
-| [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD. |
+| Link                                                                                                                      | Our 2 cents (where applicable)                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/)       | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
+| [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD.                                                                                                                                |
+| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Give a clear road through the journey how to use Domnain-Driven Design based upon practical examples.                                                                                                   |
 
 #### Videos
 
@@ -89,25 +90,28 @@ So you really want to dive deep into DDD and event storming, then the following 
 
 #### Books and Articles
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
+| Link                                                                       | Our 2 cents (where applicable)                                             |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | [Introducing EventStorming](https://leanpub.com/introducing_eventstorming) | It is work in progress for some years now, so take it with a grain of salt |
 
 #### Videos
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE) | - |
-| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk) | - |
-| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s) | - |
-  
+| Link                                                                                                                       | Our 2 cents (where applicable) |
+| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                              |
+| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                              |
+| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                              |
+| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | -                              |
+| [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                              |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                              |
+
 ## Courses
 
 Of course there are also dedicated courses and learning paths available. They are usually paid offerings (maybe your company has a subscription) and go into the details quite quickly. They therefore are recommendations especially for more advanced learners who want to broaden and deepen their knowledge:
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Pluralsight Learning Path: Domain-Driven Design](https://www.pluralsight.com/paths/domain-driven-design) | - |
+| Link                                                                                                      | Our 2 cents (where applicable) |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [Pluralsight Learning Path: Domain-Driven Design](https://www.pluralsight.com/paths/domain-driven-design) | -                              |
 
 ## DDD and Legacy
 
@@ -115,23 +119,23 @@ The application of DDD on legacy software is a special topic, but of importance 
 
 ### Books and Articles
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-|[Getting Started with DDD When Surrounded by Legacy Systems](https://www.domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf) | - |
+| Link                                                                                                                                                                             | Our 2 cents (where applicable) |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| [Getting Started with DDD When Surrounded by Legacy Systems](https://www.domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf) | -                              |
 
 ### Videos
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Eric Evans "Getting Started with DDD When Surrounded by Legacy Systems"](https://youtu.be/ZbnF0Dn6dAA) | in German; walk through the paper by Eberhard Wolff|
+| Link                                                                                                    | Our 2 cents (where applicable)                      |
+| ------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| [Eric Evans "Getting Started with DDD When Surrounded by Legacy Systems"](https://youtu.be/ZbnF0Dn6dAA) | in German; walk through the paper by Eberhard Wolff |
 
 ## Templates and Samples
 
 If you want to facilitate a DDD or Event Storming workshop and are looking for templates and sample, you find useful resources here:
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process) | Super valuable resource with tons of templates for an end-to-end DDD modeling process|
+| Link                                                                                                        | Our 2 cents (where applicable)                                                        |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process) | Super valuable resource with tons of templates for an end-to-end DDD modeling process |
 
 ## DDD Community
 
@@ -141,9 +145,9 @@ Maybe you want to touch base with the DDD community or visit a conference. Then 
 
 ## Conferences
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
-| [Domain Driven Design Europe](https://dddeurope.com/) | **The** DDD conference in Europe, highly recommended
+| Link                                                  | Our 2 cents (where applicable)                       |
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| [Domain Driven Design Europe](https://dddeurope.com/) | **The** DDD conference in Europe, highly recommended |
 
 ## Further DDD Goodies
 
@@ -157,8 +161,8 @@ As in every collection there might be some resources that are worth to mention, 
 
 #### Videos
 
-| Link | Our 2 cents (where applicable) |
-| - | - |
+| Link                                                                                            | Our 2 cents (where applicable)                                                              |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [Is Domain-Driven Design Overrated? (Stefan Tilkov at GOTO 2021)](https://youtu.be/ZZp9RQEGeqQ) | interesting talk around the sometimes maybe too evangelistic application of DDD in the wild |
 
 ## Support, Feedback, Contributing
