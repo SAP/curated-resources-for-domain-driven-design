@@ -80,7 +80,7 @@ So you really want to dive deep into DDD and event storming, then the following 
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/)       | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
 | [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD.                                                                                                                                |
-| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Give a clear road through the journey how to use Domnain-Driven Design based upon practical examples.                                                                                                   |
+| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Give a clear road through the journey how to use Domain-Driven Design based upon practical examples.                                                                                                    |
 
 #### Videos
 
