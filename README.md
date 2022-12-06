@@ -49,6 +49,7 @@ From there you can dive deeper into DDD and investigate more detailed on the top
 | ---------------------------------------------------------------------------------------------- | ------------------------------ |
 | [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)               | -                              |
 | [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | -                              |
+| [50.000 Orange Stickies Later - Alberto Brandolini - GOTO 2018](https://youtu.be/mLXQIYEwK24) (~0:50h) | -                              |
 
 ## 🧑‍🔬 DDD & Event Storming 201 - Give me more
 
