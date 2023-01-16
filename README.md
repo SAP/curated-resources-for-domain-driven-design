@@ -60,6 +60,7 @@ The following resources should be seen as good summary of important aspects of D
 | Link                                                                                                                                                         | Our 2 cents (where applicable) |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
 | [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | -                              |
+| [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420) | -                              |
 
 ### Videos
 
