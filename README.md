@@ -103,7 +103,8 @@ So you really want to dive deep into DDD and event storming, then the following 
 | [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                              |
 | [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                              |
 | [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                              |
-| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | -                              |
+| [Remote EventStorming: Redesigning Everything](https://www.youtube.com/watch?v=v4xLxmpAFdI)                                | This is mostly relevant for moderators. Additionally, at 49:55, Alberto explains how to extract backlog items from the board.  |
+| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | This is rather long, but includes some interesting meta discussions. Can be interesting for moderators. |
 | [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                              |
 | [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                              |
 
