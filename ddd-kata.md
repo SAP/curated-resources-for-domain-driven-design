@@ -91,3 +91,4 @@ As a **Team Member** your tasks are:
 * Plan to have ~4h a week of modelling sessions
 * Work iteratively (e.g. while working on Aggregate Canvas you might want to adjust your Event Storming)
 * As a moderator, strife for consensus and alignment in the team
+* Most importantly, have fun modelling.
