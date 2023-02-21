@@ -45,10 +45,10 @@ From there you can dive deeper into DDD and investigate more detailed on the top
 
 ### Videos
 
-| Link                                                                                           | Our 2 cents (where applicable) |
-| ---------------------------------------------------------------------------------------------- | ------------------------------ |
-| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)               | -                              |
-| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | -                              |
+| Link                                                                                                   | Our 2 cents (where applicable) |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)                       | -                              |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h)         | -                              |
 | [50.000 Orange Stickies Later - Alberto Brandolini - GOTO 2018](https://youtu.be/NGXl1D-KwRI) (~0:50h) | -                              |
 
 ## 🧑‍🔬 DDD & Event Storming 201 - Give me more
@@ -60,7 +60,7 @@ The following resources should be seen as good summary of important aspects of D
 | Link                                                                                                                                                         | Our 2 cents (where applicable) |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
 | [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | -                              |
-| [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420) | -                              |
+| [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420)                                          | -                              |
 
 ### Videos
 
@@ -82,7 +82,7 @@ So you really want to dive deep into DDD and event storming, then the following 
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/)       | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
 | [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD.                                                                                                                                |
-| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Give a clear road through the journey how to use Domain-Driven Design based upon practical examples.                                                                                                    |
+| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Gives a clear road through the journey how to use Domain-Driven Design based upon practical examples.                                                                                                   |
 
 #### Videos
 
@@ -98,15 +98,15 @@ So you really want to dive deep into DDD and event storming, then the following 
 
 #### Videos
 
-| Link                                                                                                                       | Our 2 cents (where applicable) |
-| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                              |
-| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                              |
-| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                              |
-| [Remote EventStorming: Redesigning Everything](https://www.youtube.com/watch?v=v4xLxmpAFdI)                                | This is mostly relevant for moderators. Additionally, at 49:55, Alberto explains how to extract backlog items from the board.  |
-| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | This is rather long, but includes some interesting meta discussions. Can be interesting for moderators. |
-| [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                              |
-| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                              |
+| Link                                                                                                                       | Our 2 cents (where applicable)                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                                                                                                                             |
+| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                                                                                                                             |
+| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                                                                                                                             |
+| [Remote EventStorming: Redesigning Everything](https://www.youtube.com/watch?v=v4xLxmpAFdI)                                | This is mostly relevant for moderators. Additionally, at 49:55, Alberto explains how to extract backlog items from the board. |
+| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | This is rather long, but includes some interesting meta discussions. Can be interesting for moderators.                       |
+| [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                                                                                                                             |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                                                                                                                             |
 
 ## Courses
 
