@@ -45,10 +45,10 @@ From there you can dive deeper into DDD and investigate more detailed on the top
 
 ### Videos
 
-| Link                                                                                           | Our 2 cents (where applicable) |
-| ---------------------------------------------------------------------------------------------- | ------------------------------ |
-| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)               | -                              |
-| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h) | -                              |
+| Link                                                                                                   | Our 2 cents (where applicable) |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| [What is DDD - Eric Evans - DDD Europe 2019](https://youtu.be/pMuiVlnGqjk) (~1h)                       | -                              |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://youtu.be/mLXQIYEwK24) (~0:30h)         | -                              |
 | [50.000 Orange Stickies Later - Alberto Brandolini - GOTO 2018](https://youtu.be/NGXl1D-KwRI) (~0:50h) | -                              |
 
 ## 🧑‍🔬 DDD & Event Storming 201 - Give me more
@@ -64,9 +64,10 @@ The following resources should be seen as good summary of important aspects of D
 
 ### Videos
 
-| Link                                                                            | Our 2 cents (where applicable)        |
-| ------------------------------------------------------------------------------- | ------------------------------------- |
-| [1st Event Storming Session - Agnieszka Pawlicka](https://youtu.be/a0lWpjlSRA0) | Doesn't elaborate too much on the why |
+| Link                                                                                              | Our 2 cents (where applicable)                                                          |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [1st Event Storming Session - Agnieszka Pawlicka](https://youtu.be/a0lWpjlSRA0)                   | Doesn't elaborate too much on the why                                                   |
+| [100,000 Orange Stickies Later - Alberto Brandolini -  Øredev 2019](https://youtu.be/fGm62ra_mQ8) | Good follow-up on the "50.000 Orange Stickies Later" talk referenced in the 101 section |
 
 ## 🦸 DDD & Event Storming 301 and beyond - Going all in
 
