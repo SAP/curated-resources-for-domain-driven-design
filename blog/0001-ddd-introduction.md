@@ -18,7 +18,7 @@ You should also be acquainted with a number of other crucial words and ideas, in
 
 Finally, DDD is a software development design discipline that puts the domain at the center of the design process. By fostering a common knowledge of the subject and disassembling complicated systems into simpler, more manageable components, it aids teams in producing better software. Understanding fundamental ideas like aggregates and bounded contexts, as well as ubiquitous language and other significant words and concepts, is crucial to getting started with DDD. So why not give it a shot and see if it can help in the development of improved software by you and your team?
 
-If you want start learning about DDD I recommend the following books:
+If you want start learning about DDD we can recommend the following books:
 
 1. “Domain-Driven Design: Tackling Complexity in the Heart of Software” by Eric Evans
 
