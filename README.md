@@ -168,6 +168,11 @@ As in every collection there might be some resources that are worth to mention, 
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [Is Domain-Driven Design Overrated? (Stefan Tilkov at GOTO 2021)](https://youtu.be/ZZp9RQEGeqQ) | interesting talk around the sometimes maybe too evangelistic application of DDD in the wild |
 
+## DDD Kata
+
+If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md). 
+Give it a shot.
+
 ## Support, Feedback, Contributing
 
 Of course this list is open to contributions:
