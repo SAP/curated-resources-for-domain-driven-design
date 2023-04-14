@@ -12,7 +12,7 @@ DDD also aids teams in disassembling complicated systems into smaller, easier-to
 
 You should be acquainted with a few fundamental ideas before beginning to use DDD. The idea of "aggregates," which are collections of objects that are handled as a singular entity, is one of them. In order to impose consistency within the domain and guarantee that business standards are observed, aggregates are used.
 
-The idea of an “ubiquitous language” that is used by both coders and subject specialists, or ubiquitous language, is another crucial one. The software will more closely represent the business domain as a result of everyone having a shared knowledge of the domain.
+The idea of an “ubiquitous language” that is used by both coders and subject specialists, is another crucial one. The software will more closely represent the business domain as a result of everyone having a shared knowledge of the domain.
 
 You should also be acquainted with a number of other crucial words and ideas, including “domain events," “domain services," "repositories," and more. Each of these ideas contributes to domain-driven design in a significant way and aids in making sure the software is well-made and simple to manage.
 
