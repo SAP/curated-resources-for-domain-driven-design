@@ -16,7 +16,7 @@ The idea of an “ubiquitous language” that is used by both coders and subject
 
 You should also be acquainted with a number of other crucial words and ideas, including “domain events," “domain services," "repositories," and more. Each of these ideas contributes to domain-driven design in a significant way and aids in making sure the software is well-made and simple to maintain.
 
-Finally, DDD is a software development design discipline that puts the domain at the center of the design process. By fostering a common knowledge of the subject and disassembling complicated systems into simpler, more manageable components, it aids teams in producing better software. Understanding fundamental ideas like aggregates and bounded contexts, as well as ubiquitous language and other significant words and concepts, is crucial to getting started with DDD. So why not give it a shot and see if it can help in the development of improved software by you and your team?
+Finally, DDD is a software design discipline that puts the domain at the center of the design process. By fostering a common understanding of the subject and decomposing complicated systems into simpler, more manageable components, it aids teams in producing better software. Understanding fundamental ideas like aggregates and bounded contexts, as well as ubiquitous language and other significant words and concepts, is crucial to getting started with DDD. So why not give it a shot and see if it can help in the development of improved software by you and your team?
 
 If you want start learning about DDD we can recommend the following books:
 
