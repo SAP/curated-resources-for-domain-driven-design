@@ -3,17 +3,19 @@
 ## What is a Kata?
 
 A kata is a specific sequence of movements and techniques practiced in the martial arts. The word "kata" is Japanese and is used in many martial arts originating from Japan, such as karate, judo, and aikido. Kata is usually taught by a sensei, who will demonstrate the movements and then guide the students as they practice the kata. The practice of kata can help martial artists to develop proper technique, balance, and control, and to learn the application of various techniques in a practical context. Some martial arts styles have kata that are performed solo, while others require a partner.
-Additionally, Kata is also commonly used in software development, to practice writing software that accomplish specific tasks, by following a predetermined set of steps. The goal of the practice is to create software that is reliable, easy to maintain and flexible. These principles are now applied in practicing Domain-Driven Design.
+Additionally, kata is also commonly used in software development to practice writing software that accomplishes specific tasks, by following a predetermined set of steps. The goal of the practice is to create software that is reliable, easy to maintain and flexible. These principles are now applied in practicing Domain-Driven Design.
 
 ## Follow the DDD starter modelling process
 
 ![DDD starter Modelling Process (CC-BY-SA-4.0 license)](./images/ddd-starter-modelling-process-colored.png)
 
-This [process](https://github.com/ddd-crew/ddd-starter-modelling-process) walks you through each stage of understanding and executing Domain-Driven Design (DDD), from orienting around an organization's business model to coding a domain model.
+This [process](https://github.com/ddd-crew/ddd-starter-modelling-process) walks you through each stage of understanding and executing Domain-Driven Design (DDD), from understanding an organization's business model to coding a domain model.
 
-This approach will walk you through each of the critical processes in developing a software system with the DDD perspective, allowing you to focus on your business concerns rather than being overwhelmed by understanding DDD.
 
-After a few cycles of the process, you will have the core DDD theory as well as practical experience to go deeper into DDD. You will then be able to alter and develop the procedure to meet your demands in every situation. In a real project, you'll frequently switch back and forth between these processes.
+
+After a few cycles of the process, you understand the core DDD theory as well as practical experience to go deeper into DDD. You will then be able to alter and develop the procedure to meet your demands in every situation. In a real project, you'll frequently switch back and forth between these processes.
+
+Please note, that the DDD Kata will not touch all aspects of the DDD Starter Modelling Process. We have selected only a subset of tools.
 
 ## Selected Tooling for the DDD Kata
 
@@ -30,16 +32,13 @@ In the DDD Kata you can experience a selected subset of tools proposed by the DD
 
 ## The DDD Kata
 
-### The Deliverables
-
-* **Form a working group** (up to 8 Person). Declare one member a domain expert (maybe a substitute) and one member as Facilitator / Moderator
-* Perform a **Big Picture Event Storming** with your group in Mural or Miro
-* **Identify the bounded context and aggregates** within evaluated process in Mural or Miro
-* Establish the message flow from Bounded Context to Bounded Context using the **Domain Message Flow** Diagrams in Mural or Miro.
-* For each identified Bounded Context, specify using the **Bounded Context Canvas** in Mural or Miro.
-* Within the defined Bounded Contexts, defined the aggregates using the **Aggregate canvases** in Mural or Miro.
-
-Plan your time carefully. Timebox your efforts.
+* Select a collaboration tool for your choice. In SAP we are using Mural. In the DDD Community Miro is used a lot.
+* **Form a working group** (up to 8 people). Declare one member a domain expert (maybe a substitute) and one member as facilitator / moderator
+* Perform a **Big Picture Event Storming** with your group in collaboration tool of choice
+* **Identify the bounded context and aggregates** within evaluated process in collaboration tool of choice
+* Establish the message flow from Bounded Context to Bounded Context using the **Domain Message Flow** Diagrams in collaboration tool of choice.
+* For each identified Bounded Context, specify using the **Bounded Context Canvas** in collaboration tool of choice.
+* Within the defined Bounded Contexts, defined the aggregates using the **Aggregate canvases** in collaboration tool of choice.
 
 ### The Requirements
 
@@ -84,11 +83,14 @@ As a **Team Member** your tasks are:
 * Create the deliverables
 * Participate actively in all workshops
 
-#### How we normally run
+#### Plan your timeline
+
+We recommend from our experience within the DDD Community at SAP the following timeline:
 
 ![Timeline Proposal](./images/timeline-proposal.png)
 
 * Plan to have ~4h a week of modelling sessions
 * Work iteratively (e.g. while working on Aggregate Canvas you might want to adjust your Event Storming)
 * As a moderator, strife for consensus and alignment in the team
-* Most importantly, have fun modelling.
+* Plan your time carefully. Timebox your efforts.
+* Most importantly, **have fun modelling**.
