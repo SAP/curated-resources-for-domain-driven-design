@@ -4,7 +4,7 @@
 
 We all want to create better code as software development teams, and Domain-Driven Design (DDD) is one strategy that can assist us in doing so. DDD, at its heart, is an approach to software development that emphasizes the business area and the issues we're attempting to resolve rather than just the technical execution.
 
-The ability to establish a shared language between expert and non-technical team members is one of the main advantages of DDD. We can communicate and work together more effectively if we use words and ideas that everyone engaged in the endeavor is familiar with. This mutual knowledge can guarantee that everyone is pursuing the same objectives and prevent misunderstandings.
+The ability to establish a shared language between expert and non-technical team members is one of the main advantages of DDD. We can communicate and work together more effectively if we use words and ideas that everyone engaged in the endeavor is familiar with. This shared understanding plays a vital role in making sure that everyone is pursuing the same objectives and prevent misunderstandings.
 
 Modular design is promoted by DDD, which is an additional advantage. We can more easily think about a system and make adjustments without impacting other areas of the software by breaking it down into smaller, more doable components. Long term, this may result in a system that is more adaptable and easy to manage.
 
