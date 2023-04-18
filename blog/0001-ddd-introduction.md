@@ -8,7 +8,7 @@ DDD puts the topic at the heart of the creative process. This indicates that fig
 
 One of the major advantages of DDD is that it aids in improving software development by fostering a common grasp of the domain. The development team can better grasp the business requirements and make sure the software satisfies those needs by involving subject specialists in the process. This should result in better software that is simpler to maintain and expand over time.
 
-DDD also aids teams in disassembling complicated systems into smaller, easier-to-manage components. This is accomplished through the idea of "bounded contexts," which are autonomous elements of the system with a clearly specified limit and well-defined interfaces for interacting with other contexts. Teams can escape the “big ball of mud” issue, where the system becomes too complicated to comprehend and manage, by using bound contexts.
+DDD also aids teams in decomposing complicated systems into smaller, easier-to-manage components. This is accomplished through the idea of "bounded contexts," which are autonomous elements of the system with a clearly specified limit and well-defined interfaces for interacting with other contexts. Teams can escape the “big ball of mud” issue, where the system becomes too complicated to comprehend and manage, by using bound contexts.
 
 You should be acquainted with a few fundamental ideas before beginning to use DDD. The idea of "aggregates," which are collections of objects that are handled as a singular entity, is one of them. In order to impose consistency within the domain and guarantee that business standards are observed, aggregates are used.
 
