@@ -1,10 +1,8 @@
 # An Introduction to Domain-Driven Design
 
-![Dall-E Generated Artwork](./images/13dd1691-ac46-465d-b164-96d8c77b38be.png)
+You’ve undoubtedly heard the phrase “Domain-Driven Design” (DDD) thrown around a lot recently as a software development architect. You might be pondering what it is and why it is gaining popularity in business. So, in this blog post, I’ll introduce you to Domain-Driven Design, describe its advantages, and show you how it can help teams create better software. First, let us describe the term "domain". A domain in software development describes a particular area or subject matter that a system is designed to address. If you were creating an e-commerce system, the domain would be "e-commerce." The domain is significant because it sets the system’s needs as well as the business principles that govern it.
 
-You’ve undoubtedly heard the phrase “Domain-Driven Design” (DDD) thrown around a lot recently as a software development architect. You might be pondering what it is and why it is gaining popularity in business. So, in this blog piece, I’ll introduce you to Domain-Driven Design, describe its advantages, and show you how it can help teams create better software. First, let us describe the term "domain". A domain in software development describes a particular area or subject matter that a system is designed to address. If you were creating an e-commerce system, the domain would be "e-commerce." The domain is significant because it sets the system’s needs as well as the business principles that govern it.
-
-DDD puts the topic at the heart of the creative process. This indicates that figuring out the topic and modeling it in the software is the primary goal. Instead of forcing the business to conform to the constraints of the software, the objective is to develop a software system that represents the business area.
+DDD puts the domain at the heart of the creative process. This indicates that figuring out the domain and modeling it in the software is the primary goal. Instead of forcing the business to conform to the constraints of the software, the objective is to develop a software system that represents the business area.
 
 One of the major advantages of DDD is that it aids in improving software development by fostering a common grasp of the domain. The development team can better grasp the business requirements and make sure the software satisfies those needs by involving subject specialists in the process. This should result in better software that is simpler to maintain and expand over time.
 
@@ -32,6 +30,6 @@ Sources:
 
 (1) [11 Best Domain-Driven Design Books in 2023](https://realtoughcandy.com/domain-driven-design-books/)
 
-(2) [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/) 
+(2) [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)
 
 (3) [Domain Driven Design: A Comprehensive Beginner’s Guide to Learn](https://www.amazon.com/Domain-Driven-Design-Comprehensive-Beginners/dp/B08439JTKL)
