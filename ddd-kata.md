@@ -11,8 +11,6 @@ Additionally, kata is also commonly used in software development to practice wri
 
 This [process](https://github.com/ddd-crew/ddd-starter-modelling-process) walks you through each stage of understanding and executing Domain-Driven Design (DDD), from understanding an organization's business model to coding a domain model.
 
-
-
 After a few cycles of the process, you understand the core DDD theory as well as practical experience to go deeper into DDD. You will then be able to alter and develop the procedure to meet your demands in every situation. In a real project, you'll frequently switch back and forth between these processes.
 
 Please note, that the DDD Kata will not touch all aspects of the DDD Starter Modelling Process. We have selected only a subset of tools.
@@ -21,7 +19,7 @@ Please note, that the DDD Kata will not touch all aspects of the DDD Starter Mod
 
 ![Tooling of the DDD Kata](./images/ddd-starter-selected-tools.png)
 
-In the DDD Kata you can experience a selected subset of tools proposed by the DDD starter Modelling Process.
+In the DDD Kata you can experience a selected subset of tools proposed by the DDD Starter Modelling Process.
 
 | Tool                                                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
