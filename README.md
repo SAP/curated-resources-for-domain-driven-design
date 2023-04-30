@@ -180,6 +180,12 @@ In addition, we are alo leveraging [GitHub Discussions](https://github.com/SAP/c
 
 Your friendly DDD crew from the SAP neighborhood 😎
 
+## Blog
+
+1. [An Introduction to Domain-Driven Design](./blog/0001-ddd-introduction.md)
+2. [The Core Concepts of Domain-Driven Design](./blog/0002-core-concepts.md)
+
+
 ## Code of Conduct
 
 We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](CODE_OF_CONDUCT.md) at all times.
