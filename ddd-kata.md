@@ -93,27 +93,105 @@ As a **Team Member** your tasks are:
 * Plan your time carefully. Timebox your efforts.
 * Most importantly, have fun modelling.
 
-
 #### How to run an Event Storming Workshop
 
-EventStorming is a flexible workshop fomat for collaborative exploration of complex business domains. It was originally created by Alberto Brandolini in 2012 as a quick alternative to precise UML diagramming. The technique brings project stakeholders together (both developers and non-technical users) to explore complex business domains.
+Event storming is a collaborative workshop method that helps to explore complex business domains and model them using events. An event is an action that occurred in the system at a specific time. Event storming can be conducted in two phases: a high-level event storm to identify the domains and then a detailed event storm to focus on a core domain.
 
-The goal of EventStorming is to drive greater understanding and productivity by simplifying the approach and including multiple levels of stakeholders in the business. With the help of sticky notes and a willing group, you can reveal your business processes more efficiently and enjoyably.
+The high-level event storm consists of these steps:
 
-EventStorming has several advantages. It is fast, reducing the time it takes to create a comprehensive business domain model from weeks to hours during a single workshop. It is also straightforward, breaking the process down into simple terms that both technical and non-technical stakeholders can understand. Additionally, it is engaging, inviting each person to participate and interact. Finally, it is effective, resulting in a fully behavioral model that can be quickly implemented and validated.
-
-Perhaps the greatest value of EventStorming is in the conversations it generates. You can use the knowledge gained in the workshop to inform your future modeling processes and build software from them, or you can simply use EventStorming to better understand your business processes and make better decisions going forward.
-
-1. Chaotic Exploration 
-2. Enforce the Timeline
-3. Enforce Consistency
-4. 
-
+1. **Chaotic Exploration**: Invite the right people from different perspectives and roles, such as domain experts, developers, testers, etc. Provide unlimited modeling space, such as a wall or a whiteboard. Ask everyone to write down relevant events in the domain and the process that they are analyzing on sticky notes. Use different colors for different types of events, such as past, present, future, etc. Encourage everyone to participate and share their ideas without filtering or criticizing.
+2. **Enforce the Timeline**: Arrange the sticky notes on the modeling space in a chronological order, from left to right. Use a horizontal line to separate different processes or subdomains. Identify any gaps, duplicates, inconsistencies or ambiguities in the events and resolve them with the help of the participants. Use arrows or lines to show the causal relationships between events.
+3. **Enforce Consistency**: Review the timeline and check if it makes sense and reflects the reality of the domain. Ask questions such as "What happens next?", "What triggers this event?", "Who is involved in this event?", etc. Use different symbols or colors to mark different aspects of the events, such as commands, aggregates, policies, external systems, users, etc. Add any missing or new events that emerge from the discussion.
+4. **Identify the Bounded Contexts**: Group the events into logical clusters that represent different subdomains or areas of responsibility in the domain. These are called bounded contexts. A bounded context is a coherent and consistent set of events that share a common language and meaning. Use different shapes or colors to highlight the boundaries of each bounded context. Name each bounded context and label its main purpose or goal.
+5. **Detailed Design**: Zoom in on the core domain and refine its events and relationships. Use different symbols or colors to mark different elements of the domain model, such as entities, value objects, aggregates, services, repositories, factories, etc. Define the properties and behaviors of each element and how they interact with each other. Use scenarios or examples to validate and test the model. Identify any constraints, rules, policies or assumptions that affect the model and document them. Use the detailed design also to validate your bounded contexts.
 
 #### How to model Domain Message Flow
 
+A Domain-Message Flow Diagram is a simple visualization showing the flow of messages (commands, events, queries) between actors, bounded contexts, and systems, for a single scenario. It helps to understand the interactions and dependencies between different parts of the domain and to identify potential issues or opportunities for improvement.
+
+To use the Domain-Message Flow, you need to follow these steps:
+
+1. **Choose a scenario**: Pick a specific use case or user story that you want to model. It should be relevant and important for your domain. For example, "A customer places an order online".
+2. **Identify the actors**: List all the people, roles, or external systems that are involved in the scenario. These are the sources or destinations of the messages. For example, "Customer", "Order Service", "Payment Service", "Inventory Service", etc.
+3. **Identify the messages**: List all the messages that are exchanged between the actors in the scenario. These are the commands, events, or queries that trigger actions or convey information. For example, "Place Order", "Order Placed", "Pay Order", "Payment Confirmed", "Check Stock", "Stock Available", etc.
+4. **Draw the diagram**: Use a tool or a whiteboard to draw the diagram. Use different shapes or colors to represent different types of actors and messages. Use arrows to show the direction and sequence of the messages. Use labels to name the actors and messages. Use swimlanes or boxes to group the actors by bounded contexts or subdomains. Use dashed lines to separate different processes or phases.
 
 #### How to document your Bounded Contexts with Bounded Context Canvas
 
+The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context12. A bounded context is a sub-system in a software architecture aligned to a part of your domain1. A bounded context can be seen as a unit of language consistency, a boundary for a model expressed in a consistent language, and a boundary for team autonomy2.
+
+**Choose a bounded context:** Pick a specific sub-system or module that you want to design or document. It should be relevant and important for your domain. For example, “Order Service”, “Payment Service”, “Inventory Service”, etc.
+
+**Fill in the canvas:** Use a tool or a whiteboard to fill in the canvas. The canvas consists of nine sections that cover different aspects of the bounded context design. These are:
+
+   **Purpose**: Describe the main purpose or goal of the bounded context in one sentence. Use active verbs and avoid technical terms. This helps to clarify the scope and alignment of the bounded context.
+
+   **Strategic Classification**: Classify the bounded context according to its strategic importance and relationship with other bounded contexts. Use one of these four categories: Core Domain, Supporting Subdomain, Generic Subdomain, or External System. This helps to prioritize the investment and effort for each bounded context.
+
+   **Domain Roles**: List the main roles or personas that interact with or benefit from the bounded context. These can be internal or external users, customers, partners, etc. This helps to understand the needs and expectations of the stakeholders.
+
+   **Inbound Communication**: List the main types and sources of incoming messages or requests that the bounded context receives from other bounded contexts or systems. These can be commands, events, queries, etc. This helps to understand the dependencies and contracts of the bounded context.
+
+   **Outbound Communication**: List the main types and destinations of outgoing messages or responses that the bounded context sends to other bounded contexts or systems. These can be commands, events, queries, etc. This helps to understand the impact and obligations of the bounded context.
+
+   **Ubiquitous Language**: List the key terms and concepts that are used in the bounded context and define them using the domain language. Use nouns, verbs, adjectives, and adverbs that are meaningful and consistent within the bounded context. This helps to establish a common understanding and communication within the team and with other teams.
+
+   **Business Decisions**: List the main business rules or policies that govern the behavior and logic of the bounded context. These can be constraints, validations, calculations, etc. This helps to capture the domain knowledge and complexity of the bounded context.
+
+   **Assumptions**: List the main assumptions or hypotheses that underlie the design and implementation of the bounded context. These can be about the domain, the users, the technology, etc. This helps to identify and validate the risks and uncertainties of the bounded context.
+
+   **Verification Metrics**: List the main metrics or indicators that measure the performance and value of the bounded context. These can be quantitative or qualitative data that reflect the goals and outcomes of the bounded context. This helps to evaluate and improve
 
 #### How to document your Aggregates with Aggregate Canvas
+
+Sure, I can try to describe how to use the Aggregate Canvas based on the resource that you provided and what I found on the web. Here is a summary:
+
+The Aggregate Canvas is a modelling tool meant to be used as a part of design-level domain modelling activities²³. An aggregate is a lifecycle pattern originally described by Eric Evans. By aggregate, we understand a graph of objects that is a consistency boundary for our domain policies²³.
+
+To use the Aggregate Canvas, you need to follow these steps²³:
+
+1. **Choose an aggregate**: Pick a specific aggregate that you want to design or document. It should be relevant and important for your domain. For example, "Order", "Customer", "Product", etc.
+2. **Befor you fill the canvas**: You should revise your event storming results and identify the aggregates mentioned in the detailed design phase. You should have clarity on the following attributes.
+
+* **Name**: Give a descriptive and meaningful name to the aggregate that reflects its purpose and domain language.
+* **Responsibility**: Describe the main responsibility or goal of the aggregate in one sentence. Use active verbs and avoid technical terms.
+* **Invariants**: List the main business rules or policies that must be enforced by the aggregate to ensure its consistency and validity. These can be constraints, validations, calculations, etc.
+* **Entities**: List the main entities that are part of the aggregate and define their properties and behaviors. An entity is an object that has an identity and a lifecycle within the aggregate. Use nouns and adjectives that are meaningful and consistent within the aggregate.
+* **Value Objects**: List the main value objects that are part of the aggregate and define their properties and behaviors. A value object is an object that has no identity and is immutable within the aggregate. Use nouns and adjectives that are meaningful and consistent within the aggregate.
+* **Domain Events**: List the main domain events that are emitted by the aggregate when something important happens within its lifecycle. A domain event is an object that captures a fact or a change in the state of the aggregate. Use past tense verbs and nouns that are meaningful and consistent within the aggregate.
+* **Commands**: List the main commands that are accepted by the aggregate to perform actions or changes on its state. A command is an object that expresses an intention or a request to do something on the aggregate. Use imperative verbs and nouns that are meaningful and consistent within the aggregate.
+* **External Dependencies**: List the main external dependencies that are required by the aggregate to perform its responsibility. These can be other aggregates, services, systems, etc. Specify their roles, types, and communication modes.
+
+After this you should be able to fill out the canvas with the following attributes:
+
+
+* **Name**: The name of the aggregate that reflects its purpose and domain language. It should be a noun or a noun phrase that is meaningful and consistent within the bounded context.
+* **Description**: A short description of the aggregate that summarizes its main responsibility or goal. It should be a sentence that uses active verbs and avoids technical terms.
+* **State Transitions**: The possible states and transitions of the aggregate within its lifecycle. A state is a condition or situation of the aggregate at a given time. A transition is a change from one state to another triggered by an event or a command.
+* **Enforced Invariants**: The business rules or policies that must be enforced by the aggregate to ensure its consistency and validity. These can be constraints, validations, calculations, etc. They should be expressed in domain language and be testable.
+* **Corrective Policies**: The corrective actions or compensations that the aggregate performs when an invariant is violated or an error occurs. These can be commands, events, exceptions, etc. They should be expressed in domain language and be traceable.
+* **Handled Commands**: The commands that are accepted by the aggregate to perform actions or changes on its state. A command is an object that expresses an intention or a request to do something on the aggregate. They should be expressed in imperative verbs and nouns that are meaningful and consistent within the aggregate.
+* **Created Events**: The events that are emitted by the aggregate when something important happens within its lifecycle. An event is an object that captures a fact or a change in the state of the aggregate. They should be expressed in past tense verbs and nouns that are meaningful and consistent within the aggregate.
+* **Throughput**: The expected or actual number of commands or events that the aggregate handles per unit of time. This can be used to measure the performance and scalability of the aggregate.
+
+## Resources
+
+* IBM Cloud Architecture Center: [Event Storming Methodology Architecture](https://www.ibm.com/cloud/architecture/architecture/practices/event-storming-methodology-architecture/).
+* Lucidchart Blog: [What Is Event Storming?](https://www.lucidchart.com/blog/ddd-event-storming).
+* Lucidspark: [8 Steps in the Event Storming Process](https://lucidspark.com/blog/8-steps-in-the-event-storming-process).
+* VMware Tanzu Developer Center: [Event Storming](https://tanzu.vmware.com/developer/practices/event-storming/).
+* Miroverse: [Judith Birmoser's Event Storming Template](https://miro.com/miroverse/event-storming/).
+* Studiosoftware: [Event Storming Example: What the Process Looks Like Step-by-Step](https://studiosoftware.com/blog/event-storming-example-what-the-process-looks-like-step-by-step/).
+* Github: [ddd-crew/domain-message-flow-modelling.](https://github.com/ddd-crew/domain-message-flow-modelling)
+* Virtual Domain-Driven Design - Domain Message Flow: [A Community of Practice.](https://virtualddd.com/learning-ddd/ddd-crew-domain-message-flow-modelling/)
+* Medium: [Modelling Bounded Contexts with the Bounded Context Canvas: A Workshop Recipe.](https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab)
+* Github: [ddd-crew/bounded-context-canvas.](https://github.com/ddd-crew/bounded-context-canvas)
+* Virtual Domain-Driven Design - Bounded Context Canvas: [A Community of Practice](https://virtualddd.com/learning-ddd/ddd-crew-bounded-context-canvas/).
+* Medium: [Bounded Context Canvas V3: Simplifications and Additions.](https://medium.com/nick-tune-tech-strategy-blog/bounded-context-canvas-v2-simplifications-and-additions-229ed35f825f)
+* Miroverse: [Nick Tune's Bounded Context Canvas Template.](https://miro.com/miroverse/the-bounded-context-canvas/)
+* Medium: [Bounded Context Canvas Recipe: Use Case Swimlanes.](https://medium.com/nick-tune-tech-strategy-blog/bounded-context-canvas-recipe-use-case-swimlanes-11ca647175d3.)
+* [Kacper Gunia's Aggregate Design Canvas template | Miroverse](https://miro.com/miroverse/aggregate-design-canvas/)
+* [The Aggregate Design Canvas - Github](https://github.com/ddd-crew/aggregate-design-canvas)
+* [Virtual Domain-Driven Design - Aggregate Canvas - A community of practise](https://virtualddd.com/learning-ddd/ddd-crew-aggregate-design-canvas/)
+* DDDDD-20 [Aggregate Canvas: A fluent way to walk through ... - YouTube](https://www.youtube.com/watch?v=AF880t1RUU4). .
+* Modelling aggregates with ["Aggregate Design Canvas"](https://domaincentric.net/blog/modelling-aggregates-with-aggregate-design-canvas).
