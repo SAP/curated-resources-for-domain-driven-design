@@ -75,6 +75,6 @@ We may build expressive, coherent domain models that represent the rules and bus
   - Vaughn Vernon - How to Use Aggregates for Tactical Design: <https://www.youtube.com/watch?v=Xf_aLAK1RfE>
   - Vaughn Version - Effective Aggregate Design Part II: <https://www.youtube.com/watch?v=JOsv01y8dlw>
   - Thomas Ploch: The One Question To Haunt Everyone: What is a DDD Aggregate? - Thomas Ploch - DDD Europe 2022: <https://www.youtube.com/watch?v=zlFqjD2LKlE>
-  - Codewrinkles: Mastering DDD Aggregate Modeling With THESE 3 Steps: <https://www.youtube.com/watch?v=E2ctgrKhqBw>
+  - Codewrinkles: M****ing DDD Aggregate Modeling With THESE 3 Steps: <https://www.youtube.com/watch?v=E2ctgrKhqBw>
   - Amichai Mantinband: Aggregates, Entities & Value Objects | Modeling Rules of Thumb + Modeling Steps: <https://www.youtube.com/watch?v=UEtmOW8uZZY>
   - Milan Jovanović: Aggregate Root Design 101 | DDD, Clean Architecture, .NET 6 - <https://www.youtube.com/watch?v=0D3EB2jvQ44>
