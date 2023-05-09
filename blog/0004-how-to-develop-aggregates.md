@@ -2,7 +2,7 @@
 
 Domain-Driven Design (DDD) is a software design discipline that focuses on modeling the domain and its concepts. DDD enables developers in creating software that is expressive, maintainable, and aligned with business demands and goals.
 
-The **aggregate** is crucial concept in DDD. Aggregates are groups of domain objects that belong in one transactional boundary by managing complexity, ensuring consistency, and defining limits in their domain models.
+The **aggregate** a is crucial concept in DDD. Aggregates are groups of domain objects that belong in one transactional boundary by managing complexity, ensuring consistency, and defining limits in their domain models.
 
 **Remark:** The code examples are meant as an inspiration and might be neither functional nor complete.
 
