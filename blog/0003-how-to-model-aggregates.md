@@ -14,7 +14,7 @@ The expression of domain invariants can take many forms, including preconditions
 
 ## How to Discover Aggregates and Their Limits?
 
-One of the hardest and most crucial jobs in domain driven design is identifying aggregates and their bounds. Aggregates are significant clusters of domain items that change collectively and provide a consistency boundary, not merely random groupings of domain objects. Aggregates should be built to safeguard and enforce the domain invariants contained inside them while allowing for eventual or asynchronous consistency of other aggregates.
+One of the hardest and most crucial jobs in Domain-Driven Design is identifying aggregates and their bounds. Aggregates are significant clusters of domain items that change collectively and provide a consistency boundary, not merely random groupings of domain objects. Aggregates should be built to safeguard and enforce the domain invariants contained inside them while allowing for eventual or asynchronous consistency of other aggregates.
 
 There are different techniques and heuristics that can help to identify aggregates and their boundaries, such as:
 
