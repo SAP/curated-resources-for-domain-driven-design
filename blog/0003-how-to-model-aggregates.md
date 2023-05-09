@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Software development methodology known as Domain Driven Design (DDD) places more emphasis on conceptual modeling of the issue domain than it does on implementation and technical specifics. The business logic and domain rules are captured in expressive, consistent, and coherent domain models that are produced with the aid of DDD. The aggregate, which is a collection of domain objects that may be handled as a single entity, is one of the essential patterns in DDD. This blog article will go over aggregates, their importance, how to build them, and how to use various technologies to execute them. You will have a better knowledge of how to utilize aggregates to represent complicated domains with consistency and cohesion by the end of this blog article.
+Domain-Driven Design (DDD) places more emphasis on conceptual modeling of the issue domain than it does on implementation and technical specifics. The business logic and domain rules are captured in expressive, consistent, and coherent domain models that are produced with the aid of DDD. The aggregate, which is a collection of domain objects that may be handled as a single entity, is one of the essential patterns in DDD. This blog article will go over aggregates, their importance, how to build them, and how to use various technologies to execute them. You will have a better knowledge of how to utilize aggregates to represent complicated domains with consistency and cohesion by the end of this blog article.
 
 ## What Are Domain Invariants, and Why Do They Matter?
 
