@@ -36,7 +36,7 @@ Designing aggregates requires a deep understanding of the domain and its rules, 
 - Identify boundaries and entities that belong together in an aggregate based on domain invariants. Domain invariants are business rules or constraints that must always be true for an aggregate. For example, an order must always have at least one line item.
 - Aim for smaller aggregates that capture only the essential state and behavior of a domain concept. Smaller aggregates reduce transactional locking and consistency complexities, as well as improve performance and scalability.
 - Qualify associations by adding constraints or filters to reduce technical complexity. For example, instead of having a direct association between an order and a customer, you can have an association between an order and a customer with a specific status or type.
-- Avoid creating aggregates based on data structures or technical requirements. Aggregates should represent domain concepts, not just generic collections of domain objects. For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
+- Avoid creating aggregates based on data structures or technical requirements. Aggregates should represent domain concepts, not just a generic collections of domain objects. For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
 - Use value objects to represent attributes or measurements that do not have identity or lifecycle. Value objects are immutable and can be shared across aggregates without affecting consistency. For example, you can use value objects to represent money, quantity, address, etc.
 
 ## Implementing Aggregates: Examples and Strategies
