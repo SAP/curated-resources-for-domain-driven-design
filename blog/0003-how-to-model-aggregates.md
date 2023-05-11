@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Domain-Driven Design (DDD) places more emphasis on conceptual modeling of the issue domain than it does on implementation and technical specifics. The business logic and domain rules are captured in expressive, consistent, and coherent domain models that are produced with the aid of DDD. The aggregate, which is a collection of domain objects that may be handled as a single entity, is one of the essential patterns in DDD. This blog article will go over aggregates, their importance, how to build them, and how to use various technologies to execute them. You will have a better knowledge of how to utilize aggregates to represent complicated domains with consistency and cohesion by the end of this blog article.
+Domain-Driven Design (DDD) places more emphasis on conceptual modeling of the issue domain than it does on implementation and technical specifics. The business logic and domain rules are captured in expressive, consistent, and coherent domain models that are produced with the aid of DDD. The aggregate is a collection of domain objects that may be handled as a single unit. It is one of the essential (tactical) patterns in DDD. This blog article will go over aggregates, their importance, how to build them, and how to use various technologies to execute them. You will have a better knowledge of how to utilize aggregates to represent complicated domains with consistency and cohesion by the end of this blog article.
 
 ## What Are Domain Invariants, and Why Do They Matter?
 
@@ -14,7 +14,7 @@ The expression of domain invariants can take many forms, including preconditions
 
 ## How to Discover Aggregates and Their Limits?
 
-One of the hardest and most crucial jobs in Domain-Driven Design is identifying aggregates and their bounds. Aggregates are significant clusters of domain items that change collectively and provide a consistency boundary, not merely random groupings of domain objects. Aggregates should be built to safeguard and enforce the domain invariants contained inside them while allowing for eventual or asynchronous consistency of other aggregates.
+One of the hardest and most crucial jobs in DDD is identifying aggregates and their bounds. Aggregates are significant clusters of domain items that change collectively and provide a consistency boundary, not merely random groupings of domain objects. Aggregates should be built to safeguard and enforce the domain invariants contained inside them while allowing for eventual or asynchronous consistency of other aggregates.
 
 There are different techniques and heuristics that can help to identify aggregates and their boundaries, such as:
 
@@ -37,6 +37,7 @@ References or identifiers are simple values that represent the identity of anoth
 ## How to Implement Aggregates and Their Persistence?
 
 Programming languages, frameworks, and data storage technologies are important for implementing aggregates and their durability. Object-oriented programming languages and frameworks can be used to deliver the capabilities and patterns needed for our domain like abstraction, encapsulation, inheritance and polymorphism. Functional programming languages and frameworks can provide features and patterns such as records, unions, pattern matching, partial application, currying, etc. Long-term aggregates may require specific data persistence techniques such as relational databases, document databases, key-value stores, graph databases, event stores, etc. Data persistence strategies are crucial to ensure the integrity and performance of our aggregates. We can create aggregates and their durability using various technologies by taking these options and trade-offs into account.
+An example how you can implement an aggregate you can see [here](0004-how-to-develop-aggregates.md).
 
 ## Conclusion
 

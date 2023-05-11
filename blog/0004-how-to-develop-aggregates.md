@@ -4,7 +4,7 @@ Domain-Driven Design (DDD) is a software design discipline that focuses on model
 
 The **aggregate** a is crucial concept in DDD. Aggregates are groups of domain objects that belong in one transactional boundary by managing complexity, ensuring consistency, and defining limits in their domain models.
 
-**Remark:** The code examples are meant as an inspiration and might be neither functional nor complete.
+> **Remark:** The code examples are meant as an inspiration and might be neither functional nor complete.
 
 ## What are Domain-Driven Design Aggregates?
 
@@ -30,14 +30,30 @@ Aggregates are useful in software development because they:
 
 ## Designing Aggregates: Best Practices and Tips
 
+> **Remark:** People often assume that using these tactical patterns is essential to "do DDD the right way". This is comparable to the patterns in the book ["Design Patterns"](https://en.wikipedia.org/wiki/Design_Patterns): you can also write good software without implementing every pattern in your product.
+> Aggregates as well as patterns are tools that can help you to fulfill your requirements depending your use case.
+
 Designing aggregates requires a deep understanding of the domain and its rules, as well as a balance between simplicity and flexibility:
 
 - Create a clear and consistent domain model that reflects the ubiquitous language of the domain experts. Use nouns and verbs that are meaningful and unambiguous in the domain context.
-- Identify boundaries and entities that belong together in an aggregate based on domain invariants. Domain invariants are business rules or constraints that must always be true for an aggregate. For example, an order must always have at least one line item.
-- Aim for smaller aggregates that capture only the essential state and behavior of a domain concept. Smaller aggregates reduce transactional locking and consistency complexities, as well as improve performance and scalability.
+- Avoid creating aggregates based on data structures or technical requirements. Aggregates should represent domain concepts, not just a generic collections of domain objects. For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
+- Aim for smaller aggregates that capture only the essential state and behavior of a domain concept. Smaller aggregates reduce transactional locking and consistency complexities, as well as improve performance and scalability. Please also consider compensation handling like SAGA in your business logic, if something goes wrong.
 - Qualify associations by adding constraints or filters to reduce technical complexity. For example, instead of having a direct association between an order and a customer, you can have an association between an order and a customer with a specific status or type.
 - Avoid creating aggregates based on data structures or technical requirements. Aggregates should represent domain concepts, not just a generic collections of domain objects. For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
 - Use value objects to represent attributes or measurements that do not have identity or lifecycle. Value objects are immutable and can be shared across aggregates without affecting consistency. For example, you can use value objects to represent money, quantity, address, etc.
+
+## Aggregates in Context
+
+An aggregate lives within one bounded context. It can be interpreted as a container for state. The container can be moved from one state to another. These state transitions are triggered by commands. Whenever the container is in one state it is completely consistent. The consistency is defined from a business perspective by the invariants basically telling what is allowed and what is not allowed.
+Whenever a state change happens (or cannot happen due to invariants one or more business events are raised, informing the "world" about the change. Whenever an aggregate is in a (consistent) state it can be persisted
+
+The scalability of the system and the size of the aggregate are in direct relation.
+However, this has impact on the handling of cross-aggregate consistency. It is easier from a developer perspective to have one aggregate per bounded context and keep that consistent. The price is that your system will only scale (or not) based on this one big aggregate. The other way round when the design foresees smaller aggregates you can scale them independently but will probably have to wrap you head around compensation.
+
+**Non-business example: A chess tournament.**
+
+The aggregate in this case will probably be a single chess game/board. The actions are the movements of the chess pieces on the board and the invariants are the rule of the chess game wrt to the allowed movements of the chess pieces.
+With this design/size of the aggregate you can cover basically every size of a tournament as the unit is the single game which can scale independently. One could now make some thought-experiments and gets an idea about the consequences concerning changing the size of the aggregate even to the extreme to have a whole tournament as one aggregate.
 
 ## Implementing Aggregates: Examples and Strategies
 
