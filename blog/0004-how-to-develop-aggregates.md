@@ -710,7 +710,7 @@ int hashCode = money.hashCode();
 
 ## Testing Aggregates: Strategies and Techniques
 
-Aggregate testing may be difficult, especially when working with complex systems and scenarios. Nonetheless, testing aggregates is necessary to guarantee that they function properly and fulfill business needs. These are several DDD testing procedures and approaches for aggregates:
+Testing aggregates may be difficult, especially when working with complex systems and scenarios. Nonetheless, testing aggregates is necessary to guarantee that they function properly and fulfill business needs. These are several DDD testing procedures and approaches for aggregates:
 
 - Use unit tests to verify the behavior and state of individual aggregates. Unit tests are isolated tests that check the logic and rules of a single aggregate. They do not depend on external resources or services. Unit tests can use mock or stub instances of other aggregates or repositories to simulate interactions or dependencies.
 - Use integration tests to verify the interaction and integration of aggregates with other components. Integration tests are tests that check how aggregates work with other parts of the system, such as databases, services, or events. They require access to real or simulated resources or services. Integration tests can use real or fake instances of other aggregates or repositories to test the communication or collaboration between them.
