@@ -60,7 +60,7 @@ The following resources should be seen as good summary of important aspects of D
 | Link                                                                                                                                                         | Our 2 cents (where applicable) |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
 | [Domain Driven Design Quickly](https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf) | -                              |
-| [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420) | -                              |
+| [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420)                                          | -                              |
 
 ### Videos
 
@@ -99,15 +99,15 @@ So you really want to dive deep into DDD and event storming, then the following 
 
 #### Videos
 
-| Link                                                                                                                       | Our 2 cents (where applicable) |
-| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                              |
-| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                              |
-| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                              |
-| [Remote EventStorming: Redesigning Everything](https://www.youtube.com/watch?v=v4xLxmpAFdI)                                | This is mostly relevant for moderators. Additionally, at 49:55, Alberto explains how to extract backlog items from the board.  |
-| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | This is rather long, but includes some interesting meta discussions. Can be interesting for moderators. |
-| [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                              |
-| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                              |
+| Link                                                                                                                       | Our 2 cents (where applicable)                                                                                                |
+| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [What is Event Storming by Paul Rayner](https://www.youtube.com/watch?v=Y7NzXl-ahtU)                                       | -                                                                                                                             |
+| [Event Storming Workshop @Bucharest Software Craftsmanship Community](https://youtu.be/xVSaDdj3PVE)                        | -                                                                                                                             |
+| [Event Storming demo & discussion](https://youtu.be/xIB_VQVVWKk)                                                           | -                                                                                                                             |
+| [Remote EventStorming: Redesigning Everything](https://www.youtube.com/watch?v=v4xLxmpAFdI)                                | This is mostly relevant for moderators. Additionally, at 49:55, Alberto explains how to extract backlog items from the board. |
+| [Trying out online EventStorming](https://youtu.be/CbPEibNUe0s)                                                            | This is rather long, but includes some interesting meta discussions. Can be interesting for moderators.                       |
+| [Event Storming - How to deal with complexity and improve your domain design](https://www.youtube.com/watch?v=R1UJS41I-Gc) | -                                                                                                                             |
+| [Event Storming - Alberto Brandolini - DDD Europe 2019](https://www.youtube.com/watch?v=mLXQIYEwK24&t)                     | -                                                                                                                             |
 
 ## Courses
 
@@ -184,7 +184,8 @@ Your friendly DDD crew from the SAP neighborhood 😎
 
 1. [An Introduction to Domain-Driven Design](./blog/0001-ddd-introduction.md)
 2. [The Core Concepts of Domain-Driven Design](./blog/0002-core-concepts.md)
-
+3. [How to model Aggregates](./blog/0003-how-to-model-aggregates.md)
+4. [How to develop Aggregates](./blog/0004-how-to-develop-aggregates.md)
 
 ## Code of Conduct
 
