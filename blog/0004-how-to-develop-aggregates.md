@@ -497,27 +497,7 @@ public class Money {
      return Objects.hash(value);
    }
 }
-
-// Quantity.java
-public class Quantity {
-
-  // Quantity value
-  private final BigDecimal value;
-
-  // Zero quantity constant
-  public static final Quantity ZERO = new Quantity(BigDecimal.ZERO);
-
-  public Quantity(BigDecimal value) {
-    // Validate value
-    if (value == null || value.signum() < 0) {
-      throw new IllegalArgumentException("Quantity value must be non-negative");
-    }
-
-    // Assign value
-    this.value = value;
-  }
-
-´´´java
+```
 
 Okay, here is the code for Quantity.java:
 
