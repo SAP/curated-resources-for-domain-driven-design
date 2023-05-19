@@ -152,6 +152,7 @@ Maybe you want to touch base with the DDD community or visit a conference. Then 
 | Link                                                  | Our 2 cents (where applicable)                       |
 | ----------------------------------------------------- | ---------------------------------------------------- |
 | [Domain Driven Design Europe](https://dddeurope.com/) | **The** DDD conference in Europe, highly recommended |
+| [KanDDDinsky](https://kandddinsky.de/)                | Annual Berlin-based DDD conference                   |
 
 ## Further DDD Goodies
 
