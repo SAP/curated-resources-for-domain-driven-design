@@ -170,8 +170,9 @@ As in every collection there might be some resources that are worth to mention, 
 
 ## DDD Kata
 
-If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md). 
-Give it a shot.
+We believe DDD is something that you must practice yourself to properly understand.
+If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md) that allows you to get hands-on experience. 
+Give it a shot!
 
 ## Support, Feedback, Contributing
 
