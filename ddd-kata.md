@@ -118,7 +118,7 @@ To use the Domain-Message Flow, you need to follow these steps:
 
 #### How to document your Bounded Contexts with Bounded Context Canvas
 
-The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context12. A bounded context is a sub-system in a software architecture aligned to a part of your domain1. A bounded context can be seen as a unit of language consistency, a boundary for a model expressed in a consistent language, and a boundary for team autonomy2.
+The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context. A bounded context is a sub-system in a software architecture aligned with a part of your domain. A bounded context can be seen as a unit of language consistency, a boundary for a model expressed in a consistent language, and a boundary for team autonomy.
 
 **Choose a bounded context:** Pick a specific sub-system or module that you want to design or document. It should be relevant and important for your domain. For example, “Order Service”, “Payment Service”, “Inventory Service”, etc.
 
