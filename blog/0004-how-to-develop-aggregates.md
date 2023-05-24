@@ -1,21 +1,32 @@
 # Aggregates: A Practical Guide for Developers
 
-Domain-Driven Design (DDD) is a software design discipline that focuses on modeling the domain and its concepts. DDD enables developers in creating software that is expressive, maintainable, and aligned with business demands and goals.
+Domain-Driven Design (DDD) is a software design discipline that focuses on modeling the domain and its concepts.
+DDD enables developers in creating software that is expressive, maintainable, and aligned with business demands and goals.
 
-The **aggregate** a is crucial concept in DDD. Aggregates are groups of domain objects that belong in one transactional boundary by managing complexity, ensuring consistency, and defining limits in their domain models.
+The **aggregate** a is crucial concept in DDD. 
+Aggregates are groups of domain objects that belong in one transactional boundary and underly shared invariants.
 
 > **Remark:** The code examples are meant as an inspiration and might be neither functional nor complete.
 
 ## What are Domain-Driven Design Aggregates?
 
-An aggregate is a pattern in DDD that defines a group of domain objects that belong together and change together. An aggregate has the following characteristics:
+An aggregate is a pattern in DDD that defines a group of domain objects that belong together and change together.
+An aggregate has the following characteristics:
 
-- It has a **root entity**, which is the main entry point to access the aggregate. The root entity is responsible for enforcing the business rules and invariants of the aggregate.
-- It has one or more **entities** and **value objects** that represent the concepts and behaviors of the domain. Entities are objects that have a unique identity and a lifecycle, while value objects are immutable objects that represent attributes or measurements.
-- It has a **boundary**, which defines what is inside and outside of the aggregate. The boundary also determines the scope of consistency and transactions for the aggregate.
-- It has an **identity**, which is usually derived from the root entity. The identity allows the aggregate to be referenced and manipulated by other aggregates or services.
+- It has a **root entity**, which is the main entry point to access the aggregate.
+The root entity is responsible for enforcing the business rules and invariants of the aggregate.
+- It has one or more **entities** and **value objects** that represent the concepts and behaviors of the domain.
+Entities are objects that have a unique identity and a lifecycle, while value objects are immutable objects that represent attributes or measurements.
+- It has a **boundary**, which defines what is inside and outside of the aggregate.
+The boundary also determines the scope of consistency and transactions for the aggregate.
+- It has an **identity**, which is usually derived from the root entity.
+The identity allows the aggregate to be referenced and manipulated by other aggregates or services.
 
-An example of an aggregate is an order and its line items. The order is the root entity, which has an identity (order number), a state (status, total amount, etc.), and a behavior (place, cancel, ship, etc.). The line items are value objects, which represent the products and quantities ordered. The order and its line items form an aggregate, which has a boundary that separates it from other aggregates (such as customers or products). The order aggregate ensures that the business rules and invariants are satisfied, such as:
+An example of an aggregate is an order and its line items.
+The order is the root entity, which has an identity (order number), a state (status, total amount, etc.), and a behavior (place, cancel, ship, etc.).
+The line items are value objects, which represent the products and quantities ordered.
+The order and its line items form an aggregate, which has a boundary that separates it from other aggregates (such as customers or products).
+The order aggregate ensures that the business rules and invariants are satisfied, such as:
 
 - An order cannot have zero or negative line items.
 - An order cannot be shipped if it is canceled or unpaid.
@@ -30,40 +41,77 @@ Aggregates are useful in software development because they:
 
 ## Designing Aggregates: Best Practices and Tips
 
-> **Remark:** People often assume that using these tactical patterns is essential to "do DDD the right way". This is comparable to the patterns in the book ["Design Patterns"](https://en.wikipedia.org/wiki/Design_Patterns): you can also write good software without implementing every pattern in your product.
-> Aggregates as well as patterns are tools that can help you to fulfill your requirements depending your use case.
+> **Remark:** People often assume that using these tactical patterns is essential to "do DDD the right way".
+> This is comparable to the patterns in the book ["Design Patterns"](https://en.wikipedia.org/wiki/Design_Patterns): you can also write good software without implementing every pattern in your product.
+> The aggregate pattern, as any other pattern, is a tool that can help you to fulfill your requirements depending your use case.
 
 Designing aggregates requires a deep understanding of the domain and its rules, as well as a balance between simplicity and flexibility:
 
-- Create a clear and consistent domain model that reflects the ubiquitous language of the domain experts. Use nouns and verbs that are meaningful and unambiguous in the domain context.
-- Avoid creating aggregates based on data structures or technical requirements. Aggregates should represent domain concepts, not just a generic collections of domain objects. For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
-- Aim for smaller aggregates that capture only the essential state and behavior of a domain concept. Smaller aggregates reduce transactional locking and consistency complexities, as well as improve performance and scalability. Please also consider compensation handling like SAGA in your business logic, if something goes wrong.
-- Qualify associations by adding constraints or filters to reduce technical complexity. For example, instead of having a direct association between an order and a customer, you can have an association between an order and a customer with a specific status or type.
-- Use value objects to represent attributes or measurements that do not have identity or lifecycle. Value objects are immutable and can be shared across aggregates without affecting consistency. For example, you can use value objects to represent money, quantity, address, etc.
+- Create a clear and consistent domain model that reflects the ubiquitous language of the domain experts.
+Use nouns and verbs that are meaningful and unambiguous in the domain context.
+- Avoid creating aggregates based on data structures or technical requirements.
+Aggregates should represent domain concepts, not just a generic collections of domain objects.
+For example, instead of having an aggregate for a list of products, you can have an aggregate for a catalog or a inventory.
+- Aim for smaller aggregates that capture only the essential state and behavior of a domain concept.
+Smaller aggregates reduce transactional locking and consistency complexities, as well as improve performance and scalability.
+Please also consider compensation handling like SAGA in your business logic, if something goes wrong.
+- Qualify associations by adding constraints or filters to reduce technical complexity.
+For example, instead of having a direct association between an order and a customer, you can have an association between an order and a customer with a specific status or type.
+- Use value objects to represent attributes or measurements that do not have identity or lifecycle.
+Value objects are immutable and can be shared across aggregates without affecting consistency.
+For example, you can use value objects to represent money, quantity, address, etc.
 
 ## Aggregates in Context
 
-An aggregate lives within one bounded context. It can be interpreted as a container for state. The container can be moved from one state to another. These state transitions are triggered by commands. Whenever the container is in one state it is completely consistent. The consistency is defined from a business perspective by the invariants basically telling what is allowed and what is not allowed.
-Whenever a state change happens (or cannot happen due to invariants one or more business events are raised, informing the "world" about the change. Whenever an aggregate is in a (consistent) state it can be persisted
+An aggregate lives within one bounded context.
+It can be interpreted as a container for state.
+The container can be moved from one state to another.
+These state transitions are triggered by commands.
+Whenever the container is in one state it is completely consistent.
+The consistency is defined from a business perspective by the invariants, telling what is allowed and what is not allowed.
+Whenever a state change happens (or cannot happen due to invariants) one or more business events are raised, informing the "world" about the change.
+Whenever an aggregate is in a (consistent) state it can be persisted.
 
 The scalability of the system and the size of the aggregate are in direct relation.
-However, this has impact on the handling of cross-aggregate consistency. It is easier from a developer perspective to have one aggregate per bounded context and keep that consistent. The price is that your system will only scale (or not) based on this one big aggregate. The other way round when the design foresees smaller aggregates you can scale them independently but will probably have to wrap you head around compensation.
+However, this has impact on cross-aggregate consistency. 
+It is easier from a developer perspective to have one aggregate per bounded context and keep that consistent.
+The price is that your system will only scale (or not) based on this one big aggregate.
+Vice versa, when the design foresees smaller aggregates you can scale them independently but will probably have to wrap you head around compensation.
 
 **Non-business example: A chess tournament.**
 
-The aggregate in this case will probably be a single chess game/board. The actions are the movements of the chess pieces on the board and the invariants are the rule of the chess game wrt to the allowed movements of the chess pieces.
-With this design/size of the aggregate you can cover basically every size of a tournament as the unit is the single game which can scale independently. One could now make some thought-experiments and gets an idea about the consequences concerning changing the size of the aggregate even to the extreme to have a whole tournament as one aggregate.
+The aggregate in this case could be a single chess game/board.
+The actions are the movements of the chess pieces on the board and the invariants are the rule of the chess game with regard to the allowed movements of the chess pieces.
+With this design/size of the aggregate you can cover basically every size of a tournament as the unit is the single game which can scale independently.
+One could now make some thought-experiments and get an idea about the consequences concerning changing the size of the aggregate even to the extreme to have a whole tournament as one aggregate.
 
 ## Implementing Aggregates: Examples and Strategies
 
-Implementing aggregates depends on the programming language and framework you use. However, there are some common strategies and tips that can help you implement aggregates effectively:
+How to implement aggregates depends on the programming language and framework you use.
+However, there are some common strategies and tips that can help you implement aggregates effectively:
 
-- Use object-oriented principles such as encapsulation, inheritance, polymorphism, and abstraction to model your aggregates. Encapsulation ensures that only the root entity can access and modify the internal state of the aggregate. Inheritance allows you to reuse common behavior across different types of aggregates. Polymorphism enables you to handle different scenarios based on the type of aggregate. Abstraction hides the implementation details from the outside world.
-- Use repositories to abstract away the persistence mechanism of your aggregates. Repositories are interfaces that provide methods to load or save whole aggregates. They hide the details of how aggregates are stored or retrieved from databases or other sources. Repositories also ensure that only one instance of an aggregate exists in memory at any given time.
-- Use factories to create instances of your aggregates. Factories are classes or methods that encapsulate the logic of creating aggregates with valid initial state. They ensure that all required fields are populated and all invariants are satisfied. Factories also simplify testing by providing mock or stub instances of aggregates.
-- Use domain events to communicate changes between aggregates or services. Domain events are messages that capture something important that happened in the domain. They can be used to trigger actions or reactions across different boundaries or contexts. Domain events also decouple aggregates from each other by avoiding direct references or dependencies.
+- Use principles such as encapsulation, inheritance/composition, polymorphism, and abstraction to model your aggregates.
+Encapsulation ensures that only the root entity can access and modify the internal state of the aggregate.
+Inheritance/composition allows you to reuse common behavior across different types of aggregates. 
+Polymorphism enables you to handle different scenarios based on the type of aggregate.
+Abstraction hides the implementation details from the outside world.
+- Use repositories to abstract away the persistence mechanism of your aggregates.
+Repositories are interfaces that provide methods to load or save whole aggregates.
+They hide the details of how aggregates are stored or retrieved from databases or other sources.
+Repositories also ensure that only one instance of an aggregate exists in memory at any given time.
+- Use factories to create instances of your aggregates.
+Factories are classes or methods that encapsulate the logic of creating aggregates with valid initial state.
+They ensure that all required fields are populated and all invariants are satisfied.
+Factories also simplify testing by providing mock or stub instances of aggregates.
+- Use domain events to communicate changes between aggregates or services.
+Domain events are messages that capture something important that happened in the domain.
+They can be used to trigger actions or reactions across different boundaries or contexts.
+Domain events also decouple aggregates from each other by avoiding direct references or dependencies.
 
-Here is an example of how to implement an order aggregate in Java. The classes such as OrderId, ProductId, Money, Quantity, etc. are examples of value objects in DDD. Value objects are immutable objects that represent attributes or measurements that do not have identity or lifecycle. They can be shared across aggregates without affecting consistency.
+Here is an example of how to implement an order aggregate in Java.
+The classes such as `OrderId`, `ProductId`, `Money`, `Quantity`, etc. are examples of value objects in DDD.
+Value objects are immutable objects that represent attributes or measurements that do not have identity or lifecycle.
+They can be shared across aggregates without affecting consistency.
 
 To utilize these classes, you must:
 
@@ -267,8 +315,6 @@ public class LineItem {
 
 }
 ```
-
-Okay, here is the code for the repository and factory classes for Order:
 
 ```java
 // OrderRepository.java
@@ -499,8 +545,6 @@ public class Money {
 }
 ```
 
-Okay, here is the code for Quantity.java:
-
 ```java
 // Quantity.java
 public class Quantity {
@@ -705,11 +749,23 @@ int hashCode = money.hashCode();
 
 ## Testing Aggregates: Strategies and Techniques
 
-Testing aggregates may be difficult, especially when working with complex systems and scenarios. Nonetheless, testing aggregates is necessary to guarantee that they function properly and fulfill business needs. These are several DDD testing procedures and approaches for aggregates:
+Testing aggregates may be difficult, especially when working with complex systems and scenarios.
+Nonetheless, testing aggregates is necessary to guarantee that they function properly and fulfill business needs.
+These are several DDD testing procedures and approaches for aggregates:
 
-- Use unit tests to verify the behavior and state of individual aggregates. Unit tests are isolated tests that check the logic and rules of a single aggregate. They do not depend on external resources or services. Unit tests can use mock or stub instances of other aggregates or repositories to simulate interactions or dependencies.
-- Use integration tests to verify the interaction and integration of aggregates with other components. Integration tests are tests that check how aggregates work with other parts of the system, such as databases, services, or events. They require access to real or simulated resources or services. Integration tests can use real or fake instances of other aggregates or repositories to test the communication or collaboration between them.
-- Use scenario tests to verify the end-to-end functionality and behavior of aggregates. Scenario tests are tests that check how aggregates perform in a realistic or complex situation. They simulate a user story or a use case that involves multiple aggregates or services. They require a complete or partial setup of the system. Scenario tests can use real or fake instances of other aggregates or repositories to test the outcome or result of a scenario.
+- Use unit tests to verify the behavior and state of individual aggregates.
+Unit tests are isolated tests that check the logic and rules of a single aggregate.
+They do not depend on external resources or services.
+Unit tests can use mock or stub instances of other aggregates or repositories to simulate interactions or dependencies.
+- Use integration tests to verify the interaction and integration of aggregates with other components.
+Integration tests are tests that check how aggregates work with other parts of the system, such as databases, services, or events.
+They require access to real or simulated resources or services.
+Integration tests can use real or fake instances of other aggregates or repositories to test the communication or collaboration between them.
+- Use scenario tests to verify the end-to-end functionality and behavior of aggregates.
+Scenario tests are tests that check how aggregates perform in a realistic or complex situation.
+They simulate a user story or a use case that involves multiple aggregates or services.
+They require a complete or partial setup of the system.
+Scenario tests can use real or fake instances of other aggregates or repositories to test the outcome or result of a scenario.
 
 **Example:**
 
@@ -871,11 +927,17 @@ public class OrderTest {
 
 ## Conclusion
 
-To design aggregates, you need to create a clear and consistent domain model that reflects the ubiquitous language of the domain experts. You also need to identify boundaries and entities that belong together in an aggregate based on domain invariants. You should aim for smaller aggregates that capture only the essential state and behavior of a domain concept. You should also qualify associations by adding constraints or filters to reduce technical complexity.
+To design aggregates, you need to create a clear and consistent domain model that reflects the ubiquitous language of the domain experts.
+You also need to identify boundaries and entities that belong together in an aggregate based on domain invariants.
+You should aim for smaller aggregates that capture only the essential state and behavior of a domain concept.
+You should also qualify associations by adding constraints or filters to reduce technical complexity.
 
-To implement aggregates, you should model your aggregates using object-oriented principles like encapsulation, inheritance, polymorphism, and abstraction. You should also use repositories to abstract away the aggregates' persistence mechanism. You should also use factories to create aggregate instances with a valid initial state. Domain events are also required for communicating changes between aggregates or services.
+To implement aggregates, you should model your aggregates using principles like encapsulation, inheritance/composition, polymorphism, and abstraction.
+You should use repositories to abstract away the aggregates' persistence mechanism factories to create aggregate instances with a valid initial state.
+Domain events are also required for communicating changes between aggregates or services.
 
-To test aggregates, use unit tests to verify the behavior and state of individual aggregates. You must also use integration tests to validate the interaction and integration of aggregates with other components. You must also use scenario tests to validate aggregates' end-to-end functionality and behavior.
+To test aggregates, use unit tests to verify the behavior and state of individual aggregates.
+You should also use integration tests to validate the interaction and integration of aggregates with other components and scenario tests to validate aggregates' end-to-end functionality and behavior.
 
 If you want start learning about DDD we can recommend the following books:
 
