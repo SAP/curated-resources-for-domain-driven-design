@@ -83,7 +83,7 @@ So you really want to dive deep into DDD and event storming, then the following 
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Domain-Driven Design: Tackling Complexity at the Heart of Software](https://www.dddcommunity.org/book/evans_2003/)       | The famous "Blue Book" from the inventor of DDD. Still the definitive resource, but we recommend reading the intro, then reading "Part 4: Strategic Design", and only then reading the rest of the book |
 | [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) | The "Red Book". A more practical help when it comes to implementing DDD.                                                                                                                                |
-| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Give a clear road through the journey how to use Domain-Driven Design based upon practical examples.                                                                                                    |
+| [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)        | Gives a clear road through the journey how to use Domain-Driven Design based upon practical examples.                                                                                                   |
 
 #### Videos
 
@@ -169,6 +169,12 @@ As in every collection there might be some resources that are worth to mention, 
 | Link                                                                                            | Our 2 cents (where applicable)                                                              |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | [Is Domain-Driven Design Overrated? (Stefan Tilkov at GOTO 2021)](https://youtu.be/ZZp9RQEGeqQ) | interesting talk around the sometimes maybe too evangelistic application of DDD in the wild |
+
+## DDD Kata
+
+We believe DDD is something that you must practice yourself to properly understand.
+If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md) that allows you to get hands-on experience. 
+Give it a shot!
 
 ## Support, Feedback, Contributing
 
