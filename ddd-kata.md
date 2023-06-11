@@ -130,7 +130,7 @@ The Bounded Context Canvas is a collaborative tool for designing and documenting
 
 * **Strategic Classification**: Classify the bounded context according to its strategic importance and relationship with other bounded contexts. Use one of these four categories: Core Domain, Supporting Subdomain, Generic Subdomain, or External System. This helps to prioritize the investment and effort for each bounded context.
 
-* **Domain Roles**: List the main roles or personas that interact with or benefit from the bounded context. These can be internal or external users, customers, partners, etc. This helps to understand the needs and expectations of the stakeholders.
+* **Domain Roles**: Define the main trait that describes or characterizes the bounded context. [See here](https://github.com/ddd-crew/bounded-context-canvas/blob/master/resources/model-traits-worksheet.md).
 
 * **Inbound Communication**: List the main types and sources of incoming messages or requests that the bounded context receives from other bounded contexts or systems. These can be commands, events, queries, etc. This helps to understand the dependencies and contracts of the bounded context.
 
@@ -180,3 +180,4 @@ To use the Aggregate Canvas, you need to follow these steps:
 * [Virtual Domain-Driven Design - Aggregate Canvas - A community of practise](https://virtualddd.com/learning-ddd/ddd-crew-aggregate-design-canvas/)
 * DDDDD-20 [Aggregate Canvas: A fluent way to walk through ... - YouTube](https://www.youtube.com/watch?v=AF880t1RUU4). .
 * Modelling aggregates with ["Aggregate Design Canvas"](https://domaincentric.net/blog/modelling-aggregates-with-aggregate-design-canvas).
+* [The One Question To Haunt Everyone: What is a DDD Aggregate?](https://www.youtube.com/watch?v=zlFqjD2LKlE) - Thomas Ploch - DDD Europe 2022
