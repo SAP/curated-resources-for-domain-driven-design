@@ -28,4 +28,4 @@ Sources:
 
 (2) [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)
 
-(3) [Domain Driven Design: A Comprehensive Beginner’s Guide to Learn](https://www.amazon.com/Domain-Driven-Design-Comprehensive-Beginners/dp/B08439JTKL)
+(3) [Domain Driven Design: A Comprehensive Beginner’s Guide to Learn](https://books.google.de/books/about/Domain_Driven_Design.html?id=q7OazAEACAAJ&redir_esc=y)
