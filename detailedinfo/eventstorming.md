@@ -160,6 +160,4 @@ EventStorming has many benefits for exploring complex business domains, such as:
 
 12. **[A list of random tips for Event Storming facilitators - Marijn Huizendveld](https://marijn.huizendveld.com/blog/a-list-of-random-tips-for-event-storming-facilitators):** Marijn Huizendveld shares a list of random tips for Event Storming facilitators, offering practical advice.
 
-13. **[Event storming - Wikipedia](https://en.wikipedia.org/wiki/Event_storming):** Wikipedia's page on Event Storming provides an overview of the technique, its applications, and key concepts.
-
-14. **[Introducing EventStorming - EventStorming](https://www.eventstorming.com/book/):** Explore the book "Introducing EventStorming" on the official EventStorming website for a detailed guide and resources on the methodology.
+13. **[Introducing EventStorming - EventStorming](https://www.eventstorming.com/book/):** Explore the book "Introducing EventStorming" on the official EventStorming website for a detailed guide and resources on the methodology.
