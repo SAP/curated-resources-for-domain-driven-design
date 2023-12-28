@@ -99,7 +99,7 @@ As a **Team Member** your tasks are:
 
 #### How to run an EventStorming Workshop
 
-EventStorming is a collaborative workshop method that helps to explore complex business domains and model them using events. An event is an action that occurred in the domain at a specific time. EventStorming can be conducted in two phases: a high-level EventStorming to identify the domains and then a detailed EventStorming to focus on a specific subdomain.
+[EventStorming](./detailedinfo/eventstorming.md) is a collaborative workshop method that helps to explore complex business domains and model them using events. An event is an action that occurred in the domain at a specific time. EventStorming can be conducted in two phases: a high-level EventStorming to identify the domains and then a detailed EventStorming to focus on a specific subdomain.
 The high-level EventStorming consists of these steps:
 
 1. **Chaotic Exploration**: Invite the right people from different perspectives and roles, such as domain experts, developers, testers, etc. Provide unlimited modeling space, such as a wall or a whiteboard. Ask everyone to write down relevant events in the domain and the process that they are analyzing on sticky notes. Encourage everyone to participate and share their ideas without filtering or criticizing.
@@ -107,6 +107,8 @@ The high-level EventStorming consists of these steps:
 3. **Enforce Consistency**: Review the timeline and check if it makes sense and reflects the reality of the domain. Ask questions such as "What happens next?", "What triggers this event?", "Who is involved in this event?", etc. Use different symbols or colors to mark different aspects of the events, such as commands, aggregates, policies, external systems, users, etc. Add any missing or new events that emerge from the discussion.
 4. **Identify the Bounded Contexts**: Group the events into logical clusters that represent different subdomains or areas of responsibility in the domain. These are called bounded contexts. A bounded context is a coherent and consistent set of events that share a common language and meaning. Use different shapes or colors to highlight the boundaries of each bounded context. Name each bounded context and label its main purpose or goal.
 5. **Detailed Design**: Zoom in on the core domain and refine its events and relationships. Define the properties and behaviors of each element and how they interact with each other. Use scenarios or examples to validate and test the model. Identify any constraints, rules, policies or assumptions that affect the model and document them. Use the detailed design also to validate your bounded contexts.
+
+A more detailed description how to run this part of the DDD Kata to be found **[here](./detailedinfo/eventstorming.md)**.
 
 #### How to model Domain Message Flow
 

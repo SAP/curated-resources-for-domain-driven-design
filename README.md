@@ -93,9 +93,9 @@ So you really want to dive deep into DDD and event storming, then the following 
 
 #### Books and Articles
 
-| Link                                                                       | Our 2 cents (where applicable)                                             |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [Introducing EventStorming](https://leanpub.com/introducing_eventstorming) | It is work in progress for some years now, so take it with a grain of salt |
+| Link                                                         | Our 2 cents (where applicable)                          |
+| ------------------------------------------------------------ | ------------------------------------------------------- |
+| [Introducing EventStorming](./detailedinfo/eventstorming.md) | Our Community take how to run an EventStorming Workshop |
 
 #### Videos
 
@@ -173,7 +173,7 @@ As in every collection there might be some resources that are worth to mention, 
 ## DDD Kata
 
 We believe DDD is something that you must practice yourself to properly understand.
-If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md) that allows you to get hands-on experience. 
+If you want to try out DDD in your team, we came up with a [DDD Kata](ddd-kata.md) that allows you to get hands-on experience.
 Give it a shot!
 
 ## Support, Feedback, Contributing
