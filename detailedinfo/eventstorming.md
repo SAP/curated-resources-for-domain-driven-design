@@ -87,7 +87,7 @@ For instance, direct participants to identify the "Delivery and Payment" bounded
 ![Detailed Design I](./images/Restaurant%20DDD%20Kata%20Example_Detailed_Design_I.png)
 
 Request participants to incorporate other elements such as policies and commands to capture the business behavior.
-Discover the business rules (aka policies) with are triggered after each event. Incorporate the actions or intents which are executed after each decision (aka. policy). Add the events corresponding to incorporated commands.
+Discover the business rules (aka policies) that are triggered after each event. Incorporate the actions or intents which are executed after each decision (aka. policy). Add the events corresponding to incorporated commands.
 
 #### Second Iteration
 
