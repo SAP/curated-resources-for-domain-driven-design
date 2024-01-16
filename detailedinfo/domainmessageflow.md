@@ -57,7 +57,7 @@ Synchronous communication pattern is a common but problematic way of designing i
 - It can affect the reliability and the resilience of the system, as each message can be vulnerable to errors, failures, or disruptions in the communication channel or the message processing, which can cause the system to fail or behave unpredictably.
 - It can limit the flexibility and the adaptability of the system, as each message can impose strict constraints on the availability, compatibility, and coordination of the communicating parties, which can prevent the system from evolving or changing according to the needs of the domain.
 
-Therefore, synchronous communication pattern is an anti-pattern that should be avoided or replaced by a better solution, such as asynchronous communication pattern, which is more suitable for loosely-coupled systems.
+Therefore, the synchronous communication pattern is an anti-pattern that should be avoided or replaced by a better solution, such as asynchronous communication pattern, which is more suitable for loosely-coupled systems.
 
 ### Star Fish Pattern
 
