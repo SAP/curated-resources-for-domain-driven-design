@@ -49,7 +49,7 @@ An anti-pattern is a common but ineffective or harmful solution to a problem, th
 
 ### Synchronous Dependencies / Communication
 
-Synchronous communication pattern is a common but problematic way of designing interactions between bounded contexts, which are sub-systems that represent a specific part of the domain. Synchronous communication pattern means that the sender and the receiver of a message must be online and ready at the same time, and that the sender must wait for a reply before continuing with other tasks. This pattern can have several negative effects on the system, such as:
+The synchronous communication pattern is a common but problematic way of designing interactions between bounded contexts, which are sub-systems that represent a specific part of the domain. Synchronous communication pattern means that the sender and the receiver of a message must be online and ready at the same time, and that the sender must wait for a reply before continuing with other tasks. This pattern can have several negative effects on the system, such as:
 
 - It can indicate that the bounded contexts are not well-defined or aligned with the domain, and that they might have too many dependencies or responsibilities, which can lead to tight coupling and low cohesion.
 - It can increase the resource consumption and the complexity of the system, as each message can require a lot of data, processing, and coordination, especially when there are many requests happening simultaneously or when the messages are large or complex.
