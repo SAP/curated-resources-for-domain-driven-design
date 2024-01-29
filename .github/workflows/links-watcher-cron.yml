@@ -36,7 +36,7 @@ jobs:
             automated issue
       - name: Create or update issue for broken links
         id: create_issue
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         if: failure()
         with:
           title: Link Checker Report
