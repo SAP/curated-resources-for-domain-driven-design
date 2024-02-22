@@ -76,29 +76,15 @@ Therefore, the star fish pattern is a synonym of a single point of failure, and 
 ## Resources
 
 1. **[Anti-pattern - Wikipedia](https://en.wikipedia.org/wiki/Anti-pattern):** Wikipedia's page on anti-patterns, providing an overview of common design patterns that may lead to counterproductive outcomes.
-
-2. **[What Is an Anti-pattern? | Baeldung on Computer Science](https://www.baeldung.com/cs/anti-patterns):** Baeldung's article explaining anti-patterns in computer science, highlighting common pitfalls and mistakes in software design.
-
-3. **[Virtual Domain-Driven Design - A community of practise](https://virtualddd.com/learning-ddd/ddd-crew-domain-message-flow-modelling/):** A resource from Virtual Domain-Driven Design focusing on domain message flow modeling within the DDD community.
-
-4. **[Best Practice - An Introduction To Domain-Driven Design](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design):** Microsoft's article introducing best practices in Domain-Driven Design (DDD), emphasizing key concepts and approaches.
-
-5. **[Domain Message Flow Modelling - GitHub](https://github.com/ddd-crew/domain-message-flow-modelling):** GitHub repository for domain message flow modeling, providing practical resources and examples.
-
-6. **[Synchronous vs. Asynchronous Communication | The TechSmith Blog](https://www.techsmith.com/blog/synchronous-vs-asynchronous-communication/):** The TechSmith Blog's comparison of synchronous and asynchronous communication, exploring the advantages and disadvantages of each approach.
-
-7. **[Synchronous vs Asynchronous Communication in Distributed Systems](https://gheorghina.github.io/microservices/reliability/sync/async/2023/02/09/sync-async-communication.html):** An article discussing synchronous and asynchronous communication in distributed systems, focusing on reliability aspects.
-
-8. **[Practical Microservices Development Patterns: Sync vs. Async](https://dzone.com/articles/practical-microservices-development-patterns-sync):** DZone's article on practical microservices development patterns, particularly comparing synchronous and asynchronous communication.
-
-9. **[Synchronous Communication: Pros, Cons, Trends and Tools | Chanty](https://www.chanty.com/blog/synchronous-communication/):** Chanty's exploration of synchronous communication, outlining its pros, cons, current trends, and relevant tools.
-
-10. **[Centralized, Decentralized and Distributed Systems - GeeksforGeeks](https://www.geeksforgeeks.org/comparison-centralized-decentralized-and-distributed-systems/):** GeeksforGeeks' comparison of centralized, decentralized, and distributed systems, providing insights into their characteristics.
-
-11. **[Single point of failure - Wikipedia](https://en.wikipedia.org/wiki/Single_point_of_failure):** Wikipedia's page on single points of failure, explaining the concept and its implications in system design.
-
-12. **[What is a Single Point of Failure? Definition & FAQs - Avi Networks](https://avinetworks.com/glossary/single-point-of-failure/):** Avi Networks' definition and FAQs on single points of failure, offering insights into their nature and how to address them.
-
-13. **[Centralized Points of Failure | weteachblockchain.org](https://weteachblockchain.org/courses/blockchain-security/3/centralized-points-of-failure/):** A resource discussing centralized points of failure in the context of blockchain security.
-
-14. **[How to avoid a Single Point of Failure (SPOF) in Distributed Systems?](https://ipwithease.com/how-to-avoid-spof-in-distributed-systems/):** Practical tips on avoiding single points of failure in distributed systems, emphasizing resilience and redundancy.
+1. **[What Is an Anti-pattern? | Baeldung on Computer Science](https://www.baeldung.com/cs/anti-patterns):** Baeldung's article explaining anti-patterns in computer science, highlighting common pitfalls and mistakes in software design.
+1. **[Best Practice - An Introduction To Domain-Driven Design](https://learn.microsoft.com/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design):** Microsoft's article introducing best practices in Domain-Driven Design (DDD), emphasizing key concepts and approaches.
+1. **[Domain Message Flow Modelling - GitHub](https://github.com/ddd-crew/domain-message-flow-modelling):** GitHub repository for domain message flow modeling, providing practical resources and examples.
+1. **[Synchronous vs. Asynchronous Communication | The TechSmith Blog](https://www.techsmith.com/blog/synchronous-vs-asynchronous-communication/):** The TechSmith Blog's comparison of synchronous and asynchronous communication, exploring the advantages and disadvantages of each approach.
+1. **[Synchronous vs Asynchronous Communication in Distributed Systems](https://gheorghina.github.io/microservices/reliability/sync/async/2023/02/09/sync-async-communication.html):** An article discussing synchronous and asynchronous communication in distributed systems, focusing on reliability aspects.
+1. **[Practical Microservices Development Patterns: Sync vs. Async](https://dzone.com/articles/practical-microservices-development-patterns-sync):** DZone's article on practical microservices development patterns, particularly comparing synchronous and asynchronous communication.
+1. **[Synchronous Communication: Pros, Cons, Trends and Tools | Chanty](https://www.chanty.com/blog/synchronous-communication/):** Chanty's exploration of synchronous communication, outlining its pros, cons, current trends, and relevant tools.
+1. **[Centralized, Decentralized and Distributed Systems - GeeksforGeeks](https://www.geeksforgeeks.org/comparison-centralized-decentralized-and-distributed-systems/):** GeeksforGeeks' comparison of centralized, decentralized, and distributed systems, providing insights into their characteristics.
+1. **[Single point of failure - Wikipedia](https://en.wikipedia.org/wiki/Single_point_of_failure):** Wikipedia's page on single points of failure, explaining the concept and its implications in system design.
+1. **[What is a Single Point of Failure? Definition & FAQs - Avi Networks](https://avinetworks.com/glossary/single-point-of-failure/):** Avi Networks' definition and FAQs on single points of failure, offering insights into their nature and how to address them.
+1. **[Centralized Points of Failure | weteachblockchain.org](https://weteachblockchain.org/courses/blockchain-security/3/centralized-points-of-failure/):** A resource discussing centralized points of failure in the context of blockchain security.
+1. **[How to avoid a Single Point of Failure (SPOF) in Distributed Systems?](https://ipwithease.com/how-to-avoid-spof-in-distributed-systems/):** Practical tips on avoiding single points of failure in distributed systems, emphasizing resilience and redundancy.

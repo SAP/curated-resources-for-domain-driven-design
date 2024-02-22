@@ -170,7 +170,6 @@ To use the Aggregate Canvas, you need to follow these steps:
 * Miroverse: [Judith Birmoser's EventStorming Template](https://miro.com/miroverse/event-storming/).
 * Studiosoftware: [EventStorming Example: What the Process Looks Like Step-by-Step](https://studiosoftware.com/blog/event-storming-example-what-the-process-looks-like-step-by-step/).
 * Github: [ddd-crew/domain-message-flow-modelling.](https://github.com/ddd-crew/domain-message-flow-modelling)
-* Virtual Domain-Driven Design - Domain Message Flow: [A Community of Practice.](https://virtualddd.com/learning-ddd/ddd-crew-domain-message-flow-modelling/)
 * Medium: [Modelling Bounded Contexts with the Bounded Context Canvas: A Workshop Recipe.](https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab)
 * Github: [ddd-crew/bounded-context-canvas.](https://github.com/ddd-crew/bounded-context-canvas)
 * Virtual Domain-Driven Design - Bounded Context Canvas: [A Community of Practice](https://virtualddd.com/learning-ddd/ddd-crew-bounded-context-canvas/).
