@@ -172,13 +172,13 @@ To use the Aggregate Canvas, you need to follow these steps:
 * Github: [ddd-crew/domain-message-flow-modelling.](https://github.com/ddd-crew/domain-message-flow-modelling)
 * Medium: [Modelling Bounded Contexts with the Bounded Context Canvas: A Workshop Recipe.](https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab)
 * Github: [ddd-crew/bounded-context-canvas.](https://github.com/ddd-crew/bounded-context-canvas)
-* Virtual Domain-Driven Design - Bounded Context Canvas: [A Community of Practice](https://virtualddd.com/learning-ddd/ddd-crew-bounded-context-canvas/).
+* Virtual Domain-Driven Design - Bounded Context Canvas: [A Community of Practice](https://virtualddd.com/github-repositories/the-bounded-context-canvas/).
 * Medium: [Bounded Context Canvas V3: Simplifications and Additions.](https://medium.com/nick-tune-tech-strategy-blog/bounded-context-canvas-v2-simplifications-and-additions-229ed35f825f)
 * Miroverse: [Nick Tune's Bounded Context Canvas Template.](https://miro.com/miroverse/the-bounded-context-canvas/)
 * Medium: [Bounded Context Canvas Recipe: Use Case Swimlanes.](https://medium.com/nick-tune-tech-strategy-blog/bounded-context-canvas-recipe-use-case-swimlanes-11ca647175d3.)
 * [Kacper Gunia's Aggregate Design Canvas template | Miroverse](https://miro.com/miroverse/aggregate-design-canvas/)
 * [The Aggregate Design Canvas - Github](https://github.com/ddd-crew/aggregate-design-canvas)
-* [Virtual Domain-Driven Design - Aggregate Canvas - A community of practise](https://virtualddd.com/learning-ddd/ddd-crew-aggregate-design-canvas/)
+* [Virtual Domain-Driven Design - Aggregate Canvas - A community of practise](https://virtualddd.com/github-repositories/the-aggregate-design-canvas/)
 * DDDDD-20 [Aggregate Canvas: A fluent way to walk through ... - YouTube](https://www.youtube.com/watch?v=AF880t1RUU4). .
 * Modelling aggregates with ["Aggregate Design Canvas"](https://domaincentric.net/blog/modelling-aggregates-with-aggregate-design-canvas).
 * [The One Question To Haunt Everyone: What is a DDD Aggregate?](https://www.youtube.com/watch?v=zlFqjD2LKlE) - Thomas Ploch - DDD Europe 2022
