@@ -1,12 +1,12 @@
 # The Core Concepts of Domain-Driven Design
 
-We all want to create better code as software development teams, and Domain-Driven Design (DDD) is one collaborative approach that can assist us in doing so. DDD, at its heart, is an methodology to software development that emphasizes the business area and the issues we're attempting to resolve rather than just the technical execution.
+We all want to create better code as software development teams, and Domain-Driven Design (DDD) is one collaborative approach that can assist us in doing so. DDD, at its heart, is a methodology to software development that emphasizes the business area and the issues we're attempting to resolve rather than just the technical execution.
 
-The ability to establish a shared language between business experts and team members with a technical background like developers is one of the main advantages of DDD. We can communicate and work together more effectively if we use words and ideas that everyone engaged in the endeavor is familiar with. This shared understanding plays a vital role in making sure that everyone is pursuing the same objectives and prevent misunderstandings.
+The ability to establish a shared language between business experts and team members with a technical background like developers is one of the main advantages of DDD. We can communicate and work together more effectively if we use words and ideas that everyone engaged in the endeavor is familiar with. This shared understanding plays a vital role in making sure that everyone is pursuing the same objectives and prevents misunderstandings.
 
 Modular design is promoted by DDD, which is an additional advantage. By dividing a system down into smaller, more manageable components, we can think about it more readily and make changes without affecting other portions of the software. Long term, this should result in a more adaptable and manageable system.
 
-Testing and feedback processes are also emphasized in DDD. We can make sure that we are creating the correct thing and moving closer to our objectives by regularly verifying our ideas and getting input from peers.
+Testing and feedback processes are also emphasized in DDD. We can make sure that we are creating the correct thing and moving closer to our objectives by regularly verifying our ideas and getting input from business users, domain experts, and technical peers.
 
 At the heart of DDD are several core concepts, including:
 
@@ -32,7 +32,7 @@ One of the most important concepts in tactical DDD is the value object. A value 
 
 Value objects are not only containers of data - they can also contain business logic. The fact that the value objects are also immutable makes the business operations both thread-safe and side-effect free.
 
-Another important concept in tactical DDD is the aggregate. An aggregate defines a consistency boundary around one or more entities. Exactly one entity in an aggregate is the root. Lookup is done using the root entity's identifier. Any other entities in the aggregate are children of the root, and are referenced by following pointers from the root.
+Another important concept in tactical DDD is the aggregate. An aggregate defines a consistency boundary around one or more entities. Exactly one entity in an aggregate is the root. Lookup is done using the root entity's identifier. Any other entities in the aggregate are children of the root, and are referenced by following pointers from the root. As such, a very important correlate of this is that during communication between Bounded Contexts one context never explicitly references ids below the aggregate root's id.
 
 ## Ubiquitous language
 
@@ -48,7 +48,7 @@ Developing a clear Ubiquitous Language requires an understanding of the business
 
 Domains and Subdomains in Domain-Driven Design
 
-In Domain-Driven Design (DDD), a domain is the most vital concept. It refers to the space of the problem for which we are acting, its entities, its behavior and rules.
+In Domain-Driven Design (DDD), a domain is the most vital concept. It refers to the space of the problem for which we are acting, its aggregates and entities, its behavior and rules.
 
 A domain can have several meanings within DDD. It can refer to the totality of the company's domain, an area, sector or process of the company, or a domain that serves as support for the business.
 
@@ -56,13 +56,13 @@ DDD necessitates the division of the domain into subdomains, which aids human co
 
 A subdomain is a domain division. Every domain, regardless of company size, can be subdivided. We separate the total complexity of the company's domain into smaller segments by doing so.
 
-There are three types of subdomains: Core, Supporting, Generic. The Core subdomain is where we must put our best efforts. The Supporting subdomain complements the main domain. The Generic subdomain is typically a ready-made solution.
+There are three types of subdomains: Core, Supporting, Generic. The Core subdomain is where we must put our best efforts. The Supporting subdomain complements the main domain. The Generic subdomain typically can be supported by ready-made commercial or open-source software or services.
 
 ### Core Domain
 
 The core domain is where we want to excel as a business and our specific skills here really differentiate us from the rest of the market. It is so critical and fundamental to the business that it gives you a competitive advantage and is a foundational concept behind the business.
 
-DDD advocates modeling based on the reality of business as relevant to your use cases. It describes independent problem areas as Bounded Contexts (each Bounded Context correlates to a microservice), and emphasizes a common language to talk about these problems.
+DDD advocates modeling based on the reality of business as relevant to your use cases. It describes independent problem areas as Bounded Contexts (each Bounded Context usually correlates to a microservice or a module within a well-structured monolith), and emphasizes a common language to talk about these problems.
 
 The core domain gives you a competitive advantage and is a foundational concept behind the business.
 
@@ -70,9 +70,9 @@ The core domain gives you a competitive advantage and is a foundational concept 
 
 The supporting domain is key to providing value in the core domain. These types of pieces help perform ancillary or supporting functions related directly to what the business does.
 
-In these cases, high-quality code and perfectly designed structure are not necessary. You could get by with assigning more inexperienced developers or even outsourcing these pieces. Just be sure that these concepts do not bleed into your core domain—you want to maintain a rigid separation with a context map to keep separate things separate.
+In these cases, high-quality code and perfectly designed structure are not necessary. You could get by with assigning more inexperienced developers or even outsourcing these pieces. Just be sure that these concepts do not bleed into your core domain—you want to maintain a rigid separation with a context map to keep separate things separate. 
 
-The supporting domain helps perform ancillary or supporting functions related directly to what the business does.
+Note that even if you assign less experienced teams or outsource this work, it can be very advantageous to have automated test cases written by your core teams to ensure that any implementation of the subdomain fulfills the explicit business needs. This provides confidence in the correctness of the behavior and allows for future refactoring to improve the code quality or performance while retaining comfidence in its behavioral correctness.
 
 ### Generic Domain
 
@@ -86,11 +86,11 @@ The generic domain leverages expertise in the market for areas that facilitate t
 
 Domain events and commands are two key concepts in domain-driven design (DDD), a software development approach that focuses on the core business domain and its logic.
 
-Domain events are facts that have happened in the past and affect the state of the domain, such as an order placed or a payment received. An important benefit of domain events is that side effects can be expressed explicitly
+Domain events are facts that have happened in the past and affect the state of the domain, such as an order placed or a payment received. An important benefit of domain events is that side effects can be expressed explicitly.
 
-A command is an object that is sent to the domain for a state change which is handled by a command handler. They should be named with a verb in an imperative mood plus the aggregate name which it operates on. Such request can be rejected due to the data the command holds being invalid/inconsistent. There should be exactly 1 handler for each command.
+A command is a message that is sent to the domain expressing an intention to change state or invoke some behavior. A command is processed by a dedicated command handler. A command should be named with a verb in an imperative mood plus the aggregate name which it operates on. A command request can be rejected due to the data the command holds being invalid/inconsistent. There should be exactly 1 handler for each command.
 
-Events and command express side effects explicitly and handling state changes in the domain.
+Events and commands express side effects explicitly and handling state changes in the domain.
 
 ## Bounded Contexts
 
