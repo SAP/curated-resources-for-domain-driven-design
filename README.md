@@ -36,10 +36,10 @@ We hope that this gives you the ability to better judge which resource is helpfu
 ## 🧑‍🎓 DDD & Event Storming 101 - Let's get things started
 
 Not yet sure what DDD and Event Storming is all about and you want to get an overview on the topic?
-We got you covered.
-In this section we some material that should hook you up on the topic and at the same time give you a good explanation and overview.
+We've got you covered.
+In this section we present some material that should hook you up on the topic and at the same time give you a good explanation and overview.
 This is a perfect starting point for your DDD journey.
-From there you can dive deeper into DDD and investigate more detailed on the topics that are of specific interest to you.
+From there you can dive deeper into DDD and investigate the topics that are of specific interest to you in more detail.
 
 > 🧑‍💻 *Recommendation* Although you can specialize on aspects of DDD we recommend to approach DDD with a broader perspective and not to hyper-focus on just one aspect.
 
