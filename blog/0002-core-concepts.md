@@ -140,7 +140,6 @@ We can begin to implement DDD principles to our own projects and enjoy the advan
 - [Command vs. Event in Domain Driven Design - Medium](https://medium.com/ingeniouslysimple/command-vs-event-in-domain-driven-design-be6c45be52a9)
 - [BoundedContext - Martin Fowler.](https://www.martinfowler.com/bliki/BoundedContext.html)
 - [Bounded Context - DDD - The Domain Driven Design](https://thedomaindrivendesign.io/bounded-context/).
-- [Domain-driven Design: Understanding Bounded Context and the Context Map ....](https://www.developer.com/design/domain-driven-design-understanding-bounded-context-and-the-context-map/)
 - [Balancing Consistency and Autonomy in Bounded Contexts - LinkedIn.](https://www.linkedin.com/advice/0/how-do-you-balance-between-consistency-autonomy)
 - [DDD_Aggregate - Martin Fowler](https://www.martinfowler.com/bliki/DDD_Aggregate.html)
 - [What Are Aggregates In Domain-Driven Design? - James Hickey](https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/)
