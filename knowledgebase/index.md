@@ -18,9 +18,46 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
   - Visual representation of how different bounded contexts interact.
   - Identifies integration patterns and relationships between contexts.
+  - **Team Relationships**
+    - **Mutually Dependent:**
+      - Two teams or bounded contexts rely on each other for success.
+      - This relationship requires close coordination and frequent communication.
+    - **Upstream Downstream**
+      - The upstream team's actions directly affect the downstream team.
+      - The upstream team can succeed independently, whereas the downstream team relies heavily on the upstream's outputs.
+    - **Free**
+      - A bounded context or team operates independently, without being affected by changes or decisions in other bounded contexts.
+      - This allowing the team to work autonomously.
+  - **Context Map Patterns:**
+    - **Anti-Corruption Layer (ACL)**
+      - Acts as a barrier between different bounded contexts.
+      - Translates and mediates interactions to prevent one context's model from corrupting another's.
+    - **Shared Kernel**
+      - A small, shared subset of the domain model used by multiple bounded contexts.
+      - Requires strict coordination to manage changes and maintain consistency.
+    - **Open Host Service**
+      - Defines a public interface for a bounded context to interact with other contexts.
+      - Facilitates controlled and standardized communication.
+    - **Published Language**
+      - A language or protocol used by multiple bounded contexts to communicate.
+      - Ensures clarity and consistency in inter-context communication.
+    - **Conformist**
+      - The downstream team adopts the upstream team’s model without modification.
+      - They must conform to the upstream's design choices.
+    - **Partnership**
+      - Teams are interdependent, and success or failure in one context directly affects the other.
+      - Joint planning and coordinated feature development are required to ensure both succeed together.
+    - **Customer/Supplier**
+      - The downstream (customer) depends on the upstream (supplier) for services or functionality.
+      - The upstream may succeed independently but must consider downstream needs through negotiation and prioritization.
+    - **Separate Ways**
+      - Two bounded contexts have no significant relationship and operate independently.
+      - Each focuses on specialized solutions without any shared models or dependencies.
+    - **Big Ball of Mud**
+      - Represents a chaotic, poorly structured system with mixed models and unclear boundaries.
+      - This pattern should be isolated to prevent the "mess" from spreading to other bounded contexts.
 
 - **[Subdomains](./concepts/strategic-concepts/domain.md#core-subdomains)**
-
   - **[Core Subdomain](./concepts/strategic-concepts/domain.md#core-subdomains):** The primary area that provides competitive advantage and is central to the business.
   - **[Supporting Subdomai](./concepts/strategic-concepts/domain.md#supporting-subdomains):** Assists the core subdomain but is not unique to the business.
   - **[Generic Subdomain](./concepts/strategic-concepts/domain.md#generic-subdomains):** Common functionalities that can often be outsourced or implemented using third-party solutions.
@@ -28,101 +65,62 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 ## **Tactical Design Concepts**
 
 - **[Entities](./concepts/tactical-concepts/entities.md)**
-
   - Objects with a distinct identity that persists over time.
   - Defined by their continuity rather than their attributes.
 
 - **[Value Objects](./concepts/tactical-concepts/valueobjects.md)**
-
   - Immutable objects defined solely by their attributes.
   - Do not have a unique identity and are interchangeable if their attributes are the same.
 
 - **[Aggregates](./concepts/tactical-concepts/aggregate.md)**
-
   - Clusters of related entities and value objects treated as a single unit for data changes.
   - Ensures consistency and enforces business rules within the boundary.
 
 - **[Aggregate Root](./concepts/tactical-concepts/aggregate.md#aggregate-root-responsibilities)**
-
   - The primary entity within an aggregate.
   - Controls access to the aggregate and ensures its invariants are maintained.
 
 - **[Repositories](./concepts/tactical-concepts/repositories.md)**
-
   - Abstractions for persisting and retrieving aggregates.
   - Provide methods to access aggregates without exposing the underlying data storage details.
 
 - **[Factories](./concepts/tactical-concepts/factories.md)**
-
   - Responsible for creating complex aggregates.
   - Ensure that all invariants are satisfied during the creation process.
 
-- **Domain Services**
-
+- **[Domain Services](./concepts/tactical-concepts/domain-services.md)**
   - Operations that don't naturally fit within entities or value objects.
   - Encapsulate domain logic that involves multiple aggregates or doesn't belong to any single entity.
 
 - **[Application Services](./concepts/tactical-concepts/application-services.md)**
-
   - Coordinate tasks and delegate work to domain objects.
   - Handle transactions, security, and other cross-cutting concerns.
 
-- **Domain Events**
-
+- **[Domain Events](./concepts/tactical-concepts/domain-events.md)**
   - Represent significant occurrences within the domain.
   - Facilitate communication between different parts of the system in a decoupled manner.
 
-- **Modules**
-
+- **[Modules](./concepts/tactical-concepts/modules.md)**
   - Logical grouping of related concepts within a bounded context.
   - Helps in organizing the domain model for better maintainability.
-
-- **Anti-Corruption Layer (ACL)**
-
-  - Acts as a barrier between different bounded contexts.
-  - Translates and mediates interactions to prevent one context's model from corrupting another's.
-
-- **Shared Kernel**
-
-  - A small, shared subset of the domain model used by multiple bounded contexts.
-  - Requires strict coordination to manage changes and maintain consistency.
-
-- **Open Host Service**
-
-  - Defines a public interface for a bounded context to interact with other contexts.
-  - Facilitates controlled and standardized communication.
-
-- **Published Language**
-  - A language or protocol used by multiple bounded contexts to communicate.
-  - Ensures clarity and consistency in inter-context communication.
 
 ## **Design Principles and Patterns**
 
 - **Encapsulation**
-
   - Hides the internal state and requires all interactions to occur through well-defined interfaces.
   - Protects the integrity of the domain model.
-
 - **Separation of Concerns**
-
   - Divides the system into distinct sections, each addressing a specific aspect of the functionality.
   - Enhances maintainability and scalability.
-
 - **Single Responsibility Principle**
-
   - Each module, class, or component should have one reason to change.
   - Promotes focused and manageable codebases.
-
-- **Command-Query Separation (CQS)**
-
+- **Command-Query Separation (CQRS)**
   - Distinguishes between operations that modify state (commands) and those that retrieve state (queries).
   - Enhances clarity and predictability in system behavior.
-
 - **Hexagonal Architecture (Ports and Adapters)**
-
   - Isolates the core domain logic from external systems through defined ports and adapters.
   - Promotes flexibility and ease of testing.
-
 - **Specification Pattern**
   - Encapsulates business rules that determine whether an object satisfies certain criteria.
   - Enables reusable and combinable business logic.
@@ -130,27 +128,23 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 ## **Architectural Patterns and Practices**
 
 - **Microservices Architecture**
-
   - Implements each bounded context as an independent microservice.
   - Enhances scalability and allows for independent deployment.
 
 - **Modular Monolith**
-
   - Organizes bounded contexts into distinct modules within a single application.
   - Balances separation of concerns with simpler deployment compared to microservices.
 
 - **Event-Driven Architecture**
-
   - Utilizes asynchronous events for communication between bounded contexts.
   - Promotes loose coupling and scalability.
 
 - **CQRS (Command Query Responsibility Segregation)**
-
   - Separates read and write operations into different models.
   - Optimizes performance and scalability by handling commands and queries independently.
 
 - **Event Sourcing**
-  - Stores the state of a domain model as a sequence of domain events.
+  - Stores the state of a domain model as a sequence of [domain events](./concepts/tactical-concepts/domain-events.md).
   - Enables rebuilding of the state by replaying events and supports audit trails.
 
 ## **Integration Patterns**
@@ -228,3 +222,20 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 - **Foster Cross-Functional Teams**
   - Encourage collaboration between developers, domain experts, and stakeholders within each bounded context to enhance model accuracy and relevance.
+
+## **Further References and Resources**
+
+### **Books:**
+
+- _Domain-Driven Design: Tackling Complexity in the Heart of Software_ by Eric Evans
+- _Implementing Domain-Driven Design_ by Vaughn Vernon
+- _Domain-Driven Design Distilled_ by Vaughn Vernon
+- _Patterns, Principles, and Practices of Domain-Driven Design_ by Scott Millett and Nick Tune
+
+### **Links:**
+
+- [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+- [Domain-Driven Design Community](https://www.dddcommunity.org/)
+- [Eric Evans' Official Website](https://www.domainlanguage.com/)
+- [DDD Part 1: Strategic Domain-Driven Design](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)
+- [Ubiquitous Language - Martin Fowler](https://martinfowler.com/bliki/UbiquitousLanguage.html)

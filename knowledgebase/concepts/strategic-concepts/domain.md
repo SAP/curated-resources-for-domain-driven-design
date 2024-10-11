@@ -216,6 +216,4 @@ By adhering to best practices in domain modeling, resource allocation, and suppl
   - _"Implementing Domain-Driven Design"_ by Vaughn Vernon
 
 - **Online Resources:**
-  - [Domain-Driven Design Community](https://www.dddcommunity.org/)
-  - [Eric Evans' Official Website](https://www.domainlanguage.com/)
-  - [DDD Part 1: Strategic Domain-Driven Design](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)
+
