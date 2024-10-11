@@ -9,7 +9,7 @@
     - [**What is a Domain?**](#what-is-a-domain)
     - [**What are Subdomains?**](#what-are-subdomains)
   - [**Types of Subdomains**](#types-of-subdomains)
-    - [**Core Subdomains**](#core-subdomains)
+    - [**Subdomains**](#subdomains)
     - [**Supporting Subdomains**](#supporting-subdomains)
     - [**Generic Subdomains**](#generic-subdomains)
   - [**Management Strategies for Development**](#management-strategies-for-development)
@@ -48,13 +48,11 @@ A **domain** represents the overarching sphere of knowledge or activity around w
 
 **Subdomains** are subdivisions within a domain that break down the broader business processes into more manageable and specific areas. They help in organizing complex systems by delineating distinct functionalities and responsibilities. Subdomains facilitate focused development efforts, enabling teams to specialize and optimize different aspects of the software.
 
----
-
 ## **Types of Subdomains**
 
 Understanding the types of subdomains is crucial for effective domain modeling and resource allocation. Subdomains are generally categorized into three types:
 
-### **Core Subdomains**
+### **Subdomains**
 
 **Core Subdomains** are the heart of the business. They contain the unique and differentiating business logic that provides competitive advantage. These subdomains are critical for achieving the primary business objectives and should receive the highest level of attention and expertise.
 
@@ -83,8 +81,6 @@ Understanding the types of subdomains is crucial for effective domain modeling a
 - **E-commerce Platform:** User Authentication
 - **Healthcare System:** Email Notifications
 - **Finance Application:** Document Management
-
----
 
 ## **Management Strategies for Development**
 
@@ -139,8 +135,6 @@ Choosing the right suppliers for third-party support in **Generic Subdomains** i
 5. **Trial Periods:** If possible, implement a trial period to assess the supplier’s performance.
 6. **Contract Negotiation:** Ensure that contracts clearly outline deliverables, timelines, costs, and support terms.
 
----
-
 ## **Importance of Supplier Selection and Due Diligence in Generic Domains**
 
 In **Generic Subdomains**, where third-party solutions are often employed, the significance of meticulous supplier selection and due diligence cannot be overstated. These areas, while not central to competitive advantage, are foundational to the overall functionality and reliability of the software system.
@@ -168,7 +162,6 @@ Selecting suppliers that can scale their solutions ensures that as your business
 ### **Support and Responsiveness**
 
 Reliable suppliers provide robust support and maintenance services, ensuring that any issues are promptly addressed. This responsiveness is vital for maintaining operational continuity and addressing any challenges that arise during the software lifecycle.
-
 
 ## **Best Practices and Recommendations**
 
@@ -215,13 +208,12 @@ In **Domain-Driven Design**, understanding and effectively managing domains and 
 
 By adhering to best practices in domain modeling, resource allocation, and supplier management, organizations can achieve a harmonious balance between in-house expertise and external support. This balance not only drives innovation and maintains competitive advantage but also ensures that essential, non-differentiating functionalities are handled efficiently and effectively.
 
-
 ## **Further Reading**
 
 - **Books:**
-  - *"Domain-Driven Design: Tackling Complexity in the Heart of Software"* by Eric Evans
-  - *"Implementing Domain-Driven Design"* by Vaughn Vernon
 
+  - _"Domain-Driven Design: Tackling Complexity in the Heart of Software"_ by Eric Evans
+  - _"Implementing Domain-Driven Design"_ by Vaughn Vernon
 
 - **Online Resources:**
   - [Domain-Driven Design Community](https://www.dddcommunity.org/)
