@@ -18,6 +18,7 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
   - Visual representation of how different bounded contexts interact.
   - Identifies integration patterns and relationships between contexts.
+
   - **Team Relationships**
     - **Mutually Dependent:**
       - Two teams or bounded contexts rely on each other for success.
@@ -28,7 +29,8 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
     - **Free**
       - A bounded context or team operates independently, without being affected by changes or decisions in other bounded contexts.
       - This allowing the team to work autonomously.
-  - **Context Map Patterns:**
+
+  - **Context Map / Integration Patterns:**
     - **Anti-Corruption Layer (ACL)**
       - Acts as a barrier between different bounded contexts.
       - Translates and mediates interactions to prevent one context's model from corrupting another's.
@@ -106,22 +108,22 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 ## **Design Principles and Patterns**
 
-- **Encapsulation**
+- **[Encapsulation](./concepts/design-principles/encapsulation.md)**
   - Hides the internal state and requires all interactions to occur through well-defined interfaces.
   - Protects the integrity of the domain model.
-- **Separation of Concerns**
+- **[Separation of Concerns](./concepts/design-principles/separation-of-concerns.md)**
   - Divides the system into distinct sections, each addressing a specific aspect of the functionality.
   - Enhances maintainability and scalability.
-- **Single Responsibility Principle**
+- **[Single Responsibility Principle](./concepts/design-principles/srp.md)**
   - Each module, class, or component should have one reason to change.
   - Promotes focused and manageable codebases.
-- **Command-Query Separation (CQRS)**
+- **[Command-Query Separation (CQRS)](./concepts/design-principles/cqrs.md)**
   - Distinguishes between operations that modify state (commands) and those that retrieve state (queries).
   - Enhances clarity and predictability in system behavior.
-- **Hexagonal Architecture (Ports and Adapters)**
+- **[Hexagonal Architecture (Ports and Adapters](./concepts/design-principles/hexagonal.md)**
   - Isolates the core domain logic from external systems through defined ports and adapters.
   - Promotes flexibility and ease of testing.
-- **Specification Pattern**
+- **[Specification Pattern](./concepts/design-principles/specpattern.md)**
   - Encapsulates business rules that determine whether an object satisfies certain criteria.
   - Enables reusable and combinable business logic.
 
@@ -147,31 +149,6 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Stores the state of a domain model as a sequence of [domain events](./concepts/tactical-concepts/domain-events.md).
   - Enables rebuilding of the state by replaying events and supports audit trails.
 
-## **Integration Patterns**
-
-- **Customer/Supplier**
-
-  - One bounded context (Supplier) provides services or data to another (Customer).
-  - The Customer depends on the Supplier's model.
-
-- **Conformist**
-
-  - The dependent context conforms to the model of the context it relies on without influencing it.
-  - Often used when one context cannot change due to external constraints.
-
-- **Separate Ways**
-
-  - Bounded contexts operate independently with no direct interaction.
-  - Suitable when contexts have minimal or no overlapping concerns.
-
-- **Shared Kernel**
-
-  - A small, shared subset of the domain model used by multiple bounded contexts.
-  - Requires strict coordination to manage changes.
-
-- **Open Host Service**
-  - Provides a public interface for a bounded context to interact with others.
-  - Facilitates controlled and standardized communication.
 
 ## **Additional Concepts**
 

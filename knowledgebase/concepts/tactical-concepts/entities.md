@@ -12,7 +12,6 @@
 8. [Common Challenges and Solutions](#common-challenges-and-solutions)
 9. [Examples](#examples)
 10. [Conclusion](#conclusion)
-11. [Further References and Resources](#further-references-and-resources)
 
 ## **Introduction**
 

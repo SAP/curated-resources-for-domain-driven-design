@@ -17,8 +17,11 @@
     - [**Overly Synchronous Communication**](#overly-synchronous-communication)
     - [**Centralized Single Point of Failure**](#centralized-single-point-of-failure)
   - [**Conclusion**](#conclusion)
+  - [**Resources**](#resources)
 
 ## **Introduction**
+
+![dmf](./images/messages-and-contents.jpg)
 
 In **Domain-Driven Design (DDD)**, creating systems that are **loosely coupled** is essential for scalability, maintainability, and flexibility. One crucial aspect of designing such systems is understanding and defining clear interactions between different parts of the system, known as **bounded contexts**. **Domain Message Flow Diagrams** are a valuable tool in modeling and visualizing these interactions, helping teams to identify potential issues and design effective communication patterns.
 
@@ -220,3 +223,8 @@ Designing the system with a central hub that all other components rely on create
 Domain Message Flow Diagrams are a powerful tool in **Domain-Driven Design** for modeling and understanding the interactions between bounded contexts, actors, and systems. By visualizing the flow of messages, teams can identify potential issues such as tight coupling, single points of failure, and unnecessary complexity.
 
 Using these diagrams helps in designing systems that are **loosely coupled**, **scalable**, and **resilient**, aligning technical implementations with business needs. By adhering to best practices and being mindful of common anti-patterns, organizations can create robust architectures that support their long-term goals.
+
+## **Resources**
+
+- [Domain Message Flow by DDD Crew](https://github.com/ddd-crew/domain-message-flow-modelling)
+- [Domain-Message Flow in DDD Kata](../../detailedinfo/domainmessageflow.md)
