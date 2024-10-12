@@ -180,11 +180,6 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Practices that go against DDD principles, such as Anemic Domain Model or God Objects.
   - Should be avoided to maintain a robust and maintainable domain model.
 
-- **Bounded Context Diagrams**
-
-  - Visual representations of bounded contexts and their interactions.
-  - Aid in understanding and communicating the system's architecture.
-
 - **Collaborative Modeling**
 
   - Engaging domain experts and developers in the modeling process.
