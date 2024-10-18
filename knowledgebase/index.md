@@ -139,27 +139,27 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 ## **Architectural Patterns and Practices**
 
-- **Microservices Architecture**
+- **[Microservices Architecture](./concepts/architectual-concepts/msa.md)**
 
   - Implements each bounded context as an independent microservice.
   - Enhances scalability and allows for independent deployment.
 
-- **Modular Monolith**
+- **[Modular Monolith](./concepts/architectual-concepts/modular-monolith.md)**
 
   - Organizes bounded contexts into distinct modules within a single application.
   - Balances separation of concerns with simpler deployment compared to microservices.
 
-- **Event-Driven Architecture**
+- **[Event-Driven Architecture](./concepts/architectual-concepts/eda.md)**
 
   - Utilizes asynchronous events for communication between bounded contexts.
   - Promotes loose coupling and scalability.
 
-- **CQRS (Command Query Responsibility Segregation)**
+- **[CQRS (Command Query Responsibility Segregation)](./concepts/architectual-concepts/cqrs.md)**
 
   - Separates read and write operations into different models.
   - Optimizes performance and scalability by handling commands and queries independently.
 
-- **Event Sourcing**
+- **[Event Sourcing](./concepts/architectual-concepts/event-sourcing.md)**
   - Stores the state of a domain model as a sequence of [domain events](./concepts/tactical-concepts/domain-events.md).
   - Enables rebuilding of the state by replaying events and supports audit trails.
 
