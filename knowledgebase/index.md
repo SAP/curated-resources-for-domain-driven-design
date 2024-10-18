@@ -20,6 +20,7 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Identifies integration patterns and relationships between contexts.
 
   - **Team Relationships**
+
     - **Mutually Dependent:**
       - Two teams or bounded contexts rely on each other for success.
       - This relationship requires close coordination and frequent communication.
@@ -67,38 +68,47 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 ## **Tactical Design Concepts**
 
 - **[Entities](./concepts/tactical-concepts/entities.md)**
+
   - Objects with a distinct identity that persists over time.
   - Defined by their continuity rather than their attributes.
 
 - **[Value Objects](./concepts/tactical-concepts/valueobjects.md)**
+
   - Immutable objects defined solely by their attributes.
   - Do not have a unique identity and are interchangeable if their attributes are the same.
 
 - **[Aggregates](./concepts/tactical-concepts/aggregate.md)**
+
   - Clusters of related entities and value objects treated as a single unit for data changes.
   - Ensures consistency and enforces business rules within the boundary.
 
 - **[Aggregate Root](./concepts/tactical-concepts/aggregate.md#aggregate-root-responsibilities)**
+
   - The primary entity within an aggregate.
   - Controls access to the aggregate and ensures its invariants are maintained.
 
 - **[Repositories](./concepts/tactical-concepts/repositories.md)**
+
   - Abstractions for persisting and retrieving aggregates.
   - Provide methods to access aggregates without exposing the underlying data storage details.
 
 - **[Factories](./concepts/tactical-concepts/factories.md)**
+
   - Responsible for creating complex aggregates.
   - Ensure that all invariants are satisfied during the creation process.
 
 - **[Domain Services](./concepts/tactical-concepts/domain-services.md)**
+
   - Operations that don't naturally fit within entities or value objects.
   - Encapsulate domain logic that involves multiple aggregates or doesn't belong to any single entity.
 
 - **[Application Services](./concepts/tactical-concepts/application-services.md)**
+
   - Coordinate tasks and delegate work to domain objects.
   - Handle transactions, security, and other cross-cutting concerns.
 
 - **[Domain Events](./concepts/tactical-concepts/domain-events.md)**
+
   - Represent significant occurrences within the domain.
   - Facilitate communication between different parts of the system in a decoupled manner.
 
@@ -130,18 +140,22 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 ## **Architectural Patterns and Practices**
 
 - **Microservices Architecture**
+
   - Implements each bounded context as an independent microservice.
   - Enhances scalability and allows for independent deployment.
 
 - **Modular Monolith**
+
   - Organizes bounded contexts into distinct modules within a single application.
   - Balances separation of concerns with simpler deployment compared to microservices.
 
 - **Event-Driven Architecture**
+
   - Utilizes asynchronous events for communication between bounded contexts.
   - Promotes loose coupling and scalability.
 
 - **CQRS (Command Query Responsibility Segregation)**
+
   - Separates read and write operations into different models.
   - Optimizes performance and scalability by handling commands and queries independently.
 
@@ -149,22 +163,17 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Stores the state of a domain model as a sequence of [domain events](./concepts/tactical-concepts/domain-events.md).
   - Enables rebuilding of the state by replaying events and supports audit trails.
 
-
 ## **Additional Concepts**
 
-- **Anti-Patterns**
+- **[Anti-Patterns](./concepts/additional-concepts/antipatterns.md)**
 
   - Practices that go against DDD principles, such as Anemic Domain Model or God Objects.
   - Should be avoided to maintain a robust and maintainable domain model.
 
-- **Collaborative Modeling**
+- **[Collaborative Modeling](./concepts/additional-concepts/collaborativemodelling.md)**
 
   - Engaging domain experts and developers in the modeling process.
   - Ensures the model accurately reflects business realities.
-
-- **Continuous Integration and Deployment (CI/CD)**
-  - Practices that support the continuous evolution and deployment of bounded contexts.
-  - Enhances agility and responsiveness to changing business needs.
 
 ## **Best Practices**
 
