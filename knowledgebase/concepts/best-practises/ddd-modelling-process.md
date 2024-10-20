@@ -364,4 +364,4 @@ Adapting the process to fit specific project needs allows for flexibility, ensur
 
 ## **Resource**
 
-- [DDD Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process/tree/master)
+- [DDD Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process)
