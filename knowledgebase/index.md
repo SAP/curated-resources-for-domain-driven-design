@@ -177,31 +177,31 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 ## **Best Practices**
 
-- **Align Bounded Contexts with Business Boundaries**
+- **[Align Bounded Contexts with Business Boundaries](./concepts/best-practises/aligmentbusiness.md)**
 
   - Ensure that technical boundaries reflect real-world business divisions and responsibilities.
 
-- **Keep Bounded Contexts Small and Focused**
+- **[Keep Bounded Contexts Small and Focused](./concepts/best-practises/bcsmallfocused.md)**
 
   - Smaller contexts are easier to manage, understand, and evolve.
 
-- **Maintain Clear Interfaces**
+- **[Maintain Clear Interfaces](./concepts/best-practises/interfaces.md)**
 
   - Define explicit interfaces for interactions between bounded contexts to facilitate communication and integration.
 
-- **Avoid Overlapping Responsibilities**
+- **[Avoid Overlapping Responsibilities](./concepts/best-practises/responsibilities.md)**
 
   - Ensure each bounded context has distinct responsibilities to prevent duplication and conflicts.
 
-- **Encourage Independent Evolution**
+- **[Encourage Independent Evolution](./concepts/best-practises/evolution.md)**
 
   - Design bounded contexts to evolve independently, allowing teams to iterate and improve without being hindered by other contexts.
 
-- **Invest in Robust Documentation**
+- **[Invest in Robust Documentation](./concepts/best-practises/robustdocument.md)**
 
   - Maintain comprehensive documentation for each bounded context, including its purpose, models, interfaces, and integration points.
 
-- **Foster Cross-Functional Teams**
+- **[Foster Cross-Functional Teams](./concepts/best-practises/crossfunctionalteams.md)**
   - Encourage collaboration between developers, domain experts, and stakeholders within each bounded context to enhance model accuracy and relevance.
 
 ## **Further References and Resources**
