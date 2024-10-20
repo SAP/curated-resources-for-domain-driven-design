@@ -19,47 +19,6 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Visual representation of how different bounded contexts interact.
   - Identifies integration patterns and relationships between contexts.
 
-  - **Team Relationships**
-
-    - **Mutually Dependent:**
-      - Two teams or bounded contexts rely on each other for success.
-      - This relationship requires close coordination and frequent communication.
-    - **Upstream Downstream**
-      - The upstream team's actions directly affect the downstream team.
-      - The upstream team can succeed independently, whereas the downstream team relies heavily on the upstream's outputs.
-    - **Free**
-      - A bounded context or team operates independently, without being affected by changes or decisions in other bounded contexts.
-      - This allowing the team to work autonomously.
-
-  - **Context Map / Integration Patterns:**
-    - **Anti-Corruption Layer (ACL)**
-      - Acts as a barrier between different bounded contexts.
-      - Translates and mediates interactions to prevent one context's model from corrupting another's.
-    - **Shared Kernel**
-      - A small, shared subset of the domain model used by multiple bounded contexts.
-      - Requires strict coordination to manage changes and maintain consistency.
-    - **Open Host Service**
-      - Defines a public interface for a bounded context to interact with other contexts.
-      - Facilitates controlled and standardized communication.
-    - **Published Language**
-      - A language or protocol used by multiple bounded contexts to communicate.
-      - Ensures clarity and consistency in inter-context communication.
-    - **Conformist**
-      - The downstream team adopts the upstream team’s model without modification.
-      - They must conform to the upstream's design choices.
-    - **Partnership**
-      - Teams are interdependent, and success or failure in one context directly affects the other.
-      - Joint planning and coordinated feature development are required to ensure both succeed together.
-    - **Customer/Supplier**
-      - The downstream (customer) depends on the upstream (supplier) for services or functionality.
-      - The upstream may succeed independently but must consider downstream needs through negotiation and prioritization.
-    - **Separate Ways**
-      - Two bounded contexts have no significant relationship and operate independently.
-      - Each focuses on specialized solutions without any shared models or dependencies.
-    - **Big Ball of Mud**
-      - Represents a chaotic, poorly structured system with mixed models and unclear boundaries.
-      - This pattern should be isolated to prevent the "mess" from spreading to other bounded contexts.
-
 - **[Subdomains](./concepts/strategic-concepts/domain.md#core-subdomains)**
   - **[Core Subdomain](./concepts/strategic-concepts/domain.md#core-subdomains):** The primary area that provides competitive advantage and is central to the business.
   - **[Supporting Subdomai](./concepts/strategic-concepts/domain.md#supporting-subdomains):** Assists the core subdomain but is not unique to the business.
@@ -212,11 +171,11 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 - _Implementing Domain-Driven Design_ by Vaughn Vernon
 - _Domain-Driven Design Distilled_ by Vaughn Vernon
 - _Patterns, Principles, and Practices of Domain-Driven Design_ by Scott Millett and Nick Tune
+- _Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy_ by Vlad Khononov
 
 ### **Links:**
 
 - [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 - [Domain-Driven Design Community](https://www.dddcommunity.org/)
 - [Eric Evans' Official Website](https://www.domainlanguage.com/)
-- [DDD Part 1: Strategic Domain-Driven Design](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)
-- [Ubiquitous Language - Martin Fowler](https://martinfowler.com/bliki/UbiquitousLanguage.html)
+- [DDD Crew](https://github.com/ddd-crew)
