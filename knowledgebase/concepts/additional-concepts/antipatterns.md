@@ -320,7 +320,7 @@ Investing in these best practices not only enhances the quality and maintainabil
   Explanation of common anti-patterns and how to avoid them.
 
 - [Anti-Patterns in Platform Engineering (StackSpot)](https://www.stackspot.com/en/blog/platform-engineering-mastering-patterns)  
-  Insights into platform engineering and how to master avoiding anti-patterns.
+  Insights into platform engineering and how to avoiding anti-patterns.
 
 - [Salesforce Anti-Patterns (SalesforceBen)](https://www.salesforceben.com/a-guide-to-6-salesforce-anti-patterns/)  
   An overview of six Salesforce-specific anti-patterns.
