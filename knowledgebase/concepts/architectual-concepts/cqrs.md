@@ -30,7 +30,7 @@ This separation means that different databases and technologies can be used for 
 
 ## Event-Driven Approach and CQRS
 
-According to the book "Building Event-Driven Microservices" by Adam Bellemare, event-driven approaches integrate well with CQRS because the system’s state changes are captured as events, which can then be propagated to update the query model effectively and asynchronously. Events act as the source of truth, enabling both consistency and traceability of all state transitions, which are crucial in distributed systems【120†source】.
+According to the book "Building Event-Driven Microservices" by Adam Bellemare, event-driven approaches integrate well with CQRS because the system’s state changes are captured as events, which can then be propagated to update the query model effectively and asynchronously. Events act as the source of truth, enabling both consistency and traceability of all state transitions, which are crucial in distributed systems.
 
 ## Best Practices for Implementing CQRS
 
