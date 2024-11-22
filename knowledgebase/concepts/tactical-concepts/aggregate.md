@@ -236,7 +236,7 @@ Below is a list of business objects from SAP S/4HANA and SAP Ariba that can be c
 | SAP S/4HANA  | Procurement   | Source List                     | Procurement          |
 | SAP S/4HANA  | Procurement   | Quotation                       | Procurement          |
 | SAP S/4HANA  | Procurement   | Info Record                     | Procurement          |
-| SAP S/4HANA  | Procurement   | Supplier Master Data            | Supplier Management  |
+| SAP S/4HANA  | Procurement   | Supplier Data                   | Supplier Management  |
 | SAP Ariba    | Procurement   | Requisition                     | Procurement          |
 | SAP Ariba    | Procurement   | Purchase Order                  | Procurement          |
 | SAP Ariba    | Procurement   | Invoice                         | Procurement          |
