@@ -43,11 +43,6 @@ An **aggregate** is a pattern in DDD that defines a group of related domain obje
 
 **Domain invariants** are the business rules and constraints that must always hold true within the domain. They reflect the domain's fundamental logic and assumptions, ensuring the accuracy and integrity of the domain model and its data.
 
-**Examples of Domain Invariants:**
-
-- **Banking Domain:** A bank account's balance must never be negative.
-- **E-commerce Domain:** An order cannot have a negative total amount.
-
 ### **Importance of Domain Invariants:**
 
 - **Defining Boundaries and Behaviors:** They help in delineating the responsibilities of domain objects and aggregates.
@@ -101,16 +96,6 @@ Identifying aggregates and their boundaries is one of the most challenging and c
 - **Prototype Designs:** Create and test different aggregate structures to evaluate their effectiveness.
 - **Evaluate Based on Criteria:** Assess designs for expressiveness, consistency, performance, and scalability.
 
-### **Example: Chess Tournament Aggregate**
-
-In a chess tournament system:
-
-- **Aggregate:** A single chess game/board.
-- **State Changes:** Movements of chess pieces.
-- **Invariants:** Rules governing valid movements and game states.
-
-This design allows each game to scale independently, handling complexity efficiently.
-
 ## **Designing Aggregates and Their Roots**
 
 ### **Aggregate Root Responsibilities**
@@ -131,16 +116,6 @@ Each aggregate has a **single, designated root entity** known as the **aggregate
 
 - **References via Identifiers:** Instead of direct object references, use identifiers to reference other aggregates. This maintains loose coupling and enhances scalability.
 - **Encapsulation:** Avoid exposing internal structures of aggregates to other parts of the system.
-
-### **Example: Order Aggregate Root**
-
-In an e-commerce system:
-
-- **Order (Aggregate Root):**
-  - **Identity:** Order ID.
-  - **State:** Status (e.g., NEW, PLACED, SHIPPED), total amount.
-  - **Behavior:** Methods to place, cancel, and ship the order.
-- **Line Items:** Represented as value objects within the Order aggregate, ensuring that any modification to line items goes through the Order aggregate root, maintaining consistency.
 
 ## **Implementing Aggregates: Strategies**
 
@@ -245,6 +220,59 @@ To effectively design, implement, and manage aggregates within DDD, consider the
 
 - **Design Iteration:** Continuously refine aggregate designs based on feedback, changing business requirements, and performance metrics.
 - **Agile Adaptation:** Adopt agile methodologies to allow for flexible and responsive design adjustments.
+
+## Example of an aggregate in SAP
+
+Below is a list of business objects from SAP S/4HANA and SAP Ariba that can be considered Aggregates, along with their corresponding Bounded Contexts:
+
+| **Solution** | **Component** | **Aggregate (Business Object)** | **Bounded Context**  |
+| ------------ | ------------- | ------------------------------- | -------------------- |
+| SAP S/4HANA  | Procurement   | Purchase Order                  | Procurement          |
+| SAP S/4HANA  | Procurement   | Purchase Requisition            | Procurement          |
+| SAP S/4HANA  | Procurement   | Supplier Invoice                | Procurement          |
+| SAP S/4HANA  | Procurement   | Goods Receipt                   | Inventory Management |
+| SAP S/4HANA  | Procurement   | Contract                        | Procurement          |
+| SAP S/4HANA  | Procurement   | Scheduling Agreement            | Procurement          |
+| SAP S/4HANA  | Procurement   | Source List                     | Procurement          |
+| SAP S/4HANA  | Procurement   | Quotation                       | Procurement          |
+| SAP S/4HANA  | Procurement   | Info Record                     | Procurement          |
+| SAP S/4HANA  | Procurement   | Supplier Master Data            | Supplier Management  |
+| SAP Ariba    | Procurement   | Requisition                     | Procurement          |
+| SAP Ariba    | Procurement   | Purchase Order                  | Procurement          |
+| SAP Ariba    | Procurement   | Invoice                         | Procurement          |
+| SAP Ariba    | Procurement   | Contract Workspace              | Procurement          |
+| SAP Ariba    | Procurement   | Supplier Performance Management | Supplier Management  |
+| SAP Ariba    | Procurement   | Sourcing Project                | Sourcing             |
+| SAP Ariba    | Procurement   | Supplier Risk Assessment        | Supplier Risk        |
+
+### Purchase Order Aggregate
+
+In SAP S/4HANA Procurement, the **Purchase Order** business object serves as an Aggregate and involves multiple related entities that work together to represent a complete and consistent unit. Here are the related entities typically associated with a **Purchase Order**:
+
+### Related Entities of Purchase Order in SAP S/4HANA Procurement
+
+1. **Purchase Order Item**: Represents individual line items within the purchase order, detailing the specific materials or services being procured.
+2. **Supplier (Vendor)**: The entity from which goods or services are purchased. Contains key information such as supplier ID, name, and address.
+3. **Material**: Represents the specific materials being ordered and includes details such as material number, description, and stock status.
+4. **Pricing Conditions**: Entities that define the pricing details for each item, including discounts, taxes, and additional charges.
+5. **Delivery Schedule**: Specifies delivery dates and quantities for each item, ensuring the timely receipt of goods or services.
+6. **Account Assignment**: Links purchase order items to cost centers, projects, or other accounting objects, ensuring proper financial allocation.
+7. **Document Flow**: Tracks the relationships between different procurement documents, such as requisitions, contracts, and goods receipts.
+8. **Approval Workflow**: Contains details related to the approval process required for authorizing the purchase order.
+9. **Purchase Order History**: Provides a record of all changes and transactions associated with the purchase order, such as goods receipts and invoice postings.
+10. **Terms of Delivery and Payment**: Defines the agreed-upon terms for delivery and payment between the buyer and the supplier.
+11. **Currency and Exchange Rate**: Information on the currency used in the purchase order and any exchange rate considerations.
+
+### Invariants for Purchase Order
+
+- **Atomic Consistency**: All line items in a purchase order must be consistent, meaning that changes to the purchase order as a whole must ensure that no item is left in an incomplete or invalid state.
+- **Referential Integrity**: Each purchase order must be linked to an existing and valid supplier, ensuring that orders are placed only with approved vendors.
+- **Approval Validity**: The purchase order must receive proper authorization before being confirmed, ensuring compliance with procurement policies.
+- **Financial Allocation**: The account assignment must align with the financial structure, ensuring that budget limits and accounting rules are not violated.
+- **Document Completion**: The purchase order must be fully populated with all necessary fields, such as item details, delivery dates, and payment terms, before it can be processed.
+- **Status Consistency**: The status of the purchase order (e.g., created, approved, partially received, completed) must reflect its true state within the procurement lifecycle.
+
+These related entities and consistency rules ensure that a **Purchase Order** in SAP S/4HANA functions as a cohesive and valid Aggregate within the **Procurement** Bounded Context.
 
 ## **Conclusion**
 
