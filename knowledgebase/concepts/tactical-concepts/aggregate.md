@@ -2,16 +2,55 @@
 
 ## **Table of Contents**
 
-1. [Introduction](#introduction)
-2. [What Are Aggregates in Domain-Driven Design?](#what-are-aggregates-in-domain-driven-design)
-3. [Understanding Domain Invariants](#understanding-domain-invariants)
-4. [Discovering Aggregates and Their Boundaries](#discovering-aggregates-and-their-boundaries)
-5. [Designing Aggregates and Their Roots](#designing-aggregates-and-their-roots)
-6. [Implementing Aggregates: Strategies](#implementing-aggregates-strategies)
-7. [Testing Aggregates: Strategies and Techniques](#testing-aggregates-strategies-and-techniques)
-8. [Best Practices and Recommendations](#best-practices-and-recommendations)
-9. [Conclusion](#conclusion)
-10. [Further References and Resources](#further-references-and-resources)
+- [Aggregates: How to Model Complex Domains with Consistency and Cohesion](#aggregates-how-to-model-complex-domains-with-consistency-and-cohesion)
+  - [**Table of Contents**](#table-of-contents)
+  - [**Introduction**](#introduction)
+  - [**What Are Aggregates in Domain-Driven Design?**](#what-are-aggregates-in-domain-driven-design)
+    - [**Key Characteristics of Aggregates:**](#key-characteristics-of-aggregates)
+    - [**Benefits of Aggregates:**](#benefits-of-aggregates)
+  - [**Understanding Domain Invariants**](#understanding-domain-invariants)
+    - [**What Are Domain Invariants?**](#what-are-domain-invariants)
+    - [**Importance of Domain Invariants:**](#importance-of-domain-invariants)
+    - [**Expressing Domain Invariants:**](#expressing-domain-invariants)
+    - [**Consistency and Performance:**](#consistency-and-performance)
+  - [**Discovering Aggregates and Their Boundaries**](#discovering-aggregates-and-their-boundaries)
+    - [**1. Leverage Ubiquitous Language and Domain Expertise**](#1-leverage-ubiquitous-language-and-domain-expertise)
+    - [**2. Analyze Domain Scenarios and Use Cases**](#2-analyze-domain-scenarios-and-use-cases)
+    - [**3. Identify and Enforce Domain Invariants**](#3-identify-and-enforce-domain-invariants)
+    - [**4. Simplify with Qualifiers and Constraints**](#4-simplify-with-qualifiers-and-constraints)
+    - [**5. Iterative Refinement and Testing**](#5-iterative-refinement-and-testing)
+  - [**Designing Aggregates and Their Roots**](#designing-aggregates-and-their-roots)
+    - [**Aggregate Root Responsibilities**](#aggregate-root-responsibilities)
+    - [**Design Principles for Aggregate Roots**](#design-principles-for-aggregate-roots)
+    - [**Relationships with Other Aggregates**](#relationships-with-other-aggregates)
+  - [**Implementing Aggregates: Strategies**](#implementing-aggregates-strategies)
+    - [**1. Encapsulation and Design Principles**](#1-encapsulation-and-design-principles)
+    - [**2. Repositories for Persistence**](#2-repositories-for-persistence)
+    - [**3. Factories for Aggregate Creation**](#3-factories-for-aggregate-creation)
+    - [**4. Domain Events for Communication**](#4-domain-events-for-communication)
+  - [**Testing Aggregates: Strategies and Techniques**](#testing-aggregates-strategies-and-techniques)
+    - [**1. Unit Testing**](#1-unit-testing)
+    - [**2. Integration Testing**](#2-integration-testing)
+    - [**3. Scenario Testing**](#3-scenario-testing)
+  - [**Best Practices and Recommendations**](#best-practices-and-recommendations)
+    - [**1. Clearly Define Aggregate Boundaries**](#1-clearly-define-aggregate-boundaries)
+    - [**2. Prioritize Core Subdomains**](#2-prioritize-core-subdomains)
+    - [**3. Utilize Third-Party Solutions for Generic Subdomains**](#3-utilize-third-party-solutions-for-generic-subdomains)
+    - [**4. Implement Rigorous Supplier Selection Processes**](#4-implement-rigorous-supplier-selection-processes)
+    - [**5. Foster Collaboration Between Internal Teams and Suppliers**](#5-foster-collaboration-between-internal-teams-and-suppliers)
+    - [**6. Continuously Monitor and Evaluate Supplier Performance**](#6-continuously-monitor-and-evaluate-supplier-performance)
+    - [**7. Ensure Robust Documentation and Knowledge Management**](#7-ensure-robust-documentation-and-knowledge-management)
+    - [**8. Embrace Iterative Refinement**](#8-embrace-iterative-refinement)
+  - [**Example of an aggregate in SAP**](#example-of-an-aggregate-in-sap)
+    - [**Purchase Order Aggregate**](#purchase-order-aggregate)
+    - [**Related Entities of Purchase Order in SAP S/4HANA Procurement**](#related-entities-of-purchase-order-in-sap-s4hana-procurement)
+    - [**Invariants for Purchase Order**](#invariants-for-purchase-order)
+  - [**Conclusion**](#conclusion)
+  - [**Further References and Resources**](#further-references-and-resources)
+    - [**Books:**](#books)
+    - [**Blogs:**](#blogs)
+    - [**YouTube:**](#youtube)
+
 
 ## **Introduction**
 
@@ -221,7 +260,7 @@ To effectively design, implement, and manage aggregates within DDD, consider the
 - **Design Iteration:** Continuously refine aggregate designs based on feedback, changing business requirements, and performance metrics.
 - **Agile Adaptation:** Adopt agile methodologies to allow for flexible and responsive design adjustments.
 
-## Example of an aggregate in SAP
+## **Example of an aggregate in SAP**
 
 Below is a list of business objects from SAP S/4HANA and SAP Ariba that can be considered Aggregates, along with their corresponding Bounded Contexts:
 
@@ -245,11 +284,11 @@ Below is a list of business objects from SAP S/4HANA and SAP Ariba that can be c
 | SAP Ariba    | Procurement   | Sourcing Project                | Sourcing             |
 | SAP Ariba    | Procurement   | Supplier Risk Assessment        | Supplier Risk        |
 
-### Purchase Order Aggregate
+### **Purchase Order Aggregate**
 
 In SAP S/4HANA Procurement, the **Purchase Order** business object serves as an Aggregate and involves multiple related entities that work together to represent a complete and consistent unit. Here are the related entities typically associated with a **Purchase Order**:
 
-### Related Entities of Purchase Order in SAP S/4HANA Procurement
+### **Related Entities of Purchase Order in SAP S/4HANA Procurement**
 
 1. **Purchase Order Item**: Represents individual line items within the purchase order, detailing the specific materials or services being procured.
 2. **Supplier (Vendor)**: The entity from which goods or services are purchased. Contains key information such as supplier ID, name, and address.
@@ -263,7 +302,7 @@ In SAP S/4HANA Procurement, the **Purchase Order** business object serves as an 
 10. **Terms of Delivery and Payment**: Defines the agreed-upon terms for delivery and payment between the buyer and the supplier.
 11. **Currency and Exchange Rate**: Information on the currency used in the purchase order and any exchange rate considerations.
 
-### Invariants for Purchase Order
+### **Invariants for Purchase Order**
 
 - **Atomic Consistency**: All line items in a purchase order must be consistent, meaning that changes to the purchase order as a whole must ensure that no item is left in an incomplete or invalid state.
 - **Referential Integrity**: Each purchase order must be linked to an existing and valid supplier, ensuring that orders are placed only with approved vendors.
