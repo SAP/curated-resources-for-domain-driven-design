@@ -80,18 +80,40 @@ The Strangler Fig Pattern is a powerful and pragmatic solution for modernizing l
 
 By combining this approach with **Domain-Driven Design** principles, software teams can ensure that the new system accurately reflects the business domain and evolves effectively with changing requirements. Emphasizing incremental changes, frequent stakeholder communication, and thorough testing helps organizations overcome the challenges of legacy modernization while building a robust and future-proof system.
 
-## Example: Applying the Strangler Fig Pattern in Legacy System Modernization
+in scope helps maintain trust and ensures that all team members are on the same page. Regular updates can also help secure ongoing support and resources for the migration effort.
 
-Imagine an organization using a legacy system that manages multiple business functions, such as purchasing, vendor communication, and invoicing processes. This legacy system has served the business well for years, but it lacks the agility required to quickly adapt to new market demands and integrate with modern services.
+3. **Prioritize High-Risk Areas First**: Begin with components that present the highest risk or offer the most significant benefit. Addressing high-risk areas early helps mitigate potential disruptions and proves the feasibility of the migration approach.
 
-To modernize this legacy system, the organization chooses to adopt the **Strangler Fig Pattern**. Instead of attempting a complete replacement, which would be risky and disruptive, they incrementally build new functionalities as a cloud-native solution. The goal is to create an agile, modern system that integrates with existing legacy components while offering improved features and scalability.
+4. **Document the Migration**: Maintain thorough documentation of each migration step, including the legacy components being replaced, the new system architecture, and any changes to routing or interfaces. This documentation is essential for ensuring a smooth transition and minimizing the risk of regression.
 
-1. **Assessment and Analysis**: The team begins by identifying specific pain points in the existing system. For example, the vendor communication module is outdated and difficult to modify for new compliance requirements. The legacy module is selected as the initial candidate for modernization.
+## Example Application of the Strangler Fig Pattern
 
-2. **Incremental Replacement**: A new vendor management service is developed as part of the cloud-native solution. This new service offers enhanced features, including automated vendor onboarding and compliance checks, which are challenging to implement in the legacy system. During this phase, the new service operates alongside the existing system, and new vendor registrations are handled by the cloud solution, while older records remain in the legacy module.
+### Context of Legacy Modernization
 
-3. **Routing Logic**: The organization sets up an API gateway to handle routing. All new vendor-related requests are directed to the new service, while existing vendors continue to be managed by the legacy module. This allows seamless integration between the two systems and ensures no disruptions to ongoing business activities.
+Consider a scenario in which an organization needs to modernize a large, monolithic system that handles essential business processes, such as user account management and order processing. The legacy system is outdated, inflexible, and difficult to maintain, yet critical for day-to-day operations. The development team opts to use the Strangler Fig Pattern to address these challenges.
 
-4. **Decommissioning the Legacy Module**: Once the new vendor management service is fully operational and all existing vendors are migrated, the legacy vendor module is decommissioned. This ensures that all processes are managed in a cloud-native environment that is easier to maintain and extend.
+### Initial Steps
 
-By applying the Strangler Fig Pattern in this context, the organization successfully modernizes its processes without disrupting day-to-day business operations. Over time, more modules from the legacy system are incrementally replaced, resulting in a fully modern, cloud-based solution that leverages the flexibility and scalability of cloud infrastructure while maintaining business continuity throughout the transformation.
+The team starts by identifying a specific component of the legacy system to replace: the user registration and authentication module. This component has a high rate of change requests, struggles with scalability, and has a direct impact on user experience. By prioritizing this area, the team can demonstrate value early on, both in terms of technical improvements and user satisfaction.
+
+### Building the New Component
+
+A modern, scalable authentication service is developed using an updated technology stack. This service includes improvements, such as multi-factor authentication (MFA) and better user session management. The new authentication service is built alongside the legacy system, with the existing user data gradually migrated to the new platform.
+
+### Establishing Routing Logic
+
+The development team sets up routing logic to determine whether user authentication requests are handled by the legacy system or the new authentication service. Initially, only new users are directed to the new service, while existing users continue to use the legacy system. Over time, as more users are migrated, all authentication requests are routed to the new service, allowing the legacy module to be phased out entirely.
+
+### Iteration and Expansion
+
+After successfully migrating the authentication module, the team moves on to replace other parts of the legacy system, such as order processing and user account management. Each component is replaced incrementally, with a focus on delivering value while minimizing risk. As each piece of functionality is migrated, routing is adjusted accordingly, until the entire legacy system has been replaced.
+
+### Result
+
+The Strangler Fig Pattern enabled the organization to modernize its critical systems without the risks associated with a complete system overhaul. By gradually replacing legacy components and maintaining business continuity throughout the process, the team successfully delivered a more flexible, maintainable, and scalable system. This incremental approach also allowed stakeholders to see consistent progress, providing confidence in the overall modernization effort.
+
+## Resources
+
+1. **[Strangler Fig Pattern - Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig):** Microsoft's explanation of the Strangler Fig pattern, detailing how to gradually replace legacy systems with modern applications.
+2. **[Strangler Fig Pattern - AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/strangler-fig.html):** AWS's guide to implementing the Strangler Fig pattern as part of cloud design strategies for system modernization.
+3. **[Strangler Fig Application - Martin Fowler](https://martinfowler.com/bliki/StranglerFigApplication.html):** Martin Fowler's blog post explaining the concept of the Strangler Fig application and its use in software refactoring and modernization.
