@@ -75,45 +75,17 @@ While Event Modeling is particularly effective for event-driven systems, it can 
 
 Event Modeling and Event Storming are complementary techniques often used in the Domain-Driven Design (DDD) toolkit. However, they serve distinct purposes:
 
-| **Aspect** | **Event Modeling** | **Event Storming** |
-| ---------- ||  |
+| **Aspect**    | **Event Modeling**                | **[Event Storming](eventstorming.md)**  |
+| ------------- | --------------------------------- | --------------------------------------- |
 | **Focus**     | Designing the solution space      | Exploring the problem space             |
 | **Output**    | A blueprint for implementation    | Shared understanding of domain concepts |
 | **Artifacts** | Commands, Events, Views, Triggers | Event timeline, aggregates, policies    |
 | **Formality** | Structured                        | Exploratory                             |
 
-## **6. Practical Resources**
+### Resources
 
-To master Event Modeling, it is crucial to engage with practical resources and tools:
-
-### Workshops
-
-- Participate in workshops offered by [eventmodeling.org](https://eventmodeling.org) to gain hands-on experience.
-
-### Community Engagement
-
-- Join the [Event Modeling Discord Community](https://eventmodeling.org/resources) for peer support and discussions.
-
-### Educational Materials
-
-1. **Books**: *Event Modeling and Event Sourcing* by Martin Dilger.
-2. **Cheat Sheets**: The [Event Modeling Cheat Sheet](https://eventmodeling.org/posts/event-modeling-cheatsheet) provides quick guidance.
-3. **Podcasts**: Subscribe to episodes on [podcast.eventmodeling.org](https://podcast.eventmodeling.org).
-4. **Video Tutorials**: Watch live streams and recorded tutorials for step-by-step instructions.
-
-### Tools
-
-- **Miro Plugin by Nebulit**: Create collaborative event models.
-- **ONote**: Structure and visualize your models effectively.
-
-## **7. Conclusion**
-
-Event Modeling is a game-changer in designing modern information systems. Its focus on collaboration, clarity, and adaptability ensures that software solutions align with business goals while minimizing development risks.
-
-### Next Steps
-
-1. Explore the [Event Modeling website](https://eventmodeling.org).
-2. Engage with the community.
-3. Apply the methodology in a small project to experience its benefits firsthand.
-
-This knowledge base article serves as a comprehensive introduction to Event Modeling. By integrating this methodology into your software engineering practices, you can significantly enhance the efficiency and accuracy of your design process.
+1. **Website**: [Event Modeling website](https://eventmodeling.org)
+2. **Books**: *Event Modeling and Event Sourcing* by Martin Dilger.
+3. **Cheat Sheets**: The [Event Modeling Cheat Sheet](https://eventmodeling.org/posts/event-modeling-cheatsheet) provides quick guidance.
+4. **Podcasts**: Subscribe to episodes on [podcast.eventmodeling.org](https://podcast.eventmodeling.org).
+5. **Video Tutorials**: Watch live streams and recorded tutorials for step-by-step instructions.
