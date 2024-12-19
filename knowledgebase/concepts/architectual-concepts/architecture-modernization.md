@@ -33,12 +33,9 @@ Organizations undertake architecture modernization for various reasons. Identify
 
 ### **1. Build Organizational Readiness**
 
-- **Assess Leadership Buy-In**:
-     Ensure leadership understands the trade-offs, including slowing feature delivery temporarily to focus on modernization.
-- **Upskill Teams**:
-     Invest in training teams in modern practices such as Domain-Driven Design (DDD), EventStorming, and Team Topologies.
-- **Create a Compelling Business Case**:
-     Clearly articulate how modernization will improve outcomes like revenue, user satisfaction, and system reliability.
+- **Assess Leadership Buy-In**: Ensure leadership understands the trade-offs, including slowing feature delivery temporarily to focus on modernization.
+- **Upskill Teams**: Invest in training teams in modern practices such as Domain-Driven Design (DDD), EventStorming, and Team Topologies.
+- **Create a Compelling Business Case**: Clearly articulate how modernization will improve outcomes like revenue, user satisfaction, and system reliability.
 
 ### **2. Map the Current Landscape**
 
