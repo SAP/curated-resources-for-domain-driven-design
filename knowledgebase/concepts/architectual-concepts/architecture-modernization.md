@@ -66,13 +66,9 @@ Organizations undertake architecture modernization for various reasons. Identify
 ## **Tips and Tricks for Effective Modernization**
 
 1. **Avoid Silver Bullets**: Resist the allure of one-size-fits-all solutions like microservices. Tailor your approach to your organization's unique needs.
-
 2. **Communicate Early and Often**: Maintain transparency with stakeholders about the goals, challenges, and progress of modernization efforts.
-
 3. **Invest in Internal Developer Platforms (IDPs)**: Simplify deployment and reduce developer friction by providing tools that enable faster, more reliable delivery.
-
 4. **Leverage Metrics**: Continuously assess the impact of modernization efforts using metrics such as time-to-market, error rates, and team satisfaction.
-
 5. **Plan for Continuous Learning**: Encourage a culture of experimentation and learning. This ensures teams stay adaptable and ready for future challenges.
 
 ## Resources
