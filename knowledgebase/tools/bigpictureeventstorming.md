@@ -165,7 +165,7 @@ Unlike traditional modeling approaches that often rely on technical diagrams, **
 
 Below are typical events along the procurement journey:
 
-1. **Purchase Requisition Created** : Triggered when an employee identifies a need and submits a requisition form or request in a system.
+1. **Purchase Requisition Created** : Triggered when an employee identifies a demand and submits a requisition form or request in a system.
 2. **Purchase Requisition Approved**: Manager or budget owner reviews and approves (or rejects) the request based on need, budget availability, etc.
 3. **Request for Quotation (RFQ) Sent**: Procurement officer solicits quotes from multiple suppliers, ensuring competitive pricing or favorable terms.
 4. **Suppliers Respond to RFQ**: Suppliers provide pricing, timelines, and other details. Procurement compiles responses for comparison.
