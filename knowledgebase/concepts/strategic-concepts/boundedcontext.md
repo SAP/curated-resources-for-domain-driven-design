@@ -245,14 +245,13 @@ From strategic design to implementation and integration, bounded contexts provid
 
 ### **Blogs:**
 
-- [Context Mapping - Martin Fowler](https://martinfowler.com/eaaDev/BoundedContext.html)
-- [What Are Bounded Contexts? - Eric Evans](https://www.domainlanguage.com/ddd/reference/BoundedContexts.html)
-- [Understanding Bounded Contexts in DDD - DZone](https://dzone.com/articles/understanding-bounded-contexts-in-ddd)
+- [Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping/)
+- [Context Mapping - Chapter 4 - Learning Domain-Driven Design](https://www.oreilly.com/library/view/what-is-domain-driven/9781492057802/ch04.html)
+- [Bounded Context - thedomaindrivendesign.io](https://thedomaindrivendesign.io/bounded-context/)
+- [Bounded Context - Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
 
 ### **YouTube:**
 
-- [Vaughn Vernon - Bounded Contexts Explained](https://www.youtube.com/watch?v=5vMjHnPv8Jc)
-- [Matt Wynne - Bounded Contexts in DDD](https://www.youtube.com/watch?v=6lEHIJdGiwY)
-- [Context Mapping and Bounded Contexts - Chris Richardson](https://www.youtube.com/watch?v=OgqgWwhuXrk)
-
-By thoroughly understanding and applying the principles of bounded contexts in Domain-Driven Design, developers and managers can architect systems that are not only technically robust but also closely aligned with business goals and requirements. This alignment ensures that the software is both effective in meeting current needs and adaptable to future changes and scaling demands.
+- [DDD Bounded Contexts & Subdomains](https://www.youtube.com/watch?v=NvBsEnDgA4o&pp=ygUPQm91bmRlZCBDb250ZXh0)
+- [Bounded Contexts - Eric Evans - DDD Europe 2020](https://www.youtube.com/watch?v=am-HXycfalo&pp=ygUPQm91bmRlZCBDb250ZXh0)
+- [Introduction to Context Mapping - Michael Plöd - DDD Europe 2022](https://www.youtube.com/watch?v=k5i4sP9q2Lk)

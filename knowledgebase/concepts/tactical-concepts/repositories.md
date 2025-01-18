@@ -253,6 +253,6 @@ By embracing repositories as an integral part of the DDD framework, developers c
 
 ### **Blogs and Articles:**
 
-- [Entities and Repositories - Domain-Driven Design Reference](https://www.domainlanguage.com/ddd/reference/entities.html)
-- [Understanding Repositories in DDD - DZone](https://dzone.com/articles/understanding-repositories-in-ddd)
+- [Domain-Driven Design: Entities, Value Objects, and How To Distinguish Them](https://blog.jannikwempe.com/domain-driven-design-entities-value-objects)
+- [Best Practice - An Introduction To Domain-Driven Design](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design)
 - [Repositories - Martin Fowler](https://martinfowler.com/eaaCatalog/repository.html)
