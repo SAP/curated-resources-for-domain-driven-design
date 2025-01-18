@@ -85,27 +85,6 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Focus on Data Evolution: Models how information changes over time through events, commands, views, and triggers.
   - Improved Collaboration: Enhances communication between technical and non-technical stakeholders by providing a clear visual blueprint of system behavior.
 
-## **Design Principles and Patterns**
-
-- **[Encapsulation](./concepts/design-principles/encapsulation.md)**
-  - Hides the internal state and requires all interactions to occur through well-defined interfaces.
-  - Protects the integrity of the domain model.
-- **[Separation of Concerns](./concepts/design-principles/separation-of-concerns.md)**
-  - Divides the system into distinct sections, each addressing a specific aspect of the functionality.
-  - Enhances maintainability and scalability.
-- **[Single Responsibility Principle](./concepts/design-principles/srp.md)**
-  - Each module, class, or component should have one reason to change.
-  - Promotes focused and manageable codebases.
-- **[Command-Query Separation (CQRS)](./concepts/design-principles/cqrs.md)**
-  - Distinguishes between operations that modify state (commands) and those that retrieve state (queries).
-  - Enhances clarity and predictability in system behavior.
-- **[Hexagonal Architecture (Ports and Adapters](./concepts/design-principles/hexagonal.md)**
-  - Isolates the core domain logic from external systems through defined ports and adapters.
-  - Promotes flexibility and ease of testing.
-- **[Specification Pattern](./concepts/design-principles/specpattern.md)**
-  - Encapsulates business rules that determine whether an object satisfies certain criteria.
-  - Enables reusable and combinable business logic.
-
 ## **Architectural Patterns and Practices**
 
 - **[Microservices Architecture](./concepts/architectual-concepts/msa.md)**
@@ -157,7 +136,7 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 - **[Invest in Robust Documentation](./concepts/best-practises/robustdocument.md):** Maintain comprehensive documentation for each bounded context, including its purpose, models, interfaces, and integration points.
 
-- **[Foster Cross-Functional Teams](./concepts/best-practises/crossfunctionalteams.md):**Encourage collaboration between developers, domain experts, and stakeholders within each bounded context to enhance model accuracy and relevance.
+- **[Foster Cross-Functional Teams](./concepts/best-practises/crossfunctionalteams.md):** Encourage collaboration between developers, domain experts, and stakeholders within each bounded context to enhance model accuracy and relevance.
 
 ## **Further References and Resources**
 
