@@ -1,12 +1,10 @@
-Below is a revised, streamlined, and polished version of the article. It removes redundancy, tightens the language, and maintains a logical flow while preserving the original meaning and intent.
-
-# K**Big Picture EventStorming**
+# **Big Picture EventStorming**
 
 ## What Is Big Picture EventStorming?
 
 **Big Picture EventStorming** is an immersive, workshop-based method for exploring and modeling an entire business domain by focusing on **domain events**—noteworthy occurrences that change the system’s state. Conceived by **Alberto Brandolini** in the early 2010s and inspired by **Domain-Driven Design (DDD)**, it aims to:
 
-- Foster **cross-functional collaboration** between business and technical stakeholders.  
+- Foster **cross-functional collaboration** between business and technical stakeholders.
 - Surface **hidden dependencies**, inefficiencies, and unexplored assumptions.
 - Generate **actionable insights** for strategic and operational improvements.
 
@@ -30,7 +28,7 @@ Unlike traditional modeling approaches that often rely on technical diagrams, **
 
 ## Key Principles
 
-![Elements of Big Picture EventStorming]()
+![Elements of Big Picture EventStorming](./images/BigPictureEventStorming%20Grammar.png)
 
 1. **Domain Event Focus**  
    - **What Are Domain Events?**  
@@ -142,10 +140,130 @@ Unlike traditional modeling approaches that often rely on technical diagrams, **
 5. **Strategic Insights**  
    - Understanding of **bottlenecks, innovation possibilities**, and system-wide improvements.
 
-## Conclusion
+## Summary
 
 **Big Picture EventStorming** is far more than a simple workshop—it’s a **transformative methodology**. By zeroing in on domain events and nurturing open dialogue, EventStorming helps organizations:
 
 - **Expose hidden complexities** and insights.  
 - **Break down siloed thinking** and encourage collaboration.  
 - **Drive continuous improvement** and strategic alignment.
+
+## Example Procurement Process
+
+![Big Picture EventStorming Procurement Process](./images/BigPicture%20EventStorming%20Example.png)
+
+### 1. Identify Key Players (Stakeholders)
+
+- **Requestor/Employee**: Person who needs to purchase goods/services.  
+- **Manager**: Approves the request from a budget or need perspective.  
+- **Procurement Officer**: Oversees sourcing, vendor selection, and contract management.  
+- **Finance**: Manages budgeting, invoices, payments, and financial reporting.  
+- **Supplier/Vendor**: Provides goods/services and invoices.  
+- **Legal**: Contract Negotiations with Suppliers
+
+### 2. Major Domain Events
+
+Below are typical events along the procurement journey:
+
+1. **Purchase Requisition Created** : Triggered when an employee identifies a need and submits a requisition form or request in a system.
+2. **Purchase Requisition Approved**: Manager or budget owner reviews and approves (or rejects) the request based on need, budget availability, etc.
+3. **Request for Quotation (RFQ) Sent**: Procurement officer solicits quotes from multiple suppliers, ensuring competitive pricing or favorable terms.
+4. **Suppliers Respond to RFQ**: Suppliers provide pricing, timelines, and other details. Procurement compiles responses for comparison.
+5. **Supplier Shortlisted & Selected**: Procurement and stakeholders evaluate responses, select a preferred vendor, and possibly hold negotiations.
+6. **Contract Finalized (If Needed)**: Formal agreement covering pricing, deliverables, timelines, and legal terms is drafted and signed.
+7. **Purchase Order (PO) Created**: Official PO is issued to the chosen supplier, outlining order details and referencing contract terms.
+8. **Goods/Services Delivered**: The supplier delivers goods or services to the requesting department, completing or partially completing the order.
+9. **Goods/Services Inspected & Received**: Requestor confirms the delivery matches specifications, quality standards, or SLAs.
+10. **Invoice Received**: Supplier sends an invoice referencing the PO, detailing payment terms.
+11. **Invoice Approved**: Accounts (Finance) payable validates invoice details against the PO, resolves discrepancies, and approves for payment.
+12. **Payment Released**:Finance processes the payment, finalizing the transaction and updating financial records.
+13. **Procurement Review & Reporting (Read Model)**: Periodic or ad hoc review of spend, supplier performance, and process metrics to identify improvements.
+
+### 3. Possible Pain Points (Hotspots)
+
+1. **Manual, Paper-Driven Requisitions**
+   - **Issue**: Paper forms or outdated software can slow approvals and create confusion about requisition status.  
+   - **Impact**: Delays, errors in data entry, lack of transparency.
+
+2. **Approvals Bottleneck**
+   - **Issue**: Approvals pile up with a single manager or a specific department.  
+   - **Impact**: Slow progress, tension between departments, and last-minute escalations.
+
+3. **Inefficient RFQ & Supplier Selection**
+   - **Issue**: Manually emailing or calling multiple suppliers leads to long turnaround times.  
+   - **Impact**: Potential missed cost savings, disorganized documentation, and extended procurement cycles.
+
+4. **Contract Negotiation Delays**
+   - **Issue**: Legal or management back-and-forth can be protracted if contract processes aren’t streamlined.  
+   - **Impact**: Missed deadlines, lost discounts, potential friction with suppliers.
+
+5. **Invoice Matching Errors**
+   - **Issue**: If invoice details don’t match the PO or receiving records, manual reconciliation is time-consuming.  
+   - **Impact**: Delayed payments, frustration for suppliers, and potential financial penalties.
+
+6. **Lack of Spend Analytics**
+   - **Issue**: Without proper analytics, organizations can’t identify overspending, vendor performance issues, or cost-saving opportunities.  
+   - **Impact**: Reactive decision-making, missed negotiating power, hidden inefficiencies.
+
+### 4. Potential Opportunities & Improvements
+
+- **Automated Procurement Platform**
+  - **Opportunity**: Implement an integrated digital system or e-procurement suite (e.g., Coupa, SAP Ariba, or a custom solution).  
+  - **Value**:
+    - Speeds up requisition and approval flows.  
+    - Consolidates vendor data, quotes, and PO information in one place.  
+    - Enables real-time status tracking.
+
+- **Streamlined Approval Workflow**
+  - **Opportunity**: Introduce dynamic routing rules for approvals (e.g., up to a certain dollar amount only a single manager is needed).  
+  - **Value**:  
+    - Reduced bottlenecks and waiting times.  
+    - Clear visibility of who’s holding up an approval.
+
+- **Supplier Portal & Self-Service**
+  - **Opportunity**: Provide suppliers with a portal to upload quotations, invoices, and track payment status.  
+  - **Value**:  
+    - Eliminates back-and-forth emails.  
+    - Minimizes data entry errors and shortens response times.
+
+- **Contract Templates & E-Signatures**
+  - **Opportunity**: Use standard contract templates and digital signatures to expedite negotiations.  
+  - **Value**:  
+    - Shortens legal reviews with pre-approved terms and conditions.  
+    - Offers clarity and reduces version-control chaos.
+
+- **Real-Time Delivery Tracking & Quality Checks**
+  - **Opportunity**: Integrate supplier logistics data into the procurement system for real-time shipment tracking.  
+  - **Value**:  
+    - Immediate alerts on delivery issues or delays.  
+    - Automated checklists for inspection and acceptance of goods.
+
+- **Automated Invoice Matching**
+  - **Opportunity**: Deploy OCR (Optical Character Recognition) or AI-enabled invoice processing to match invoices with POs.  
+  - **Value**:  
+    - Reduces manual data entry and reconciliation errors.  
+    - Quicker turnaround for vendor payments.
+
+- **Centralized Data & Analytics**
+  - **Opportunity**: Implement a robust data warehouse or analytics tool.  
+  - **Value**:  
+    - Gain visibility into total spend, supplier performance, cost savings opportunities.  
+    - Informed, proactive decision-making on strategic sourcing.
+
+- **Continuous Improvement & Supplier Relationship Management**
+  - **Opportunity**: Create periodic review sessions to measure supplier performance (on-time deliveries, quality, compliance).  
+  - **Value**:  
+    - Foster stronger partnerships with top-performing suppliers.  
+    - Uncover improvement areas and renegotiate better terms.
+
+### 5. Next Steps for Transformation
+
+- **Run a Focused Workshop**: Gather procurement stakeholders, finance, operations, IT, and major suppliers to validate these findings.  
+- **Prioritize Issues & Opportunities**: Use a matrix to rank potential improvements by impact and feasibility.  
+- **Develop a Roadmap**: Outline quick-win implementations (e.g., e-signatures, automated workflows) before tackling bigger changes (e.g., full e-procurement solution).  
+- **Assign Ownership**: Clearly designate teams or individuals responsible for each improvement.  
+- **Monitor & Evolve**: Use periodic metrics (cost savings, lead times, supplier satisfaction) to gauge success and refine the process.
+
+## Conclusion
+
+By mapping out the entire procurement journey through **Big Picture EventStorming**, organizations can visualize both friction points and opportunities. A clear, shared understanding of the **procurement process** paves the way for strategic changes—from **automation** and **data integration** to **better supplier relationships**—that deliver tangible benefits in cost savings, efficiency, and stakeholder satisfaction.
