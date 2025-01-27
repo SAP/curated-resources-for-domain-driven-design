@@ -12,7 +12,7 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Defines a clear boundary within which a specific domain model is applicable.
   - Prevents ambiguity by ensuring terms and concepts have consistent meanings within the context.
 
-- **[Context Mapping](./tools/strategic/contextmapping.md)**
+- **[Context Mapping](./tools/contextmapping.md)**
   - Visual representation of how different bounded contexts interact.
   - Identifies integration patterns and relationships between contexts.
 
@@ -27,7 +27,7 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Objects with a distinct identity that persists over time.
   - Defined by their continuity rather than their attributes.
 
-- **[Value Objects](./concepts/tactical-concepts/valueobjects.md)**
+- **[Value Objects](./concepts/tactical-concepts/value-objects.md)**
   - Immutable objects defined solely by their attributes.
   - Do not have a unique identity and are interchangeable if their attributes are the same.
 
