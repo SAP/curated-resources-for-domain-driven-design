@@ -247,7 +247,6 @@ From strategic design to implementation and integration, bounded contexts provid
 
 - [Strategic Domain Driven Design with Context Mapping](https://www.infoq.com/articles/ddd-contextmapping/)
 - [Context Mapping - Chapter 4 - Learning Domain-Driven Design](https://www.oreilly.com/library/view/what-is-domain-driven/9781492057802/ch04.html)
-- [Bounded Context - thedomaindrivendesign.io](https://thedomaindrivendesign.io/bounded-context/)
 - [Bounded Context - Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
 
 ### **YouTube:**
