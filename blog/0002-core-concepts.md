@@ -118,7 +118,6 @@ We can begin to implement DDD principles to our own projects and enjoy the advan
 
 ## Resources
 
-- [What is Strategic Design ? - DDD - The Domain Driven Design](https://thedomaindrivendesign.io/what-is-strategic-design/)
 - [DDD Part 1: Strategic Domain-Driven Design | Vaadin](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)
 - [I. Strategic Design - Learning Domain-Driven Design [Book]](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/part01.html)
 - [Strategic Domain-Driven Design - Medium.](https://medium.com/@chatuev/ddd-for-microservices-4778a363c071).
@@ -126,10 +125,8 @@ We can begin to implement DDD principles to our own projects and enjoy the advan
 - [DDD Part 2: Tactical Domain-Driven Design | Vaadin](https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design)
 - [Domain-Driven Design Part II: Tactical Design | by Can Güt | Medium](https://medium.com/@lifelongstudent/domain-driven-design-part-ii-tactical-design-16bc527c6263)
 - [Ubiquitous Language: Documenting and Communicating Tips - LinkedIn](https://www.linkedin.com/advice/0/how-do-you-document-communicate-your-ubiquitous)
-- [Developing the ubiquitous language - DDD - The Domain Driven Design](https://thedomaindrivendesign.io/developing-the-ubiquitous-language)
 - [UbiquitousLanguage - Martin Fowler](https://www.martinfowler.com/bliki/UbiquitousLanguage.html)
 - [Domain-driven design - Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)
-- [Domains and Subdomains - DDD - The Domain Driven Design](https://thedomaindrivendesign.io/domains-and-subdomains/)
 - [Domain, Subdomain, Bounded Context, Problem/Solution Space in ... - Medium](https://medium.com/nick-tune-tech-strategy-blog/domains-subdomain-problem-solution-space-in-ddd-clearly-defined-e0b49c7b586c)
 - [Domain-Driven Design for Microservice Decomposition - LinkedIn](https://www.linkedin.com/advice/1/how-do-you-apply-principles-domain-driven)
 - [Domain Driven Design (DDD): Core concepts and Enterprise Architecture](https://alok-mishra.com/2021/06/30/domain-driven-design-ddd-core-concepts-explained/)
@@ -139,10 +136,8 @@ We can begin to implement DDD principles to our own projects and enjoy the advan
 - [Domain events: Design and implementation | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation)
 - [Command vs. Event in Domain Driven Design - Medium](https://medium.com/ingeniouslysimple/command-vs-event-in-domain-driven-design-be6c45be52a9)
 - [BoundedContext - Martin Fowler.](https://www.martinfowler.com/bliki/BoundedContext.html)
-- [Bounded Context - DDD - The Domain Driven Design](https://thedomaindrivendesign.io/bounded-context/).
 - [Balancing Consistency and Autonomy in Bounded Contexts - LinkedIn.](https://www.linkedin.com/advice/0/how-do-you-balance-between-consistency-autonomy)
 - [DDD_Aggregate - Martin Fowler](https://www.martinfowler.com/bliki/DDD_Aggregate.html)
 - [What Are Aggregates In Domain-Driven Design? - James Hickey](https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/)
 - [Understanding Aggregates in Domain-Driven Design - DZone](https://dzone.com/articles/domain-driven-design-aggregate)
-- [domain driven design - What's the difference between an Aggregate and a ...](https://softwareengineering.stackexchange.com/questions/443173/whats-the-difference-between-an-aggregate-and-a-model)
 
