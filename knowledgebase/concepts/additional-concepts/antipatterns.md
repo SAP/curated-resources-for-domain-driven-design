@@ -362,9 +362,6 @@ Investing in these best practices not only enhances the quality and maintainabil
 - [God Class Explanation (LinearB Blog)](https://linearb.io/blog/what-is-a-god-class)  
   An article detailing what a God Class is and its drawbacks.
 
-- [God Object (Coding Drills)](https://www.codingdrills.com/tutorial/design-patterns-tutorial/god-object-anti-pattern)  
-  A tutorial on how to avoid the God Object anti-pattern.
-
 ### Transaction Script Pattern
 
 - [Transaction Script (Martin Fowler)](https://martinfowler.com/eaaCatalog/transactionScript.html)  
