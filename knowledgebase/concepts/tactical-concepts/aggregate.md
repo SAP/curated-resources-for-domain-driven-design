@@ -60,6 +60,8 @@ One of the essential tactical patterns in DDD is the **aggregate**. An aggregate
 
 ## **What Are Aggregates in Domain-Driven Design?**
 
+![Aggregate](./images/Aggregates.png)
+
 An **aggregate** is a pattern in DDD that defines a group of related domain objects that are treated as a single unit for data changes. Aggregates ensure that these objects maintain consistency and adhere to business rules within their boundaries.
 
 ### **Key Characteristics of Aggregates:**
@@ -79,6 +81,8 @@ An **aggregate** is a pattern in DDD that defines a group of related domain obje
 ## **Understanding Domain Invariants**
 
 ### **What Are Domain Invariants?**
+
+![Domain Invariants](./images/Domain%20Invariants.png)
 
 **Domain invariants** are the business rules and constraints that must always hold true within the domain. They reflect the domain's fundamental logic and assumptions, ensuring the accuracy and integrity of the domain model and its data.
 
@@ -107,6 +111,8 @@ Depending on the required consistency and performance, invariants can vary in th
 Identifying which invariants must always be upheld (strong consistency) and which can tolerate temporary inconsistencies is crucial for effective aggregate design.
 
 ## **Discovering Aggregates and Their Boundaries**
+
+![AggregatesWithBoundaries](./images/Aggregates%20and%20Boundaries.png)
 
 Identifying aggregates and their boundaries is one of the most challenging and critical tasks in DDD. Aggregates are significant clusters of domain objects that change collectively and provide a consistency boundary. Here are techniques and heuristics to discover aggregates and their boundaries:
 
@@ -137,6 +143,8 @@ Identifying aggregates and their boundaries is one of the most challenging and c
 
 ## **Designing Aggregates and Their Roots**
 
+![AggregateRoots](./images/Aggregates%20Roots.png)
+
 ### **Aggregate Root Responsibilities**
 
 Each aggregate has a **single, designated root entity** known as the **aggregate root**. The aggregate root is responsible for:
@@ -157,6 +165,8 @@ Each aggregate has a **single, designated root entity** known as the **aggregate
 - **Encapsulation:** Avoid exposing internal structures of aggregates to other parts of the system.
 
 ## **Implementing Aggregates: Strategies**
+
+![Implementations](./images/Implementation.png)
 
 Implementing aggregates effectively requires adherence to design principles and leveraging appropriate tools and patterns. Here are common strategies and tips for implementing aggregates:
 
@@ -183,6 +193,8 @@ Implementing aggregates effectively requires adherence to design principles and 
 - **Decoupling Aggregates:** Avoid direct dependencies between aggregates by leveraging domain events for inter-aggregate communication.
 
 ## **Testing Aggregates: Strategies and Techniques**
+
+![TestingAggregates](./images/Aggregate%20Testing.png)
 
 Testing aggregates is essential to ensure that they function correctly and adhere to business requirements. Here are various testing strategies and techniques for aggregates:
 
@@ -217,6 +229,8 @@ Testing aggregates is essential to ensure that they function correctly and adher
 - **Outcome Verification:** Ensure that the system behaves as expected under various conditions.
 
 ## **Best Practices and Recommendations**
+
+![AggregateBestPractises](./images/Best%20Practises.png)
 
 To effectively design, implement, and manage aggregates within DDD, consider the following best practices:
 
