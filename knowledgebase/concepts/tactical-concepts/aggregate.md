@@ -136,8 +136,6 @@ Identifying aggregates and their boundaries is one of the most challenging and c
 
 ## **Designing Aggregates and Their Roots**
 
-![AggregateRoots](./images/Aggregates%20Roots.png)
-
 ### **Aggregate Root Responsibilities**
 
 Each aggregate has a **single, designated root entity** known as the **aggregate root**. The aggregate root is responsible for:
@@ -158,8 +156,6 @@ Each aggregate has a **single, designated root entity** known as the **aggregate
 - **Encapsulation:** Avoid exposing internal structures of aggregates to other parts of the system.
 
 ## **Implementing Aggregates: Strategies**
-
-![Implementations](./images/Implementation.png)
 
 Implementing aggregates effectively requires adherence to design principles and leveraging appropriate tools and patterns. Here are common strategies and tips for implementing aggregates:
 
