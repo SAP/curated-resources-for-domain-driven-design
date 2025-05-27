@@ -51,7 +51,6 @@
     - [**Blogs:**](#blogs)
     - [**YouTube:**](#youtube)
 
-
 ## **Introduction**
 
 Domain-Driven Design (DDD) emphasizes the conceptual modeling of the problem domain over mere implementation and technical specifics. By capturing business logic and domain rules in expressive, consistent, and coherent domain models, DDD facilitates the development of software that aligns closely with business needs.
@@ -59,8 +58,6 @@ Domain-Driven Design (DDD) emphasizes the conceptual modeling of the problem dom
 One of the essential tactical patterns in DDD is the **aggregate**. An aggregate is a collection of domain objects treated as a single unit, ensuring consistency and cohesion within complex domains. This article explores what aggregates are, how to discover them, and best practices for designing and implementing them.
 
 ## **What Are Aggregates in Domain-Driven Design?**
-
-![Aggregate](./images/Aggregates.png)
 
 An **aggregate** is a pattern in DDD that defines a group of related domain objects that are treated as a single unit for data changes. Aggregates ensure that these objects maintain consistency and adhere to business rules within their boundaries.
 
@@ -81,8 +78,6 @@ An **aggregate** is a pattern in DDD that defines a group of related domain obje
 ## **Understanding Domain Invariants**
 
 ### **What Are Domain Invariants?**
-
-![Domain Invariants](./images/Domain%20Invariants.png)
 
 **Domain invariants** are the business rules and constraints that must always hold true within the domain. They reflect the domain's fundamental logic and assumptions, ensuring the accuracy and integrity of the domain model and its data.
 
@@ -111,8 +106,6 @@ Depending on the required consistency and performance, invariants can vary in th
 Identifying which invariants must always be upheld (strong consistency) and which can tolerate temporary inconsistencies is crucial for effective aggregate design.
 
 ## **Discovering Aggregates and Their Boundaries**
-
-![AggregatesWithBoundaries](./images/Aggregates%20and%20Boundaries.png)
 
 Identifying aggregates and their boundaries is one of the most challenging and critical tasks in DDD. Aggregates are significant clusters of domain objects that change collectively and provide a consistency boundary. Here are techniques and heuristics to discover aggregates and their boundaries:
 
@@ -194,8 +187,6 @@ Implementing aggregates effectively requires adherence to design principles and 
 
 ## **Testing Aggregates: Strategies and Techniques**
 
-![TestingAggregates](./images/Aggregate%20Testing.png)
-
 Testing aggregates is essential to ensure that they function correctly and adhere to business requirements. Here are various testing strategies and techniques for aggregates:
 
 ### **1. Unit Testing**
@@ -229,8 +220,6 @@ Testing aggregates is essential to ensure that they function correctly and adher
 - **Outcome Verification:** Ensure that the system behaves as expected under various conditions.
 
 ## **Best Practices and Recommendations**
-
-![AggregateBestPractises](./images/Best%20Practises.png)
 
 To effectively design, implement, and manage aggregates within DDD, consider the following best practices:
 
