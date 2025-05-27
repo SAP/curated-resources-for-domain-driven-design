@@ -51,7 +51,6 @@
     - [**Blogs:**](#blogs)
     - [**YouTube:**](#youtube)
 
-
 ## **Introduction**
 
 Domain-Driven Design (DDD) emphasizes the conceptual modeling of the problem domain over mere implementation and technical specifics. By capturing business logic and domain rules in expressive, consistent, and coherent domain models, DDD facilitates the development of software that aligns closely with business needs.
