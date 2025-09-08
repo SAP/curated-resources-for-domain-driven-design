@@ -24,7 +24,7 @@ If you want start learning about DDD we can recommend the following books:
 
 Sources:
 
-(1) [11 Best Domain-Driven Design Books in 2023](https://realtoughcandy.com/domain-driven-design-books/)
+(1) [The Ultimate List of Domain Driven Design Books (2024)](https://www.workingsoftware.dev/the-ultimate-list-of-domain-driven-design-books-in-2024/)
 
 (2) [Learning Domain-Driven Design](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/)
 
