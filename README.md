@@ -141,9 +141,10 @@ The application of DDD on legacy software is a special topic, but of importance 
 
 If you want to facilitate a DDD or Event Storming workshop and are looking for templates and sample, you find useful resources here:
 
-| Link                                                                                                        | Our 2 cents (where applicable)                                                        |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process) | Super valuable resource with tons of templates for an end-to-end DDD modeling process |
+| Link                                                                                                                            | Our 2 cents (where applicable)                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process)                     | Super valuable resource with tons of templates for an end-to-end DDD modeling process  |
+| [DDD Toolbox - Event Storming](https://dddtoolbox.com/event-storming) ([Source Code](https://github.com/poulainpi/ddd-toolbox)) | Open-source Event Storming tool with modern web interface                              |
 
 ## DDD Community
 
