@@ -144,7 +144,7 @@ If you want to facilitate a DDD or Event Storming workshop and are looking for t
 | Link                                                                                                                            | Our 2 cents (where applicable)                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | [Domain-Driven Design Starter Modelling Process](https://github.com/ddd-crew/ddd-starter-modelling-process)                     | Super valuable resource with tons of templates for an end-to-end DDD modeling process  |
-| [DDD Toolbox - Event Storming](https://dddtoolbox.com/event-storming) ([Source Code](https://github.com/poulainpi/ddd-toolbox)) | Open-source Event Storming tool with modern web interface                              |
+| [DDD Toolbox - Event Storming](https://dddtoolbox.com/event-storming) ([Source Code](https://github.com/poulainpi/ddd-toolbox)) | Open-source Event Storming tool with modern web interface  (use on your own risk - not approved by SAP yet)      |
 
 ## DDD Community
 
