@@ -140,8 +140,242 @@ Different stakeholders may have varying perspectives and interests. Use multiple
 
 **Example:** Create one context map highlighting technical dependencies for the development team and another focusing on business processes and team interactions for project managers and executives.
 
+## **When to Use Each Pattern: Decision Guide**
+
+Choosing the right Context Mapping pattern depends on several factors:
+
+| Question | Pattern Recommendation |
+|----------|----------------------|
+| Do both teams need to succeed together? | **Partnership** |
+| Can we share a tiny portion of the model? | **Shared Kernel** (keep minimal!) |
+| Does downstream need to influence upstream? | **Customer-Supplier** |
+| Can upstream accommodate downstream needs? | **Customer-Supplier** or **Open Host Service** |
+| Is upstream unwilling to accommodate? | **Conformist** or **Anti-Corruption Layer** |
+| Is upstream model poor quality or legacy? | **Anti-Corruption Layer** |
+| Do multiple contexts need the same capability? | **Open Host Service** + **Published Language** |
+| Is integration cost higher than benefit? | **Separate Ways** |
+
+### Pattern Selection Flowchart
+
+```
+Start: Two contexts need to integrate
+    │
+    ├─ Do both teams share common goal and fail/succeed together?
+    │  YES → Partnership
+    │  NO  → Continue
+    │
+    ├─ Is upstream willing to accommodate downstream?
+    │  YES → Can downstream influence roadmap?
+    │       YES → Customer-Supplier
+    │       NO  → Continue
+    │  NO  → Continue
+    │
+    ├─ Does downstream have rich domain model to protect?
+    │  YES → Anti-Corruption Layer
+    │  NO  → Continue
+    │
+    ├─ Does upstream provide well-defined API for many consumers?
+    │  YES → Open Host Service (downstream is Conformist)
+    │  NO  → Continue
+    │
+    └─ Is integration benefit worth the cost?
+       YES → Conformist (simple integration)
+       NO  → Separate Ways
+```
+
+## **Anti-Patterns to Avoid**
+
+### 1. Too Many Shared Kernels
+
+**Problem**: Multiple contexts share large portions of model
+
+**Impact**: High coordination cost, reduced autonomy, difficult to evolve contexts independently
+
+**Fix**: Minimize shared kernel (typically <5% of domain model) or switch to Customer-Supplier with Published Language
+
+**Example**: Five contexts sharing `Customer`, `Order`, `Product` models create tight coupling. Better: Each context owns its view, coordinates via events or APIs.
+
+### 2. Conformist Everywhere
+
+**Problem**: All downstream contexts conform to upstream models without translation
+
+**Impact**: Upstream design decisions pollute entire system, downstream contexts lose domain richness
+
+**Fix**: Add Anti-Corruption Layers for critical downstream contexts with rich domain models
+
+**Example**: Modern e-commerce platform conforming entirely to legacy ERP's awkward data structures. Better: Use ACL to translate ERP model to e-commerce domain concepts.
+
+### 3. Hidden Dependencies
+
+**Problem**: Context map shows no relationship, but contexts share database, cache, or filesystem
+
+**Impact**: Unexpected coupling, hard to reason about changes, surprise breakages
+
+**Fix**: Make implicit dependencies explicit on context map. If contexts share infrastructure, document it.
+
+**Example**: Two "separate" contexts both read/write same database tables. Better: Explicitly model as Shared Kernel or establish clear ownership with integration pattern.
+
+### 4. God Context
+
+**Problem**: One context integrates with everyone (hub-and-spoke architecture)
+
+**Impact**: Single point of failure, bottleneck for changes, overloaded team
+
+**Fix**: Decompose god context into smaller contexts, use event-driven choreography instead of orchestration
+
+**Example**: "Integration Hub" that all contexts must go through. Better: Contexts publish events to message bus, consumers subscribe to what they need.
+
+### 5. Circular Dependencies
+
+**Problem**: Context A depends on B, B depends on C, C depends on A
+
+**Impact**: Cannot deploy independently, complex coordination, high risk of breakage
+
+**Fix**: Break cycle by introducing events, reversing dependency direction, or extracting shared concern
+
+**Example**: Order → Inventory → Shipping → Order. Better: Order publishes events, Inventory and Shipping subscribe, Order doesn't call back.
+
+## **Creating a Context Map: Workshop Approach**
+
+### Workshop Format (2-3 hours)
+
+**Participants**: Architects, tech leads, domain experts, product owners
+
+**Materials**: Large whiteboard or Miro board, sticky notes in different colors, markers
+
+#### Step 1: Identify Bounded Contexts (30 min)
+
+1. List all bounded contexts in the system
+2. Write each on a large sticky note (one color, e.g., yellow)
+3. Arrange spatially on board (no connections yet)
+4. For each context, note:
+   - Responsible team
+   - Core domain concepts
+   - Primary capabilities
+
+#### Step 2: Draw Integration Lines (45 min)
+
+1. For each pair of contexts that integrate, draw a line connecting them
+2. Mark direction with arrows:
+   - Single arrow (→): Uni-directional dependency
+   - Double arrow (↔): Bi-directional dependency
+3. Label line with integration mechanism:
+   - REST API
+   - Domain Events
+   - Message Queue
+   - Shared Database (flag as concern!)
+   - Batch File Transfer
+   - gRPC, GraphQL, etc.
+
+#### Step 3: Classify Relationships (45 min)
+
+1. For each integration line, determine the Context Mapping pattern
+2. Use abbreviations on the line:
+   - **P**: Partnership
+   - **SK**: Shared Kernel
+   - **U/D**: Upstream/Downstream (Customer-Supplier)
+   - **CF**: Conformist
+   - **ACL**: Anti-Corruption Layer
+   - **OHS**: Open Host Service
+   - **PL**: Published Language
+   - **SW**: Separate Ways
+3. For asymmetric relationships, mark **U** (Upstream) and **D** (Downstream)
+
+#### Step 4: Identify Issues and Opportunities (30 min)
+
+**Red Flags** (mark with red sticky notes):
+- Circular dependencies
+- Excessive Conformist patterns (downstream context losing domain integrity)
+- Too many Shared Kernels (high coordination cost)
+- God Context (one context integrating with everyone)
+- Hidden dependencies (shared database not on map)
+
+**Opportunities** (mark with green sticky notes):
+- Extract Open Host Service from point-to-point integrations
+- Add ACL to protect critical downstream context
+- Simplify to Separate Ways where integration cost exceeds benefit
+- Replace Shared Kernel with Customer-Supplier + Published Language
+
+**Deliverable**: Documented context map showing all contexts, relationships, patterns, and action items
+
+## **Context Map Visual Notation**
+
+### Example Context Map
+
+```
+┌─────────────────┐                    ┌─────────────────┐
+│   Order Mgmt    │ ───── OHS/PL ────→ │   Shipping      │
+│   (Upstream)    │                    │  (Downstream)   │
+│   Team: Orders  │                    │   Team: Ops     │
+└─────────────────┘                    └─────────────────┘
+                                               │
+                                               │ CF
+                                               ↓
+                                       ┌─────────────────┐
+                                       │  External       │
+                                       │  Carrier API    │
+                                       │  (3rd Party)    │
+                                       └─────────────────┘
+
+┌─────────────────┐                    ┌─────────────────┐
+│   Billing       │ ←───── P ────────→ │   Payments      │
+│   Team: Finance │                    │   Team: Finance │
+└─────────────────┘                    └─────────────────┘
+         │                                      │
+         └──────────────── SK ─────────────────┘
+              (Shared: Money, CustomerId)
+
+┌─────────────────┐         ACL         ┌─────────────────┐
+│  Modern CRM     │ ←──────────────────  │  Legacy ERP     │
+│  (Downstream)   │                      │  (Upstream)     │
+│  Team: Sales    │                      │  Team: Legacy   │
+└─────────────────┘                      └─────────────────┘
+```
+
+### Notation Legend
+
+- **Box**: Bounded Context with team ownership
+- **Arrow**: Direction of dependency
+- **Label on Line**: Context Mapping pattern abbreviation
+- **Double Arrow**: Bi-directional dependency (Partnership)
+- **Single Arrow**: Uni-directional dependency (Upstream/Downstream)
+
+## **Evolution and Maintenance**
+
+Context Maps are **living documents**. They should be updated when:
+
+- New bounded contexts are introduced
+- Integration patterns change (e.g., adding ACL, migrating from Conformist to OHS)
+- Organizational structure changes (team ownership transfers)
+- Major architectural decisions are made
+- Teams discover hidden dependencies
+
+**Recommendation**:
+- Review context map **quarterly** with architecture team
+- Use it as input for roadmap planning and team capacity allocation
+- Store context map in version control (as diagrams or code-as-diagram tools)
+- Present context map in architecture reviews and onboarding sessions
+
+## **Relationship to Agentic AI**
+
+In multi-agent AI systems, Context Mapping patterns apply directly to [Agent-to-Agent Communication](../concepts/emerging-practices/agentic-ai/a2a-communication.md):
+
+- **MCP Servers**: Implement Open Host Service pattern
+- **AI Agents**: Can be Conformist (adopt tool schemas), use ACL (translate external agent models), or form Partnerships (peer collaboration)
+- **Multi-Agent Systems**: Context Map shows which agents integrate and how
+
+See [Agentic AI and DDD](../concepts/emerging-practices/agentic-ai/index.md) for detailed application to autonomous agent systems.
+
 ## **Conclusion**
 
 Context mapping is a powerful technique in Domain-Driven Design that helps teams visualize and understand the complex relationships between bounded contexts and the teams working on them. By using defined patterns and recognizing team relationships, organizations can plan and coordinate more effectively, manage dependencies, and prevent issues related to model propagation and system integration.
+
+Key takeaways:
+
+- **Choose patterns deliberately**: Use the decision guide to select appropriate integration patterns
+- **Avoid anti-patterns**: Watch for too many Shared Kernels, Conformist everywhere, hidden dependencies
+- **Make it visual**: Workshop approach and clear notation make context maps accessible
+- **Keep it current**: Context maps are living documents that evolve with the system
+- **Use for planning**: Context maps inform roadmap, team structure, and architectural decisions
 
 Adhering to best practices such as creating focused context maps, documenting patterns, and tailoring views for different perspectives ensures that context mapping remains a valuable tool for both analysis and design in complex systems.

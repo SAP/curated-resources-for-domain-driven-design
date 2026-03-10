@@ -87,28 +87,28 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
 
 ## **Architectural Patterns and Practices**
 
-- **[Microservices Architecture](./concepts/architectual-concepts/msa.md)**
+- **[Microservices Architecture](./concepts/architectural-concepts/msa.md)**
   - Implements each bounded context as an independent microservice.
   - Enhances scalability and allows for independent deployment.
 
-- **[Modular Monolith](./concepts/architectual-concepts/modular-monolith.md)**
+- **[Modular Monolith](./concepts/architectural-concepts/modular-monolith.md)**
   - Organizes bounded contexts into distinct modules within a single application.
   - Balances separation of concerns with simpler deployment compared to microservices.
 
-- **[Event-Driven Architecture](./concepts/architectual-concepts/eda.md)**
+- **[Event-Driven Architecture](./concepts/architectural-concepts/eda.md)**
   - Utilizes asynchronous events for communication between bounded contexts.
   - Promotes loose coupling and scalability.
 
-- **[CQRS (Command Query Responsibility Segregation)](./concepts/architectual-concepts/cqrs.md)**
+- **[CQRS (Command Query Responsibility Segregation)](./concepts/architectural-concepts/cqrs.md)**
 
   - Separates read and write operations into different models.
   - Optimizes performance and scalability by handling commands and queries independently.
 
-- **[Event Sourcing](./concepts/architectual-concepts/event-sourcing.md)**
+- **[Event Sourcing](./concepts/architectural-concepts/event-sourcing.md)**
   - Stores the state of a domain model as a sequence of [domain events](./concepts/tactical-concepts/domain-events.md).
   - Enables rebuilding of the state by replaying events and supports audit trails.
 
-- **[Architecture Modernization](./concepts/architectual-concepts/architecture-modernization.md)**
+- **[Architecture Modernization](./concepts/architectural-concepts/architecture-modernization.md)**
   - Transform legacy systems into modern, adaptable architectures aligned with business strategy and customer needs.
   - Focus on incremental improvements, stakeholder buy-in, and fostering collaboration for continuous innovation and efficiency.
 
@@ -122,7 +122,29 @@ Domain-Driven Design (DDD) is a strategic approach to software development that 
   - Engaging domain experts and developers in the modeling process.
   - Ensures the model accurately reflects business realities.
 
+- **[Cognitive Load in DDD](./concepts/additional-concepts/cognitive-load-ddd.md)**
+  - Understanding how DDD patterns reduce mental effort in software development.
+  - Managing complexity through strategic and tactical design patterns.
+  - Optimizing developer productivity by minimizing extraneous cognitive load.
+
+## **Emerging Practices**
+
+- **[Agentic AI and Domain-Driven Design](./concepts/emerging-practices/agentic-ai/index.md)**
+  - Applying DDD patterns to autonomous AI agent systems.
+  - Designing multi-agent coordination using Context Mapping and Domain Events.
+  - Establishing guardrails for agent autonomy through Aggregates and Bounded Contexts.
+
+  - **[Agent-to-Agent Communication](./concepts/emerging-practices/agentic-ai/a2a-communication.md)**
+    - Peer-to-peer coordination patterns for autonomous agents.
+    - EventStorming workshops for agent discovery.
+    - Context Mapping patterns (Partnership, Customer-Supplier, Anti-Corruption Layer).
+    - Event-driven coordination and Saga patterns.
+
 ## **Best Practices**
+
+- **[Encapsulation in DDD](./concepts/best-practises/encapsulation.md):** Protect domain invariants by hiding implementation details and exposing behavior through intention-revealing interfaces. Avoid anemic domain models and public setters.
+
+- **[SOLID Principles in DDD](./concepts/best-practises/solid-principles-ddd.md):** Apply Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion principles to create maintainable, flexible domain models.
 
 - **[Align Bounded Contexts with Business Boundaries](./concepts/best-practises/aligmentbusiness.md):** Ensure that technical boundaries reflect real-world business divisions and responsibilities.
 
